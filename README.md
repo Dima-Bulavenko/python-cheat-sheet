@@ -78,20 +78,13 @@ Link to the live site - [Python Cheat Sheet](https://dima-bulavenko.github.io/py
 
 ## User Stories
 
-* As a user I want to be able to fully understand the purpose of Disney Food Guide from the main landing page.
+* As a user I want to be able to fully understand the purpose of Python Cheat Sheet from the main landing page.
 * As a user I want the navigation to be intuitive and easy to understand, with a clear purpose and easy access to
   information.
-* As a user I want to be able to see simple and organised lists with names, prices, descriptions and pictures of each
-  item.
 * As a user I want easy links that can lead me off page in a different tab to view the full menu and map locations of
   each item when applicable.
-* As a user I want to be able to sign up to a mailing list to receive further information and updates from Disney Food
-  Guide direct to my email mailbox.
-* As a user I want to be able to contact Disney Food Guide and share my own personal experience at Disney World with
-  pictures if applicable.
-* As a user I want to be able to connect with Disney Food Guide through various social media sites quickly and easily.
-* As a user I want to see the top recommended restaurants, food and drink at Disney World.
-* As a user I want to be provided with a link to book a table at any of the applicable locations listed on the site.
+* As a user I want to be able to contact Python Cheat Sheet and share my own personal experience of using the site.
+* As a user I want to be able to get more expansive information about key python concepts throughout python documentation.
 
 [Back to top](<#contents>)
 
