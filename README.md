@@ -101,20 +101,31 @@ designs vary from the end layout in some places due to creative decisions made t
 
 [Back to top](<#contents>)
 
+
 ## Site Structure
 
-Disney Food Guide has five pages freely accessible by using the on site navigation. These pages are
-the [home page](index.html), which is the default loading page, [restaurants](restaurants.html), [snacks](snacks.html)
-, [drinks](drinks.html) and [contact](contact.html). There is one other page which is viewed in response to the contact
-form submission, that page is [thanks](thanks.html), but this page isn't accessible via the normal site navigation. The
-navigation bar is present on every page of the website. This nav is replaced by a mobile sticky nav on smaller devices,
-which follows the screen when the user continues down the pages. A back to the top clickable link was added to the
-longer pages to enable a user to scroll back up to the top of the page without having to manually scroll. This makes
-accessing the nav bar easier on larger screens. These links disappear on smaller devices as the nav bar is always
-visible. The logo at the top left of the nav bar can also be used as a link to the home page. There is also a scroll
-down clickable link box on the home page main header image which provides a visual queue for the user to scroll down to
-view the welcome text as the main header takes up the entire page. When clicked, this box scrolls the view down to the
-lower section. The box and contents disappears on smaller devices.
+### Home Page
+The home page serves as the central hub, outlining the site's primary objectives and purpose. Content includes an introduction to the Python language, reasons for learning it, and valuable links for tutorials and Python download.
+
+### Cheat Sheet Page
+The cheat sheet page, arguably the most crucial, offers users essential information on key Python concepts. Users can seamlessly navigate through topics using pagination buttons for a smooth learning experience.
+
+### Feedback Page
+The feedback page provides visitors with the opportunity to express gratitude, share wishes, or provide valuable suggestions for site improvement.
+
+## Common Elements Across Pages
+
+### Header
+- Contains the site's logo, linking back to the home page.
+- Navigation bar facilitating easy movement throughout the site.
+- Links to the developer's LinkedIn profile and the GitHub repository housing the site's source code.
+
+### Footer
+Mirrors the header, excluding the logo.
+
+### Navigation Bar
+Enables users to swiftly move between topics, enhancing overall navigation efficiency.
+
 
 [Back to top](<#contents>)
 
