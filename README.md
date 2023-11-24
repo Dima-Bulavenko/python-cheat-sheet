@@ -90,18 +90,14 @@ Link to the live site - [Python Cheat Sheet](https://dima-bulavenko.github.io/py
 
 ## Wireframes
 
-The project templates and wireframes for Disney Food Guide were designed using [Balsamiq](https://balsamiq.com). The
+The project templates and wireframes for Python Cheat Sheet were designed using [Balsamiq](https://balsamiq.com). The
 designs vary from the end layout in some places due to creative decisions made throughout the development process.
 
 ![Wireframe image for home page](assets/readme-images/balsamiq-home-page.png)
 
-![Wireframe image for restaurants page](assets/readme-images/balsamiq-restaurants.png)
+![Wireframe image for home page](assets/readme-images/balsamiq-get-started.png)
 
-![Wireframe image for snacks page](assets/readme-images/balsamiq-snacks.png)
-
-![Wireframe image for drinks page](assets/readme-images/balsamiq-drinks.png)
-
-![Wireframe image for contact page](assets/readme-images/balsamiq-contact.png)
+![Wireframe image for home page](assets/readme-images/balsamiq-feedback.png)
 
 [Back to top](<#contents>)
 
