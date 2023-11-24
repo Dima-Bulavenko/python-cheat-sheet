@@ -133,11 +133,10 @@ Enables users to swiftly move between topics, enhancing overall navigation effic
 
 * ### Typography
 
-The font family chosen for Disney Food Guide was Montserrat, with a backup font of sans-serif. This font family was used
-for all text across the site. It was chosen for its professional yet playful feel which is easy to read. It matched well
-with the lighthearted tone of the content whilst still remaining formal enough to not look unprofessional. The font was
-selected from [Google Fonts](https://fonts.google.com/). To cut down on load times only font weights of 300 and 400 were
-chosen. The font was imported using a link in [the CSS document](assets/css/style.css).
+Python Cheat Sheet uses two font family. The first one is `Inter`, being used for all text on pages.
+And the second one is `Lexend`, being used for headers elements of HTML. Both of the fonts are used with backup font of
+`sans-serif`. The selection of these fonts is intentional, aiming to prioritize readability and deliver an optimal design for users.
+The fonts were selected from [Google Fonts](https://fonts.google.com/).
 
 * ### Colour Scheme
 
