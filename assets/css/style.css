@@ -18,3 +18,7 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--site-background-color);
+    color: var(--text-color);
+}
