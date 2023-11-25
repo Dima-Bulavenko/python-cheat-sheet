@@ -654,23 +654,16 @@ The live link for Python Cheat Sheet can be found here - [Python Cheat Sheet](ht
 
 # Credits
 
-This section will credit the sources of content and media for Disney Food Guide.
+This section will credit the sources of content and media for Python Cheat Sheet.
 
 ## Content
 
 * For creating sensible and readable content was used [ChatGPT](https://chat.openai.com/)
-
-
 * Fonts were imported from [Google Fonts](https://fonts.google.com/).
 * Icons were imported from [Font Awesome](https://fontawesome.com/).
-* Content and information was collated from [The Official Disney Website](https://www.disneyworld.co.uk/)
-  and [Disney Food Blog](https://www.disneyfoodblog.com/).
-* The Disney Food Guide colour palate was inspired
-  by [Scheme Colour Classic Disney Colour Scheme](https://www.schemecolor.com/classic-disney.php)
-* A tutorial on how to build a reponsive mobile nav menu with CSS and no Javascript was found
-  at [Log Rocket](https://blog.logrocket.com/create-responsive-mobile-menu-with-css-no-javascript/).
-* General minor HTML and CSS code tutorials and resources were found at [MDN](https://developer.mozilla.org/en-US/)
-  and [W3Schools](https://www.w3schools.com/).
+* The Python Cheat Sheet colour palette was inspired
+  by [Dark Blue Colour Scheme.](https://coolors.co/fdf0d5-00a6fb-0085c8-006494-003554-051923)
+
 
 ## Media
 
