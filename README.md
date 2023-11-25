@@ -27,7 +27,7 @@ grasping and reinforcing Python knowledge.
 
 Link to the live site - [Python Cheat Sheet](https://dima-bulavenko.github.io/python-cheat-sheet/)
 
-![Python Cheat Sheet Responsive Design](assets/readme-images/disney-food-guide-responsive-display.png)
+![Python Cheat Sheet Responsive Design](assets/images/readme-images/disney-food-guide-responsive-display.png)
 
 # Contents
 
@@ -93,11 +93,11 @@ Link to the live site - [Python Cheat Sheet](https://dima-bulavenko.github.io/py
 The project templates and wireframes for Python Cheat Sheet were designed using [Balsamiq](https://balsamiq.com). The
 designs vary from the end layout in some places due to creative decisions made throughout the development process.
 
-![Wireframe image for home page](assets/readme-images/balsamiq-home-page.png)
+![Wireframe image for home page](assets/images/readme-images/balsamiq-home-page.png)
 
-![Wireframe image for home page](assets/readme-images/balsamiq-get-started.png)
+![Wireframe image for home page](assets/images/readme-images/balsamiq-get-started.png)
 
-![Wireframe image for home page](assets/readme-images/balsamiq-feedback.png)
+![Wireframe image for home page](assets/images/readme-images/balsamiq-feedback.png)
 
 [Back to top](<#contents>)
 
@@ -148,7 +148,7 @@ For text color, I opted for an off-white shade. This intentional choice creates 
 
 Additionally, shades derived from Rich Black are strategically used for buttons and various blocks. This approach subtly highlights specific elements, contributing to a visually cohesive design. 
 
-![Disney classic colour scheme](assets/readme-images/cheat_sheet_colour_scheme.png)
+![Disney classic colour scheme](assets/images/readme-images/cheat_sheet_colour_scheme.png)
 
 [Back to top](<#contents>)
 
@@ -182,7 +182,7 @@ text. When a user is on one of the pages that underline continually displays ben
 they are on. The page links are evenly spaced using flexbox and respond to changes of screen size. When the screen size
 goes below 757px this navigation bar is hidden and is replaced with a mobile nav bar.
 
-![Nav bar large display](assets/readme-images/nav-bar-full-screen.png)
+![Nav bar large display](assets/images/readme-images/nav-bar-full-screen.png)
 
 * Mobile Nav
 
@@ -194,9 +194,9 @@ indicate a way of closing the menu to the user. When the cross icon is clicked t
 down menu doesn't interfere with the flow and layout of information displayed beneath it, it simply appears on-top until
 closed with the cross icon. This menu can be accessed anywhere on the page.
 
-![Nav bar small display](assets/readme-images/nav-bar-small.png)
+![Nav bar small display](assets/images/readme-images/nav-bar-small.png)
 
-![Nav bar open menu](assets/readme-images/nav-bar-open-menu.png)
+![Nav bar open menu](assets/images/readme-images/nav-bar-open-menu.png)
 
 * ### Main Header
 
@@ -212,7 +212,7 @@ resizes at multiple break points to allow for most of the background image to st
 from display when the mobile nav bar is introduced and the header section is resized to the point where the information
 below is visible without having to scroll.
 
-![Main header section](assets/readme-images/main-header-large.png)
+![Main header section](assets/images/readme-images/main-header-large.png)
 
 * ### Introduction
 
@@ -222,7 +222,7 @@ playful tone of the content. The purpose of this text is to walk the user throug
 have an understanding before they then use the navigation bar to travel through the sections. The text is short enough
 so as not to overload the user with too much information at once.
 
-![Welcome section paragraph](assets/readme-images/welcome-section.png)
+![Welcome section paragraph](assets/images/readme-images/welcome-section.png)
 
 * ### Mailing List
 
@@ -236,7 +236,7 @@ placeholders in the input fields which are filled out with the details of Mickey
 stacks beneath the welcome paragraph on smaller screens. The button changes colours when hovered over and there is a
 light orange background with a rounded border radius on the form. The form is an optional feature for the user.
 
-![Mailing list](assets/readme-images/mailing-list.png)
+![Mailing list](assets/images/readme-images/mailing-list.png)
 
 * ### Footer
 
@@ -250,7 +250,7 @@ should be familiar with without much explanation needed. They should also be fam
 writing their full names. The footer is designed using flexbox and is reponsive with smaller screen sizes and because of
 its simplicity, doesn't require much editing or resizing. The icons are spaced evenly across the screen using flexbox.
 
-![Landing page footer](assets/readme-images/footer.png)
+![Landing page footer](assets/images/readme-images/footer.png)
 
 [Back to top](<#contents>)
 
@@ -271,7 +271,7 @@ used. The title is a h1 and is centered in the middle of the image to clearly di
 user. As the screen size is reduced the background image and titles continue to resize at certain break points to fit on
 smaller screens.
 
-![Restaurant header](assets/readme-images/restaurant-header.png)
+![Restaurant header](assets/images/readme-images/restaurant-header.png)
 
 * ### Restaurant Listings
 
@@ -292,7 +292,7 @@ styling of the listings is recorded using CSS classes for reusable styling throu
 are used to style all the following listings. Content is spaced out to avoid clutter and to display information in a
 pleasant and easy to understand way for the user.
 
-![Restaurant listings](assets/readme-images/restaurant-listings.png)
+![Restaurant listings](assets/images/readme-images/restaurant-listings.png)
 
 * ### Restaurant Footer
 
@@ -306,7 +306,7 @@ is removed from display when the mobile nav bar is visible on smaller screens. A
 display and is visible at all times, there is no need for the user to scroll to the top of the page to navigate the
 site. This also frees up space in the footer for responsivity on smaller screens.
 
-![Restaurant footer](assets/readme-images/restaurant-footer.png)
+![Restaurant footer](assets/images/readme-images/restaurant-footer.png)
 
 [Back to top](<#contents>)
 
@@ -326,7 +326,7 @@ Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blo
 The snacks header is styled very similarly to the restaurant header except the difference in title content. This is to
 showcase the subject and purpose of the page to the user in a clear and defined way.
 
-![Snacks header](assets/readme-images/snacks-header.png)
+![Snacks header](assets/images/readme-images/snacks-header.png)
 
 * ### Snack Listings
 
@@ -357,7 +357,7 @@ Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blo
 The styling for the drinks header is consistent with the previous pages. The h1 title is different to clearly display
 the subject of the content of the page to the user.
 
-![Drinks header](assets/readme-images/drinks-header.png)
+![Drinks header](assets/images/readme-images/drinks-header.png)
 
 * ### Drink Listings
 
@@ -371,7 +371,7 @@ location links open in a new tab. The pictures are high quality and of a similar
 used to evenly space content. As with the other pages, the listings are responsive and stack when viewed on smaller
 screen sizes.
 
-![Drinks listings](assets/readme-images/drinks-listings.png)
+![Drinks listings](assets/images/readme-images/drinks-listings.png)
 
 [Back to top](<#contents>)
 
@@ -396,7 +396,7 @@ page, however there is a linear gradient applied to the bottom of the background
 for the footer throughout the rest of the site. This helps bring some consistency to the colour scheme in comparison to
 the other pages in the site.
 
-![Contact background](assets/readme-images/contact-background.png)
+![Contact background](assets/images/readme-images/contact-background.png)
 
 * ### Contact Form
 
@@ -413,7 +413,7 @@ placeholders as the mailing list form. When the form is submitted the user is di
 styled in exactly the same way but with a thank you message instead of the form. This is the only way to access the
 thanks.html page.
 
-![Contact form](assets/readme-images/contact-form.png)
+![Contact form](assets/images/readme-images/contact-form.png)
 
 ### Form Submission Confirmation
 
@@ -429,7 +429,7 @@ Link to live site - [Thanks](https://matthew-hurrell.github.io/Disney-Food-Guide
 
 Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/thanks.html)
 
-![Thank you form submission page](assets/readme-images/thank-you-page.png)
+![Thank you form submission page](assets/images/readme-images/thank-you-page.png)
 
 [Back to top](<#contents>)
 
@@ -484,31 +484,31 @@ the final tests, no errors on any pages were found.
 
 * ### Home page
 
-![Home page html validation](assets/readme-images/index.html-validation.png)
+![Home page html validation](assets/images/readme-images/index.html-validation.png)
 
 * ### Restaurants
 
-![Restaurants html validation](assets/readme-images/restaurants.html-validation.png)
+![Restaurants html validation](assets/images/readme-images/restaurants.html-validation.png)
 
 * ### Snacks
 
-![Home page html validation](assets/readme-images/snacks.html-validation.png)
+![Home page html validation](assets/images/readme-images/snacks.html-validation.png)
 
 * ### Drinks
 
-![Home page html validation](assets/readme-images/drinks.html-validation.png)
+![Home page html validation](assets/images/readme-images/drinks.html-validation.png)
 
 * ### Contact
 
-![Home page html validation](assets/readme-images/contact.html-validation.png)
+![Home page html validation](assets/images/readme-images/contact.html-validation.png)
 
 * ### Thanks
 
-![Home page html validation](assets/readme-images/thanks.html-validation.png)
+![Home page html validation](assets/images/readme-images/thanks.html-validation.png)
 
 * ### Style.css
 
-![Home page html validation](assets/readme-images/style.css-validation.png)
+![Home page html validation](assets/images/readme-images/style.css-validation.png)
 
 [Back to top](<#contents>)
 
@@ -522,7 +522,7 @@ and [Responsive Design Checker](https://responsivedesignchecker.com/). Once the 
 also used to view the pages on multiple physical devices such as an Apple iPad, Apple iPhone 6, Samsung Galaxy and Apple
 MacBook Pro.
 
-![Disney Food Guide Responsive Design](assets/readme-images/disney-food-guide-responsive-display.png)
+![Disney Food Guide Responsive Design](assets/images/readme-images/disney-food-guide-responsive-display.png)
 
 [Back to top](<#contents>)
 
@@ -534,23 +534,23 @@ areas - Performance, Accessibility, Best Practices and SEO.
 
 * ### Home page
 
-![Home lighthouse test](assets/readme-images/lighthouse-test.png)
+![Home lighthouse test](assets/images/readme-images/lighthouse-test.png)
 
 * ### Restaurants
 
-![Restaurant lighthouse test](assets/readme-images/lighthouse-restaurants.png)
+![Restaurant lighthouse test](assets/images/readme-images/lighthouse-restaurants.png)
 
 * ### Snacks
 
-![Snacks lighthouse test](assets/readme-images/lighthouse-snacks.png)
+![Snacks lighthouse test](assets/images/readme-images/lighthouse-snacks.png)
 
 * ### Drinks
 
-![Drinks lighthouse test](assets/readme-images/lighthouse-drinks.png)
+![Drinks lighthouse test](assets/images/readme-images/lighthouse-drinks.png)
 
 * ### Contact
 
-![Contact lighthouse test](assets/readme-images/lighthouse-contact.png)
+![Contact lighthouse test](assets/images/readme-images/lighthouse-contact.png)
 
 [Back to top](<#contents>)
 
@@ -624,27 +624,27 @@ GitHub Pages. This is a guide to deploy a site on GitHub Pages using GitHub.
 1. Sign in to GitHub and go to the repositories menu by clicking on your avatar in the top right corner, then select
    the 'Your repositories' option .
 
-![Github Deployment Step 1](assets/readme-images/github-deployment-step-1.png)
+![Github Deployment Step 1](assets/images/readme-images/github-deployment-step-1.png)
 
-![Github Deployment Step 2](assets/readme-images/github-deployment-step-2.png)
+![Github Deployment Step 2](assets/images/readme-images/github-deployment-step-2.png)
 
 2. Click to open the repository and click on the settings icon to open the settings menu for the repository.
 
-![Github Deployment Step 3](assets/readme-images/github-deployment-step-3.png)
+![Github Deployment Step 3](assets/images/readme-images/github-deployment-step-3.png)
 
-![Github Deployment Step 4](assets/readme-images/github-deployment-step-4.png)
+![Github Deployment Step 4](assets/images/readme-images/github-deployment-step-4.png)
 
 3. In the settings menu, click on the pages tab on the left side of the screen.
 
-![Github Deployment Step 5](assets/readme-images/github-deployment-step-5.png)
+![Github Deployment Step 5](assets/images/readme-images/github-deployment-step-5.png)
 
 4. Under Branch, select branch:main, leave the folder on root and click save.
 
-![Github Deployment Step 6](assets/readme-images/github-deployment-step-6.png)
+![Github Deployment Step 6](assets/images/readme-images/github-deployment-step-6.png)
 
 5. The page will then automatically refresh and provide a link to the published site when it has finished processing.
 
-![Github Deployment Step 7](assets/readme-images/github-deployment-step-7.png)
+![Github Deployment Step 7](assets/images/readme-images/github-deployment-step-7.png)
 
 Congratulations! The site was deployed:)
 
