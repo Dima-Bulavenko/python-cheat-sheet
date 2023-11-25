@@ -663,6 +663,7 @@ This section will credit the sources of content and media for Python Cheat Sheet
 * Icons were imported from [Font Awesome](https://fontawesome.com/).
 * The Python Cheat Sheet colour palette was inspired
   by [Dark Blue Colour Scheme.](https://coolors.co/fdf0d5-00a6fb-0085c8-006494-003554-051923)
+* Information about using [CSS variables](https://www.w3schools.com/css/css3_variables.asp) 
 
 
 ## Media
