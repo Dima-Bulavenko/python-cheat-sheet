@@ -1,6 +1,15 @@
 /* Google Font import*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Variables */
+:root {
+    --site-background-color: #051923;
+    --block-backgorund-color: #003554;
+    --border-color: #006494;
+    --button-color: #0085C8;
+    --button-hover-color: #00A6FB;
+    --text-color: #FDF0D5;
+}
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
