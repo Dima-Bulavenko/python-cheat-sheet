@@ -140,16 +140,15 @@ The fonts were selected from [Google Fonts](https://fonts.google.com/).
 
 * ### Colour Scheme
 
-The colour scheme used was a variation on the classic Disney colour scheme. Mostly a combination of whites, pinks,
-blacks and orange yellows with varying degrees of transparency to provide different shades. The text colour is a dark
-grey so as not to appear too dark. Social media icons transition to their signature colours when hovered over. The light
-colours throughout the site help to generate a soft and welcoming atmosphere. Orange is a colour of optimism, freedom
-and youth. Pink is a calm, soft and creative colour. Yellow is a colour often associated with fun, happiness, joy and
-positivity. Together these colours capture the youthful spirit of Disney. A blue background image is used for the
-contact page as blue is a colour of trust, confidence and purpose. This may help generate more confidence and trust in
-the user to submit their details.
+The final color scheme is a reflection of my preferences as a programmer, aiming for both aesthetic appeal and user-friendly design:
 
-![Disney classic colour scheme](assets/readme-images/disney-colour-scheme.png)
+The background color, Rich Black, was chosen for its non-intrusive quality, providing a comfortable user experience without causing eye strain.
+
+For text color, I opted for an off-white shade. This intentional choice creates a strong contrast with the background, enhancing the readability and clarity of information throughout the site.
+
+Additionally, shades derived from Rich Black are strategically used for buttons and various blocks. This approach subtly highlights specific elements, contributing to a visually cohesive design. 
+
+![Disney classic colour scheme](assets/readme-images/cheat_sheet_colour_scheme.png)
 
 [Back to top](<#contents>)
 
