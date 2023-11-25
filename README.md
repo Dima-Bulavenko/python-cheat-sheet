@@ -665,6 +665,7 @@ This section will credit the sources of content and media for Python Cheat Sheet
   by [Dark Blue Colour Scheme.](https://coolors.co/fdf0d5-00a6fb-0085c8-006494-003554-051923)
 * Information about using [CSS variables](https://www.w3schools.com/css/css3_variables.asp)
 * Favicon and logo were created by using [icons8](https://icons8.com/icons)
+* [Semantic HTML](https://www.semrush.com/blog/semantic-html5-guide/): What It Is and How to Use It Correctly
 
 
 ## Media
