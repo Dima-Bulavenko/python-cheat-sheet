@@ -5,10 +5,12 @@
 :root {
     --site-background-color: #051923;
     --block-backgorund-color: #003554;
-    --border-color: #006494;
+    --border-color: rgba(229, 71, 234, 0.44);
     --button-color: #0085C8;
     --button-hover-color: #00A6FB;
     --text-color: #FDF0D5;
+    --site-gradient: linear-gradient(90deg, rgba(109, 199, 255, 1) 0%, rgba(230, 171, 255, 1) 0%, rgba(91, 129, 255, 1) 33%, rgba(26, 109, 255, 1) 66%, rgba(200, 34, 255, 1) 100%);
+    --icon-color: #e8ebee;
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -20,5 +22,76 @@
 
 body {
     background-color: var(--site-background-color);
-    color: var(--text-color);
+    color: var(--text-color)
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.font-aw-icon {
+    font-size: 1.6rem;
+    color: #b3b3b6;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Header */
+
+.header-icon {
+    font-size: 1.8rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    background-color: rgba(3, 11, 31, 0.6);
+    border-bottom: transparent solid 2px;
+    border-image: var(--site-gradient) 1;
+    position: fixed;
+    width: 100vw;
+    backdrop-filter: blur(3px);
+    padding: 0 5vw;
+}
+
+#nav-topics-toggle {
+    display: none;
+}
+
+label[for="nav-topics-toggle"] {
+    flex-grow: 2;
+}
+
+#feedback {
+    flex-grow: 1;
+}
+
+header > h1 {
+    font-size: 0;
+    order: 1;
+    text-align: center;
+    margin: auto;
+    flex-grow: 10;
+}
+
+#logo {
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+#nav-site {
+    display: none;
+}
+
+#outer-sites {
+    display: flex;
+    justify-content: space-evenly;
+    order: 2;
+    flex-grow: 4;
+
 }
