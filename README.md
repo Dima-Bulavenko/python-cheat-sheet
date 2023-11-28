@@ -666,6 +666,7 @@ This section will credit the sources of content and media for Python Cheat Sheet
 * Information about using [CSS variables](https://www.w3schools.com/css/css3_variables.asp)
 * Favicon and logo were created by using [icons8](https://icons8.com/icons)
 * [Semantic HTML](https://www.semrush.com/blog/semantic-html5-guide/): What It Is and How to Use It Correctly
+* How to create [Blurry Header](https://www.w3schools.com/cssref/css3_pr_backdrop-filter.php)
 
 
 ## Media
