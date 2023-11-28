@@ -571,46 +571,9 @@ interactivity of the site.
 
 * ### Resolved
 
-* The first time the HTML code was submitted to W3C HTML testing it produced one main error. The testing program flagged
-  some extra i closing tags from an icon that had been removed. This wasn't an obvious mistake as it wasn't showing up
-  on the site or causing any problems with the display. Because the majority of the HTML was copied between pages, these
-  bugs flagged up on the other pages too. They were simply identified and deleted within the HTML to resolve the
-  problem.
-
-* When the site was first tested by Google Chrome's Lighthouse tester it flagged that the images files across the site
-  were much too large, which was slowing down loading times. Performance was only measuring at an average of 70%. The
-  first attempt to solve this problem was made by installing the app ImgBot through GitHub. This small program
-  automatically scans repositories for large images and compresses them to optimize loading times. The changes are then
-  committed to a new branch and then merged with the original file. Unfortunately results were varied, and it didn't
-  make much difference to the loading times. The second attempt involved manually editing the image sizes and type via
-  apple preview. The new image files were then re-uploaded and the older image files were overwritten. This process was
-  time consuming but it did result in drastically reduced loading times and an average lighthouse performance rating of
-  greater than 90% across all pages.
-
-* When the scrolling clickable links at the bottom of each page and on the main landing page were first added the screen
-  was not scrolling smoothly, it was returning to the destination instantly, which didn't result in a good user
-  experience. Normally scroll behaviour can be edited using javascript but because the project was limited to vanilla
-  HTML and CSS this was not an option. This problem was quite easily resolved by adding the CSS property
-  scroll-behaviour: smooth to the * selector (All elements).
-
-* The more difficult part of the project was adding a responsive mobile nav without using javascript. Most online
-  tutorials use javascript to help the functionality of a responsive nav. Originally basic javascript was implimented to
-  try and create the nav bar, but when this method failed another solution needed to be found. Peers on slack
-  recommended an online tutorial about building a responsive nav bar with just CSS and HTML. This method uses a hidden
-  checkbox to toggle the menu opening and closing. The solution was to hide the checkbox from view but still have its
-  functionality present when clicked by a user. The checkbox is then overlayed with a menu icon which then appears to
-  the user to function as a menu button. This solution worked and was implemented into the latest version of the site.
+* Incorrect link to my LinkedIn [Fixing Commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/8debbfe51d11a12ba6a04e3cc4ccac3082a46928).
 
 * ### Unresolved
-
-As stated, using just HTML and CSS to create a website has its shortcomings. Unfortunately without knowledge or use of
-other languages, both contact forms on Disney Food Guide have no functionality. Although they seem to accept data they
-do not currently collect or send the data to any back-end database. This is an issue that can only be resolved with more
-knowledge of back end languages.
-
-Another unresolved issue is the slight differences in feature styling on some devices. Buttons were smaller and text was
-a different weight on certain apple devices. A reason for these differences was not found, but the differences were
-minor and did not detract from the overall user experience.
 
 [Back to top](<#contents>)
 
