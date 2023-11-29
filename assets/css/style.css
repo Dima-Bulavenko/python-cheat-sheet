@@ -103,3 +103,38 @@ header > h1 {
         gap: 25px
     }
 }
+
+/* Media query: laptops and larger (992 and up) */
+@media screen and (min-width: 992px) {
+/* Header */
+    header {
+        padding: 0 20px;
+    }
+
+    header > h1 {
+        flex: 1 200px;
+        order: initial;
+        text-align: left;
+    }
+    #feedback, label[for="nav-topics-toggle"] {
+        display: none;
+    }
+
+    #nav-site {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    #nav-site > ul {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 50px;
+        font-size: 1.2rem;
+    }
+
+    #outer-sites {
+        flex: 1 200px;
+    }
+}
