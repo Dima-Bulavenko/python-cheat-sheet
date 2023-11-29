@@ -30,8 +30,8 @@
 </head>
 <body>
 <header>
-    <input type="checkbox" id="nav-topics-toggle" name="nav-topics-toggle">
-    <label class="font-aw-icon" for="nav-topics-toggle">
+    <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
+    <label class="font-aw-icon" for="nav-topics-show">
         <i class="fa-solid fa-bars font-aw-icon"></i>
     </label>
     
@@ -66,72 +66,79 @@
         </li>
     </ul>
 </header>
+
+<div id="nav-topics-container">
+        <input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
+        <label for="nav-topics-hide"><i class="fa-solid fa-xmark"></i></label>
+        <nav id="nav-topics">
+            <ul>
+                <li>
+                    <a href="#introduction-and-basics">Introduction and Basics</a>
+                    <ul>
+                        <li><a href="#python-introduction">Python Introduction</a></li>
+                        <li><a href="#setting-up-python">Setting up Python</a></li>
+                        <li><a href="#hello-world-program">Hello World Program</a></li>
+                        <li><a href="#comments-and-documentation">Comments and Documentation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#variables-and-data-types:">Variables and Data Types</a>
+                    <ul>
+                        <li><a href="#variables-and-assignments">Variables and Assignments</a></li>
+                        <li><a href="#numeric-types">Numeric Types (int, float)</a></li>
+                        <li><a href="#strings-and-string-operations">Strings and String Operations</a></li>
+                        <li><a href="#lists-and-tuples">Lists and Tuples</a></li>
+                        <li><a href="#dictionaries">Dictionaries</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#control-flow:">Control Flow</a>
+                    <ul>
+                        <li><a href="#conditional-statements">Conditional Statements (if, else, elif)</a></li>
+                        <li><a href="#loops">Loops (for, while)</a></li>
+                        <li><a href="#break-and-continue-statements">Break and Continue Statements</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#functions">Functions</a>
+                    <ul>
+                        <li><a href="#defining-functions">Defining Functions</a></li>
+                        <li><a href="#function-parameters-and-return-values">Function Parameters and Return Values</a>
+                        </li>
+                        <li><a href="#lambda-functions">Lambda Functions</a></li>
+                        <li><a href="#recursion">Recursion</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#modules-and-packages">Modules and Packages</a>
+                    <ul>
+                        <li><a href="#importing-modules">Importing Modules</a></li>
+                        <li><a href="#creating-and-using-packages">Creating and Using Packages</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#error-handling">Error Handling</a>
+                    <ul>
+                        <li><a href="#exceptions-and-errors">Exceptions and Errors</a></li>
+                        <li><a href="#try-except-blocks">Try, Except Blocks</a></li>
+                        <li><a href="#handling-different-types-of-exceptions">Handling Different Types of Exceptions</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#file-handling">File Handling</a>
+                    <ul>
+                        <li><a href="#reading-from-files">Reading from Files</a></li>
+                        <li><a href="#writing-to-files">Writing to Files</a></li>
+                        <li><a href="#working-with-file-paths">Working with File Paths</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+</div>
 <main>
-    <nav id="nav-topics">
-        <ul>
-            <li>
-                <a href="#introduction-and-basics">Introduction and Basics</a>
-                <ul>
-                    <li><a href="#python-introduction">Python Introduction</a></li>
-                    <li><a href="#setting-up-python">Setting up Python</a></li>
-                    <li><a href="#hello-world-program">Hello World Program</a></li>
-                    <li><a href="#comments-and-documentation">Comments and Documentation</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#variables-and-data-types:">Variables and Data Types</a>
-                <ul>
-                    <li><a href="#variables-and-assignments">Variables and Assignments</a></li>
-                    <li><a href="#numeric-types">Numeric Types (int, float)</a></li>
-                    <li><a href="#strings-and-string-operations">Strings and String Operations</a></li>
-                    <li><a href="#lists-and-tuples">Lists and Tuples</a></li>
-                    <li><a href="#dictionaries">Dictionaries</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#control-flow:">Control Flow</a>
-                <ul>
-                    <li><a href="#conditional-statements">Conditional Statements (if, else, elif)</a></li>
-                    <li><a href="#loops">Loops (for, while)</a></li>
-                    <li><a href="#break-and-continue-statements">Break and Continue Statements</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#functions">Functions</a>
-                <ul>
-                    <li><a href="#defining-functions">Defining Functions</a></li>
-                    <li><a href="#function-parameters-and-return-values">Function Parameters and Return Values</a></li>
-                    <li><a href="#lambda-functions">Lambda Functions</a></li>
-                    <li><a href="#recursion">Recursion</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#modules-and-packages">Modules and Packages</a>
-                <ul>
-                    <li><a href="#importing-modules">Importing Modules</a></li>
-                    <li><a href="#creating-and-using-packages">Creating and Using Packages</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#error-handling">Error Handling</a>
-                <ul>
-                    <li><a href="#exceptions-and-errors">Exceptions and Errors</a></li>
-                    <li><a href="#try-except-blocks">Try, Except Blocks</a></li>
-                    <li><a href="#handling-different-types-of-exceptions">Handling Different Types of Exceptions</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#file-handling">File Handling</a>
-                <ul>
-                    <li><a href="#reading-from-files">Reading from Files</a></li>
-                    <li><a href="#writing-to-files">Writing to Files</a></li>
-                    <li><a href="#working-with-file-paths">Working with File Paths</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
 </main>
+
 <footer></footer>
 </body>
 </html>
