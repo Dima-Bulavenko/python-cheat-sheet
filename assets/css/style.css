@@ -210,4 +210,24 @@ main {
     #outer-sites {
         flex: 1 200px;
     }
+
+    /* Navigation by topics */
+    #nav-topics-hide:checked + #nav-topics-container {
+        display: initial;
+    }
+
+    #nav-topics-container {
+        top: var(--header-height);
+        width: fit-content;
+    }
+
+    #nav-bar-topics {
+        width: 300px;
+        padding-bottom: 70px;
+    }
+
+    #nav-bar-topics > label {
+        display: none;
+    }
+
 }
