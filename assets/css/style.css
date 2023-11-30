@@ -170,6 +170,11 @@ main {
         justify-content: flex-end;
         gap: 25px
     }
+
+        /* Navigation by topics */
+    #nav-bar-topics{
+        width: 40vw;
+    }
 }
 
 /* Media query: laptops and larger (992 and up) */
