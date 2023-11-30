@@ -11,6 +11,8 @@
     --text-color: #FDF0D5;
     --site-gradient: linear-gradient(90deg, rgba(109, 199, 255, 1) 0%, rgba(230, 171, 255, 1) 0%, rgba(91, 129, 255, 1) 33%, rgba(26, 109, 255, 1) 66%, rgba(200, 34, 255, 1) 100%);
     --icon-color: #e8ebee;
+    --header-height: 3.5rem;
+    --blure-bakcground-color: rgba(3, 11, 31, 0.6);
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -23,7 +25,7 @@
 body {
     background-color: var(--site-background-color);
     color: var(--text-color);
-    font-family: "Inter", sans-serif;;
+    font-family: "Inter", sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -48,21 +50,22 @@ li {
 header {
     display: flex;
     align-items: center;
-    height: 3.5rem;
-    background-color: rgba(3, 11, 31, 0.6);
+    height: var(--header-height);
+    background-color: var(--blure-bakcground-color);
     border-bottom: transparent solid 2px;
     border-image: var(--site-gradient) 1;
     position: fixed;
     width: 100vw;
     backdrop-filter: blur(3px);
     padding: 0 5vw;
+    z-index: 50;
 }
 
-#nav-topics-toggle {
+#nav-topics-show, #nav-topics-hide {
     display: none;
 }
 
-label[for="nav-topics-toggle"] {
+label[for="nav-topics-show"] {
     flex-grow: 2;
 }
 
@@ -95,9 +98,46 @@ header > h1 {
 
 }
 
+/* Navigation by topics */
+#nav-topics-container{
+    background-color: var(--blure-bakcground-color);
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    backdrop-filter: blur(3px);
+    z-index: 51;
+}
+
+#nav-topics-container > label {
+    display: block;
+    width: 90vw;
+    margin-right: 100px;
+    background-color: var(--site-background-color);
+}
+
+#nav-topics {
+    width: 90vw;
+    margin-right: 100px;
+    background-color: var(--site-background-color);
+}
+
+#nav-topics-hide:checked + label[for=nav-topics-hide] {
+    display: none;
+}
+
+#nav-topics-hide:checked ~ #nav-topics {
+    display: none;
+}
+
+
+/* Main */
+main {
+    padding-top: var(--header-height);
+}
+
 /* Media query: tablets and larger (768 and up) */
 @media screen and (min-width: 768px) {
-/* Header */
+    /* Header */
     header {
         padding-right: 3vw;
     }
@@ -120,7 +160,7 @@ header > h1 {
         order: initial;
         text-align: left;
     }
-    #feedback, label[for="nav-topics-toggle"] {
+    #feedback, label[for="nav-topics-show"] {
         display: none;
     }
 
