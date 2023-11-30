@@ -9,7 +9,8 @@
     --button-color: #0085C8;
     --button-hover-color: #00A6FB;
     --text-color: #FDF0D5;
-    --site-gradient: linear-gradient(90deg, rgba(109, 199, 255, 1) 0%, rgba(230, 171, 255, 1) 0%, rgba(91, 129, 255, 1) 33%, rgba(26, 109, 255, 1) 66%, rgba(200, 34, 255, 1) 100%);
+    --site-horizontal-gradient: linear-gradient(90deg, rgba(109, 199, 255, 1) 0%, rgba(230, 171, 255, 1) 0%, rgba(91, 129, 255, 1) 33%, rgba(26, 109, 255, 1) 66%, rgba(200, 34, 255, 1) 100%);
+    --site-vertical-gradient: linear-gradient(0deg, rgba(109, 199, 255, 1) 0%, rgba(230, 171, 255, 1) 0%, rgba(91, 129, 255, 1) 33%, rgba(26, 109, 255, 1) 66%, rgba(200, 34, 255, 1) 100%);
     --icon-color: #e8ebee;
     --header-height: 3.5rem;
     --blure-bakcground-color: rgba(3, 11, 31, 0.6);
@@ -53,7 +54,7 @@ header {
     height: var(--header-height);
     background-color: var(--blure-bakcground-color);
     border-bottom: transparent solid 2px;
-    border-image: var(--site-gradient) 1;
+    border-image: var(--site-horizontal-gradient) 1;
     position: fixed;
     width: 100vw;
     backdrop-filter: blur(3px);
@@ -103,29 +104,33 @@ header > h1 {
     background-color: var(--blure-bakcground-color);
     position: fixed;
     height: 100%;
-    overflow-y: auto;
+    width: 100vw;
+    overflow-x: hidden;
     backdrop-filter: blur(3px);
     z-index: 51;
 }
 
-#nav-topics-container > label {
-    display: block;
+#nav-bar-topics {
+    display: flex;
+    flex-direction: column;
     width: 90vw;
     margin-right: 100px;
     background-color: var(--site-background-color);
+    padding: 20px 0 60px 15px;
+    border-right: 2px solid transparent;
+    border-image: var(--site-vertical-gradient) 1;
+}
+
+#nav-bar-topics > label {
+    margin-bottom: 30px;
+    width: min-content;
 }
 
 #nav-topics {
-    width: 90vw;
-    margin-right: 100px;
-    background-color: var(--site-background-color);
+
 }
 
-#nav-topics-hide:checked + label[for=nav-topics-hide] {
-    display: none;
-}
-
-#nav-topics-hide:checked ~ #nav-topics {
+#nav-topics-hide:checked + #nav-topics-container{
     display: none;
 }
 
