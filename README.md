@@ -633,6 +633,8 @@ This section will credit the sources of content and media for Python Cheat Sheet
 * [Semantic HTML](https://www.semrush.com/blog/semantic-html5-guide/): What It Is and How to Use It Correctly
 * How to create [Blurry Header](https://www.w3schools.com/cssref/css3_pr_backdrop-filter.php)
 * [Gradient Creator](https://cssgradient.io/)
+* How to create [Border with radius and gradient](https://dev.to/afif/border-with-gradient-and-radius-387f)
+* How to create [Typewriter Effect](https://css-tricks.com/snippets/css/typewriter-effect/)
 
 
 ## Media
