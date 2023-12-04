@@ -4,7 +4,7 @@
 /* Variables */
 :root {
     --site-background-color: #051923;
-    --block-backgorund-color: #003554;
+    --block-backgorund-color: #1E293BFF;
     --border-color: rgba(229, 71, 234, 0.44);
     --button-color: #0085C8;
     --button-hover-color: #00A6FB;
@@ -15,6 +15,7 @@
     --icon-color: #e8ebee;
     --header-height: 3.5rem;
     --blure-bakcground-color: rgba(3, 11, 31, 0.6);
+    --main-link-color: #ff00f1;
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -149,14 +150,98 @@ header > h1 {
     font-weight: 400;
 }
 
-#nav-topics-hide:checked + #nav-topics-container{
+#nav-topics-hide:checked + #nav-topics-container {
     display: none;
 }
 
 
 /* Main */
+.highlight-text {
+    color: var(--hilight-text-color);
+    font-weight: bolder;
+}
+.highlight-block {
+    position: relative;
+    background-color: var(--block-backgorund-color);
+    color: #bfcbe2;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.rounded-gradient-border::before {
+    /* element that has class rounded-gradient-border must be relative*/
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: var(--site-vertical-gradient);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+
+.typewriter > * {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  /*letter-spacing: .15em;*/
+  animation:
+    typing 2s steps(25, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
 main {
-    padding-top: var(--header-height);
+    padding: var(--header-height) 0 10px 0;
+    line-height: 1.75rem;
+}
+
+main a {
+    color: var(--main-link-color);
+}
+
+main h2 {
+    font-size: 1.3rem;
+}
+
+main h2,
+main h3 {
+    margin: 10px 0px 20px;
+}
+
+main section {
+    padding: 20px 0 40px;
+    margin: 0 20px;
+}
+
+main p:not(p:first-child),
+main li:not(li:first-child){
+    margin-top: 20px;
+}
+
+#greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 40px 0;
+    margin: 0;
 }
 
 /* Media query: tablets and larger (768 and up) */
