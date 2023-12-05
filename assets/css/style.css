@@ -290,7 +290,21 @@ main li:not(li:first-child){
 
 /* Media query: laptops and larger (992 and up) */
 @media screen and (min-width: 992px) {
-/* Header */
+    /* Custom scrollbar*/
+    *::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: var(--block-backgorund-color);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: var(--text-color);
+        border-radius: 2px;
+    }
+
+    /* Header */
     header {
         padding: 0 20px;
     }
@@ -330,6 +344,10 @@ main li:not(li:first-child){
     #nav-topics-container {
         top: var(--header-height);
         width: fit-content;
+    }
+
+    #nav-topics-container::-webkit-scrollbar-track {
+        background: var(--site-background-color);
     }
 
     #nav-bar-topics {
