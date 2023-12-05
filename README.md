@@ -635,6 +635,7 @@ This section will credit the sources of content and media for Python Cheat Sheet
 * [Gradient Creator](https://cssgradient.io/)
 * How to create [Border with radius and gradient](https://dev.to/afif/border-with-gradient-and-radius-387f)
 * How to create [Typewriter Effect](https://css-tricks.com/snippets/css/typewriter-effect/)
+* Make math calculations in CSS using [calc()](https://www.w3schools.com/cssref/func_calc.php)
 
 
 ## Media
