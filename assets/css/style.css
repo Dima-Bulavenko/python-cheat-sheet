@@ -16,6 +16,7 @@
     --header-height: 3.5rem;
     --blure-bakcground-color: rgba(3, 11, 31, 0.6);
     --main-link-color: #ff00f1;
+    --nav-bar-laptop-width: 300px;
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -307,12 +308,19 @@ main li:not(li:first-child){
     }
 
     #nav-bar-topics {
-        width: 300px;
+        width: var(--nav-bar-laptop-width);
         padding-bottom: 70px;
     }
 
     #nav-bar-topics > label {
         display: none;
     }
+
+    /* Main */
+    main {
+        margin-left: auto;
+        width: calc(100% - var(--nav-bar-laptop-width));
+    }
+
 
 }
