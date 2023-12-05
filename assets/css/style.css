@@ -342,10 +342,11 @@ main li:not(li:first-child){
     }
 
     /* Main */
-    main {
+    main, footer {
         margin-left: auto;
         width: calc(100% - var(--nav-bar-laptop-width));
     }
+
 
 
 }
