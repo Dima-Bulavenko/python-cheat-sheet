@@ -17,6 +17,7 @@
     --blure-bakcground-color: rgba(3, 11, 31, 0.6);
     --main-link-color: #ff00f1;
     --nav-bar-laptop-width: 300px;
+    --footer-backgorund-color: #09072782
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -245,7 +246,25 @@ main li:not(li:first-child){
     margin: 0;
 }
 
-/* Media query: tablets and larger (768 and up) */
+/* Footer */
+#useful-links{
+    position: relative;
+    height: calc(1.5 * var(--header-height));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--main-link-color);
+    text-align: left;
+    font-weight: 600;
+    background-color: #140909;
+    border-top: 2px solid transparent;
+    border-image: var(--site-horizontal-gradient) 1;
+}
+
+
+
+/* Media query:     tablets and larger (768 and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     header {
