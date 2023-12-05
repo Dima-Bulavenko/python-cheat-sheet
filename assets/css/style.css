@@ -324,3 +324,11 @@ main li:not(li:first-child){
 
 
 }
+
+/* Media query: PC (1440 and up) */
+@media screen and (min-width: 1440px) {
+    main > section {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
