@@ -280,6 +280,12 @@ main li:not(li:first-child){
     #nav-bar-topics{
         width: 40vw;
     }
+
+    /*Footer*/
+    #useful-links {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 /* Media query: laptops and larger (992 and up) */
