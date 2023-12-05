@@ -113,6 +113,8 @@ header > h1 {
     overflow-x: hidden;
     backdrop-filter: blur(3px);
     z-index: 51;
+    border-right: 2px solid transparent;
+    border-image: var(--site-vertical-gradient) 1;
 }
 
 #nav-bar-topics {
@@ -121,8 +123,6 @@ header > h1 {
     width: 90vw;
     background-color: var(--site-background-color);
     padding: 20px 0 30px 15px;
-    border-right: 2px solid transparent;
-    border-image: var(--site-vertical-gradient) 1;
 }
 
 #nav-bar-topics > label {
