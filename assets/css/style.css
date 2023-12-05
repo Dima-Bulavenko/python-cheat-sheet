@@ -6,6 +6,7 @@
     --site-background-color: #051923;
     --block-backgorund-color: #1E293BFF;
     --border-color: rgba(229, 71, 234, 0.44);
+    --selected-link-color: #0050c8;
     --button-color: #0085C8;
     --button-hover-color: #00A6FB;
     --text-color: #C0C0C0;
@@ -51,6 +52,13 @@ li {
     list-style: none;
 }
 
+.selected-page {
+    color: var(--selected-link-color);
+}
+
+.bold-text {
+    font-weight: 600;
+}
 
 /* Header */
 header {
