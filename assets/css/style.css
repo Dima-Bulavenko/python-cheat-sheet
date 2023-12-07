@@ -18,6 +18,7 @@
     --blure-bakcground-color: rgba(3, 11, 31, 0.6);
     --main-link-color: #ff00f1;
     --nav-bar-laptop-width: 300px;
+    --scrollbar-width: 5px;
     --footer-backgorund-color: #09072782
 }
 
@@ -300,7 +301,7 @@ main li:not(li:first-child){
 @media screen and (min-width: 992px) {
     /* Custom scrollbar*/
     *::-webkit-scrollbar {
-        width: 5px;
+        width: var(--scrollbar-width);
     }
 
     *::-webkit-scrollbar-track {
@@ -370,7 +371,8 @@ main li:not(li:first-child){
     /* Main */
     main, footer {
         margin-left: auto;
-        width: calc(100% - var(--nav-bar-laptop-width));
+        /* The last parameter for width calculation is border width of nav-topics bar*/
+        width: calc(100% - var(--nav-bar-laptop-width) - var(--scrollbar-width) - 2px);
     }
 
 
