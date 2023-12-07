@@ -573,7 +573,8 @@ interactivity of the site.
 
 * Incorrect link to my LinkedIn [Fixing Commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/8debbfe51d11a12ba6a04e3cc4ccac3082a46928).
 * Scroll didn't appear when a content overflow a container ([Stuck overflow solution](https://stackoverflow.com/questions/16094785/have-a-fixed-position-div-that-needs-to-scroll-if-content-overflow))
-* A bug was caused due to improperly placed `#nav-topics-hide` radio button which hide navigation topics bar. The button was nested inside the navigation bar that don't allow to close the bar. Extracting this element from the bar enabled to close it and make styling more simple ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/8bf8204d520ceb952de7f3ee690b4ebe02381790)) 
+* A bug was caused due to improperly placed `#nav-topics-hide` radio button which hide navigation topics bar. The button was nested inside the navigation bar that don't allow to close the bar. Extracting this element from the bar enabled to close it and make styling more simple ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/8bf8204d520ceb952de7f3ee690b4ebe02381790))
+* The topics navigation bar cover the main and footer blocks because of its scrollbar and border width ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/ec193946286a00e54185b1a37cd400bd9f7a6fe9))
 
 * ### Unresolved
 
