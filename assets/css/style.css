@@ -33,6 +33,9 @@ body {
     background-color: var(--site-background-color);
     color: var(--text-color);
     font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4 {
@@ -221,6 +224,7 @@ header > h1 {
 main {
     padding: var(--header-height) 0 10px 0;
     line-height: 1.75rem;
+    flex-grow: 1;
 }
 
 main a {
@@ -294,6 +298,7 @@ main li:not(li:first-child){
     #useful-links {
         flex-direction: row;
         justify-content: space-around;
+        height: var(--header-height);
     }
 }
 
