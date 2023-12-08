@@ -41,7 +41,7 @@
         </a>
     </h1>
     
-    <div id="feedback"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
+    <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
     
     <nav id="nav-site">
         <ul class="bold-text">
@@ -130,7 +130,44 @@
 </div>
 
 <main>
-    feedback main
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <div class="feedback-container">
+            <form action="https://formdump.codeinstitute.net/" method="post" id="feedback-form">
+                
+                <div class="field"><label  class="highlight-text" for="feedback-email">Email</label>
+                    <input type="email" id="feedback-email" name="email" required>
+                </div>
+                
+                <fieldset>
+                    <legend class="highlight-text">Rate Python Cheat Sheet</legend>
+                    <div id="rating-container">
+                        <input type="radio" id="rate-1" value="1" name="cheat-sheet-rating" required>
+                        <label for="rate-1"><i class="fa-solid fa-face-angry"></i></label>
+                        
+                        <input type="radio" id="rate-2" value="2" name="cheat-sheet-rating">
+                        <label for="rate-2"><i class="fa-solid fa-face-frown"></i> </label>
+                        
+                        <input type="radio" id="rate-3" value="3" name="cheat-sheet-rating">
+                        <label for="rate-3"><i class="fa-solid fa-face-meh"></i></label>
+                        
+                        <input type="radio" id="rate-4" value="4" name="cheat-sheet-rating">
+                        <label for="rate-4"><i class="fa-solid fa-face-smile"></i></label>
+                        
+                        <input type="radio" id="rate-5" value="5" name="cheat-sheet-rating">
+                        <label for="rate-5"><i class="fa-solid fa-face-grin-stars"></i></label>
+                    </div>
+                </fieldset>
+                
+                <div class="field">
+                    <label class="highlight-text" for="feedback-description">Leave your feedback</label>
+                    <textarea name="feedback-description" id="feedback-description"></textarea>
+                </div>
+                
+                <button type="submit">Send Feedback</button>
+            </form>
+            </div>
+    </section>
 </main>
 <footer>
     <ul id="useful-links">
