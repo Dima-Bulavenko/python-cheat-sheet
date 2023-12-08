@@ -7,7 +7,7 @@
     --block-backgorund-color: #1E293BFF;
     --border-color: rgba(229, 71, 234, 0.44);
     --selected-link-color: #0050c8;
-    --button-color: #0085C8;
+    --button-color: #01689e;
     --button-hover-color: #00A6FB;
     --text-color: #C0C0C0;
     --hilight-text-color: #fafaf8;
@@ -87,7 +87,7 @@ label[for="nav-topics-show"] {
     flex-grow: 2;
 }
 
-#feedback {
+#feedback-icon {
     flex-grow: 1;
 }
 
@@ -182,12 +182,11 @@ header > h1 {
     border-radius: 20px;
 }
 
-.rounded-gradient-border::before {
+.gradient-border::before {
     /* element that has class rounded-gradient-border must be relative*/
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 20px;
     padding: 2px;
     background: var(--site-vertical-gradient);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -328,7 +327,7 @@ main li:not(li:first-child){
         order: initial;
         text-align: left;
     }
-    #feedback, label[for="nav-topics-show"] {
+    #feedback-icon, label[for="nav-topics-show"] {
         display: none;
     }
 
