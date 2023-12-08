@@ -238,9 +238,6 @@ main {
     padding: var(--header-height) 0 10px 0;
     line-height: 1.75rem;
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 main a {
@@ -276,6 +273,11 @@ main li:not(li:first-child){
 }
 
 /* Feedback*/
+#feedback-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 #feedback {
     margin: 0;
     padding: 0;
@@ -325,6 +327,10 @@ fieldset {
 
 #rating-container > input:checked + label {
     color: var(--button-hover-color);
+}
+
+#feedback-email {
+    max-width: 320px;
 }
 
 #feedback-form textarea {
