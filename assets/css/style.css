@@ -389,6 +389,22 @@ fieldset {
         width: 40vw;
     }
 
+    /*Main*/
+    /*Feedback*/
+    .feedback-container {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #feedback-form button {
+        max-width: 200px;
+    }
+
+    #rating-container {
+        justify-content: space-evenly;
+    }
+
     /*Footer*/
     #useful-links {
         flex-direction: row;
