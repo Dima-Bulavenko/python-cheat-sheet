@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Meta tags for search engines-->
+    <meta name="keywords"
+          content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
+    <meta name="description"
+          content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
+
+    <!-- Favicons -->
+    <link type="image/png" sizes="16x16" rel="icon" href="./assets/images/favicons/icons8-python-gradient-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./assets/images/favicons/icons8-python-gradient-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./assets/images/favicons/icons8-python-gradient-96.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/images/favicons/icons8-python-gradient-180.png">
+
+    <!-- Title -->
+    <title>Variables and data types</title>
+
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e212569926.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+    <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
+    <label class="font-aw-icon" for="nav-topics-show">
+        <i class="fa-solid fa-bars font-aw-icon"></i>
+    </label>
+    
+    <h1>
+        <a href="index.html">
+            <img id="logo" src="./assets/images/icons8-python.svg" alt="">
+        </a>
+    </h1>
+    
+    <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
+    
+    <nav id="nav-site">
+        <ul class="bold-text">
+            <li><a href="./index.html">Home</a></li>
+            <li class="selected-page" ><a href="./variables.html">Get Started</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <ul id="outer-sites">
+        <li>
+            <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
+               aria-label="Visit my LinkedIn page (open in new tab)">
+                <i class="fa-brands fa-linkedin font-aw-icon"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
+               aria-label="Visit GitHub repository of this project (open in new tab)">
+                <i class="fa-brands fa-square-github font-aw-icon"></i>
+            </a>
+        </li>
+    </ul>
+</header>
+
+<input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
+<div id="nav-topics-container">
+    <div id="nav-bar-topics">
+        <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
+        <nav id="nav-topics">
+            <ul>
+                <li>
+                    <h2><a href="./variables.html">Variables</a></h2>
+                    <ul>
+                        <li><h3><a href="./variables.html#assignments">Assignments</a></h3></li>
+                        <li><h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3></li>
+                        <li><h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3></li>
+                        <li><h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3></li>
+                        <li><h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="selected-page"><a href="./data-types.html">Data Types</a></h2>
+                    <ul>
+                        <li>
+                            <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#string">String</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#list">List</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#tuple">Tuple</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#set">Set</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#frozenset">Frozenset</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#none">None</a></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./control-flow.html">Control Flow</a></h2>
+                    <ul>
+                        <li><h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3></li>
+                        <li><h3><a href="./control-flow.html#loops">Loops</a></h3></li>
+                        <li><h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue Statements</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./functions.html">Functions</a></h2>
+                    <ul>
+                        <li><h3><a href="./functions.html#defining-functions">Defining Functions</a></h3></li>
+                        <li><h3><a href="./functions.html#function-parameters-and-return-values">Function Parameters</a></h3>
+                        </li>
+                        <li><h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3></li>
+                        <li><h3><a href="./functions.html#recursion">Recursion</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./modules-and-packages.html">Modules and Packages</a></h2>
+                    <ul>
+                        <li><h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3></li>
+                        <li><h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using Packages</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./error-handling.html">Error Handling</a></h2>
+                    <ul>
+                        <li><h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3></li>
+                        <li><h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3></li>
+                        <li><h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of Exceptions</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./file-handling.html">File Handling</a></h2>
+                    <ul>
+                        <li><h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3></li>
+                        <li><h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3></li>
+                        <li><h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a></h3></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<main>
+    <section class="topic-section" id="data-types">
+        <h2>Data Types</h2>
+        <p>In Python, data types categorize the types of values that variables can hold. They define how the values can be stored, manipulated, and operated upon in a program. Python is dynamically typed, meaning you don't need to explicitly declare the data type of a variable; the interpreter determines it based on the assigned value.</p>
+        <p class="highlight-block">Common data types include integers, floating-point numbers, strings, lists, tuples, dictionaries, sets</p>
+    
+    
+        <section id="numeric-types">
+            <h3>Numeric Types <a
+                href="https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex" target="_blank"
+                rel="noopener"
+                aria-label="Get detailed information about Numeric Types in python official documentation (open in new tab)"><i
+                class="fa-solid fa-circle-info"></i></a></h3>
+            <p>Numeric types in Python represent numerical values and are essential for performing mathematical
+               operations. The main numeric types are
+                <span class="highlight-text">int</span> (integer), <span class="highlight-text">float</span>
+               (floating-point), and
+                <span class="highlight-text">complex</span> (complex numbers).</p>
+        
+            <h4>Integer</h4>
+            <p>Represents whole numbers without any decimal points.</p>
+            <p>Can be positive or negative.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">num_int = 42
+negative_int = -10
+</code></pre>
+        
+            <h4>Floating-Point</h4>
+            <p>Represents numbers with decimal points or in exponential form.</p>
+            <p>Can be used to represent real numbers.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">num_float = 3.14
+</code></pre>
+        
+            <h4>Complex Numbers</h4>
+            <p>Represents numbers in the form of a + bj, where "a" and "b" are real numbers, and "j" is the imaginary
+               unit.</p>
+            <p>Useful in mathematical and engineering applications.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">num_complex = 2 + 3j
+</code></pre>
+        
+            <h4>Operations on Numeric Types</h4>
+            <p>Python supports various arithmetic operations on numeric types:</p>
+             <pre><div class="lang-name">Python</div><code class="hljs language-python"># Examples:
+a = 10
+b = 3
+
+# Addition
+sum_result = a + b  # Result: 13
+
+# Subtraction
+diff_result = a - b  # Result: 7
+
+# Multiplication
+prod_result = a * b  # Result: 30
+
+# Division
+div_result = a / b   # Result: 3.3333 (floating-point division)
+
+# Floor Division (returns the floor value)
+floor_div_result = a // b  # Result: 3
+
+# Modulus (returns the remainder)
+mod_result = a % b  # Result: 1
+
+# Exponentiation
+exp_result = a ** b  # Result: 1000
+</code></pre>
+        </section>
+        
+        <section id="string">
+        </section>
+        
+        <section id="list">
+        </section>
+        
+        <section id="tuple">
+        </section>
+        
+        <section id="dictionary">
+        </section>
+        
+        <section id="set">
+        </section>
+        
+        <section id="frozenset">
+        </section>
+        
+        <section id="boolean">
+        </section>
+        
+        <section id="none">
+        </section>
+        
+    </section>
+    
+</main>
+<footer>
+    <ul id="useful-links">
+        <li>
+            <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
+               aria-label="Visit visit python documentation site(open in new tab)">
+               Python3 documentation
+            </a>
+        </li>
+        <li>
+            <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
+               aria-label="Visit python online compiler site(open in new tab)">
+               Python online compiler
+            </a>
+        </li>
+    </ul>
+</footer>
+<script>hljs.highlightAll();</script>
+</body>
+</html>
