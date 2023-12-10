@@ -551,9 +551,106 @@ index_of_3 = my_tuple.index(3)
 </code></pre>
         </div>
     </section>
-        </section>
         
         <section id="dictionary">
+            <h3>Dictionary <a href="https://docs.python.org/3/library/stdtypes.html#dict" target="_blank" rel="noopener" aria-label="Get detailed information about Dictionary type in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
+        <p>Dictionaries are <span class="highlight-text">unordered</span>, <span class="highlight-text">mutable</span> collections of items. They are defined using curly braces and consist of key-value pairs.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+</code></pre>
+
+        <h4>Accessing Dictionary Items</h4>
+        <p>You can access the value associated with a specific key in a dictionary.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+name_value = my_dict["name"]  # Result: "John"
+</code></pre>
+
+        <h4>Change Dictionary Items</h4>
+        <p>You can change the value associated with a specific key in a dictionary.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+my_dict["age"] = 31
+# Result: {"name": "John", "age": 31, "city": "New York"}
+</code></pre>
+
+        <h4>Add Dictionary Items</h4>
+        <p>You can add new key-value pairs to a dictionary.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30}
+my_dict["city"] = "New York"
+# Result: {"name": "John", "age": 30, "city": "New York"}
+</code></pre>
+
+        <h4>Nested Dictionaries</h4>
+        <p>Dictionaries can be nested inside other dictionaries.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">nested_dict = {"person": {"name": "John", "age": 30, "city": "New York"}}
+# Accessing nested value: nested_dict["person"]["age"]
+</code></pre>
+
+        <h4>Dictionary Methods</h4>
+
+        <div class="method">
+            <p><span class="highlight-text">keys()</span> - returns a list of all the keys in the dictionary.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+keys_view = my_dict.keys()
+# Result: dict_keys(['name', 'age', 'city'])
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">values()</span> - returns a list of all the values in the dictionary.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+values_view = my_dict.values()
+# Result: dict_values(['John', 30, 'New York'])
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">items()</span> - returns a list of all key-value pairs in the dictionary.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+items_view = my_dict.items()
+# Result: dict_items([('name', 'John'), ('age', 30), ('city', 'New York')])
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">get()</span> - returns the value for the specified key. If the key is not found, it returns a default value.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+age_value = my_dict.get("age", 0) # 0 is default value
+# Result: 30
+# Alternatively: age_value = my_dict["age"] if "age" in my_dict else 0
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">pop()</span> - removes the item with the specified key and returns its value.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+age_value = my_dict.pop("age")
+# Result: age_value: 30, my_dict: {'name': 'John', 'city': 'New York'}
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">popitem()</span> - removes and returns the last inserted key-value pair.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+last_item = my_dict.popitem()
+# Result: last_item: ('city', 'New York'), my_dict: {'name': 'John', 'age': 30}
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">update()</span> - updates the dictionary with elements from another dictionary or from an iterable of key-value pairs.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30}
+new_data = {"city": "New York", "gender": "Male"}
+my_dict.update(new_data)
+# Result: {'name': 'John', 'age': 30, 'city': 'New York', 'gender': 'Male'}
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">clear()</span> - removes all items from the dictionary.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+my_dict.clear()
+# Result: {}
+</code></pre>
+        </div>
         </section>
         
         <section id="set">
