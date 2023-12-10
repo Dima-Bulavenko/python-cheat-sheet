@@ -214,6 +214,10 @@ header > h1 {
     margin: 40px 20px;
 }
 
+.topic-section > section {
+    margin: 0;
+}
+
 .topic-section :is(h1, h2, h3, h4) {
     margin: 50px 0 20px;
 }
@@ -238,7 +242,18 @@ header > h1 {
     border-radius: 0 0 5px 5px;
 }
 
+/* Method block */
+.method {
+    margin-bottom: 45px;
+}
 
+.method p {
+    margin-top: 10px!important;
+}
+
+.method pre {
+    margin-top: 10px;
+}
 
 .typewriter > * {
   color: #fff;
