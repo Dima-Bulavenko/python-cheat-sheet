@@ -489,6 +489,68 @@ index_of_3 = my_list.index(3)
         </section>
         
         <section id="tuple">
+        <h3>Tuple <a href="https://docs.python.org/3/library/stdtypes.html#tuple" target="_blank" rel="noopener" aria-label="Get detailed information about Tuple type in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
+        <p>Tuples are <span class="highlight-text">ordered</span>, <span class="highlight-text">immutable</span> sequences used to store collections of items. They are defined using parentheses.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, "apple", "orange")
+</code></pre>
+
+        <h4>Access Tuple Items</h4>
+        <p>You can access individual items in a tuple using indexing (like a list).</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, "apple", "orange")
+first_item = my_tuple[0]  # Result: 1
+</code></pre>
+
+        <h4>Update Tuples</h4>
+        <p>Tuples are immutable, meaning you cannot change the values of items once they are set.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">original_tuple = (1, 2, 3)
+new_tuple = original_tuple + (4, 5)
+# Result: (1, 2, 3, 4, 5)
+</code></pre>
+
+        <h4>Unpack Tuples</h4>
+        <p>You can assign the elements of a tuple to individual variables using unpacking (list has the same behavior).</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3)
+a, b, c = my_tuple
+# Variables: a=1, b=2, c=3
+</code></pre>
+
+        <h4>Loop Tuples</h4>
+        <p>You can iterate through a tuple using a <span class="highlight-text">for</span> loop.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, 4)
+for item in my_tuple:
+    print(item)
+# Output: 1
+#         2
+#         3
+#         4
+</code></pre>
+
+        <h4>Join Tuples</h4>
+        <p>You can concatenate two tuples using the <span class="highlight-text">+</span> operator.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">tuple1 = (1, 2, 3)
+tuple2 = (4, 5, 6)
+joined_tuple = tuple1 + tuple2
+# Result: (1, 2, 3, 4, 5, 6)
+</code></pre>
+
+        <h4>Tuple Methods</h4>
+
+        <div class="method">
+            <p><span class="highlight-text">count()</span> - returns the number of occurrences of a specified element in the tuple.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 2, 3, 4, 2, 5)
+count_of_2 = my_tuple.count(2)
+# Result: 3
+</code></pre>
+        </div>
+
+        <div class="method">
+            <p><span class="highlight-text">index()</span> - returns the index of the first occurrence of a specified element in the tuple (or raises a ValueError if not found).</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, 4)
+index_of_3 = my_tuple.index(3)
+# Result: 2
+</code></pre>
+        </div>
+    </section>
         </section>
         
         <section id="dictionary">
