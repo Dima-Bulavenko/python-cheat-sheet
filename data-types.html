@@ -231,6 +231,127 @@ exp_result = a ** b  # Result: 1000
         </section>
         
         <section id="string">
+            <h3>String <a
+                href="https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str" target="_blank"
+                rel="noopener"
+                aria-label="Get detailed information about String type in python official documentation (open in new tab)"><i
+                class="fa-solid fa-circle-info"></i></a></h3>
+            <p>Strings are sequences of characters, and they can be defined using either single quotes (') or double quotes (").</p>
+            <p><span class="highlight-text">Strings are immutable</span>, meaning you cannot change the characters of an existing string directly.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+</code></pre>
+            <h4>Accessing Characters</h4>
+            <p>You can access individual characters in a string using indexing.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+first_char = my_string[0]  # Result: 'H'
+</code></pre>
+            
+            <h4>String Slicing</h4>
+            <p>Slicing allows you to extract a portion of the string.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python"># Initial string
+my_string = "Python Programming"
+
+# String Slicing
+substring_1 = my_string[0:6]    # Result: 'Python'
+substring_2 = my_string[7:18]   # Result: 'Programming'
+substring_3 = my_string[:6]     # Result: 'Python' (omitting start index defaults to 0)
+substring_4 = my_string[7:]     # Result: 'Programming' (omitting end index defaults to the end)
+
+# Slicing with a step
+substring_5 = my_string[0:10:2]  # Result: 'Pto rg' (every second character from index 0 to 9)
+
+# Reverse the string using slicing
+reversed_string = my_string[::-1]  # Result: 'gnimmargorP nohtyP'
+</code></pre>
+        
+            <h4>Useful String Methods</h4>
+            <div class="method">
+                <p><span class="highlight-text">len()</span> - returns the length (number of
+                                                                              characters) of a string.</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+length = len(my_string)  # Result: 13
+</code></pre>
+            </div>
+    
+            <div class="method">
+                <p><span class="highlight-text">lower() and upper()</span> - converts all characters in
+                                                                                            a string to lowercase and
+                                                                                            uppercase appropriately</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+lowercase_str = my_string.lower()  # Result: 'hello, python!'
+uppercase_str = my_string.upper()  # Result: 'HELLO, PYTHON!'
+</code></pre>
+            </div>
+    
+            <div class="method">
+                <p><span class="highlight-text">strip()</span> - removes leading and trailing whitespaces from a string.</p>
+                <p><span class="highlight-text">lstrip()</span> - removes leading whitespaces.</p>
+                <p><span class="highlight-text">rstrip()</span> - removes trailing whitespaces</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">padded_str = "   Python   "
+stripped_str = padded_str.strip()  # Result: 'Python'
+</code></pre>
+            </div>
+            
+            <div class="method">
+                <p><span class="highlight-text">replace()</span> - replaces a specified substring with another substring.</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+new_str = my_string.replace("Python", "World")  # Result: 'Hello, World!'
+</code></pre>
+            </div>
+            
+            <div class="method">
+                <p><span class="highlight-text">find()</span> - returns the index of the first occurrence of a substring (or -1 if not found).</p>
+                <p><span class="highlight-text">count()</span> - returns the number of occurrences of a substring.</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+index = my_string.find("Python")  # Result: 7
+occurrences = my_string.count("o")  # Result: 2
+</code></pre>
+            </div>
+            
+            <div class="method">
+                <p><span class="highlight-text">split()</span> - splits a string into a list of substrings based on a specified delimiter.</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+words = my_string.split(",")  # Result: ['Hello', ' Python!']
+</code></pre>
+            </div>
+            
+            <div class="method">
+                <p><span class="highlight-text">join()</span> - joins elements of a sequence (like a list) into a string using the specified separator.</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">word_list = ["Hello", "Python!"]
+joined_str = ",".join(word_list)  # Result: 'Hello,Python!'
+</code></pre>
+            </div>
+            
+            <div class="method">
+                <p><span class="highlight-text">startswith() and endswith()</span> - checks if a string starts or ends with a specified substring.</p>
+                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+starts_with = my_string.startswith("Hello")  # Result: True
+ends_with = my_string.endswith("Python")  # Result: False
+</code></pre>
+            </div>
+            
+            <p class="highlight-block"><a href="https://docs.python.org/3/library/stdtypes.html#string-methods" target="_blank"
+                rel="noopener"
+                aria-label="Check Check the entire list of strings' methods in python documentation (open in new tab)">Check the entire list of strings' methods</a></p>
+            
+            <h4>String Format</h4>
+            <p>The most common and versatile method for string formatting is using <span class="highlight-text">f-strings</span>.</p>
+            <p>An f<span class="highlight-text">-string</span> is created by prefixing a string with the letter "f"</p>
+            <p>You can embed expressions inside curly braces <span class="highlight-text">{}</span> within the string.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">name = "Alice"
+age = 30
+formatted_str = f"My name is {name} and I am {age} years old."
+</code></pre>
+            
+            <p>You can include variables, expressions, and even function calls inside curly braces.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 5
+y = 10
+result_str = f"The sum of {x} and {y} is {x + y}."
+</code></pre>
+            
+            <p class="highlight-block"><a href="https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting" target="_blank"
+                rel="noopener"
+                aria-label="Check detailed information about strings format in python documentation (open in new tab)">Check detailed information about strings format</a></p>
         </section>
         
         <section id="list">
