@@ -208,6 +208,37 @@ header > h1 {
     mask-composite: exclude;
 }
 
+/* Topics pages */
+.topic-section {
+    padding: 0;
+    margin: 40px 20px;
+}
+
+.topic-section :is(h1, h2, h3, h4) {
+    margin: 50px 0 20px;
+}
+
+.topic-section p {
+    line-height: 1.3rem;
+
+}
+
+/* Code style*/
+.topic-section pre {
+    margin-top: 30px;
+}
+
+.lang-name {
+    border-radius: 5px 5px 0 0;
+    padding-left: 10px;
+    background-color: var(--block-backgorund-color);
+}
+.topic-section code {
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+}
+
+
 
 .typewriter > * {
   color: #fff;
