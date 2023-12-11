@@ -798,7 +798,50 @@ result = is_even(4)  # Result: True
 </code></pre>
         </section>
         
-        <section id="none"></section>
+        <section id="none">
+            <h3>Python NoneType</h3>
+        <p>In Python, <span class="highlight-text">None</span> is a special constant representing the absence of a value or a null value. It is often used to signify that a variable or a function does not have a meaningful value or result.</p>
+
+        <h4>Assignment of None</h4>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_variable = None
+</code></pre>
+
+        <h4>Function Return Values</h4>
+            <p>Functions in Python can explicitly return <span class="highlight-text">None</span> to indicate that they don't produce any meaningful result.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">def do_something():
+    # code to do something
+    return None
+</code></pre>
+
+        <h4>Default Function Arguments</h4>
+            <p><span class="highlight-text">None</span> is commonly used as a default value for function parameters when the absence of a user-provided value is meaningful.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">def greet(name=None):
+    if name is None:
+        print("Hello, anonymous!")
+    else:
+        print(f"Hello, {name}!")
+
+greet()  # Output: Hello, anonymous!
+greet("John")  # Output: Hello, John!
+</code></pre>
+
+        <h4>Checking for None</h4>
+            <p>You can check if a variable is <span class="highlight-text">None</span> using the is operator.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">if some_variable is None:
+    print("The variable is None.")
+else:
+    print("The variable has a value.")
+</code></pre>
+
+        <h4>Comparisons</h4>
+            <p><span class="highlight-text">None</span> is considered equal to itself and evaluates to <span
+                    class="highlight-text">False</span> in a boolean context.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = None
+y = None
+print(x == y)  # Output: True
+print(bool(None))  # Output: False
+</code></pre>
+        </section>
         
     </section>
     
