@@ -175,33 +175,172 @@
 </div>
 
 <main>
-    <section class="topic-section" id="operators">
-	    <section id="arithmetic-operators">
-		   
-	    </section>
+    <section class="topic-section">
+        <h2 id="operators">Operators <a
+                href="https://docs.python.org/3/library/operator.html" target="_blank"
+                rel="noopener"
+                aria-label="Get detailed information about operators in python official documentation (open in new tab)"><i
+                class="fa-solid fa-circle-info"></i></a></h2>
+        <p>Operators in Python are special symbols or keywords used to perform operations on variables and values.</p>
+    
+        <section id="arithmetic-operators">
+            <h3>Arithmetic Operators</h3>
+            <p>Arithmetic operators perform mathematical operations on numeric values.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">a = 10
+	    b = 5
 	    
-	    <section id="assignment-operators">
-		   
-	    </section>
+	    # Addition
+	    result_addition = a + b  # Result: 15
 	    
-	    <section id="comparison-operators">
-		   
-	    </section>
+	    # Subtraction
+	    result_subtraction = a - b  # Result: 5
 	    
-	    <section id="logical-operators">
-		   
-	    </section>
+	    # Multiplication
+	    result_multiplication = a * b  # Result: 50
 	    
-	    <section id="identity-operators">
-		   
-	    </section>
-	    <section id="membership-operators">
-		   
-	    </section>
+	    # Division
+	    result_division = a / b  # Result: 2.0
 	    
-	    <section id="operator-precedence">
-		   
-	    </section>
+	    # Modulus
+	    result_modulus = a % b  # Result: 0
+	    
+	    # Exponentiation
+	    result_exponentiation = a ** b  # Result: 100000
+	    </code></pre>
+        </section>
+    
+        <section id="assignment-operators">
+            <h3>Assignment Operators</h3>
+            <p>Assignment operators are used to assign values to variables.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 5
+	    
+	    # Simple Assignment
+	    y = x  # y gets the value of x
+	    
+	    # Add and Assign
+	    x += 3  # Equivalent to: x = x + 3
+	    
+	    # Subtract and Assign
+	    x -= 2  # Equivalent to: x = x - 2
+	    
+	    # Multiply and Assign
+	    x *= 4  # Equivalent to: x = x * 4
+	    
+	    # Divide and Assign
+	    x /= 2  # Equivalent to: x = x / 2
+	    </code></pre>
+        </section>
+    
+        <section id="comparison-operators">
+            <h3>Comparison Operators</h3>
+            <p>Comparison operators compare two values and return a boolean result.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 5
+	    y = 10
+	    
+	    # Equal
+	    result_equal = x == y  # Result: False
+	    
+	    # Not Equal
+	    result_not_equal = x != y  # Result: True
+	    
+	    # Greater Than
+	    result_greater_than = x > y  # Result: False
+	    
+	    # Less Than
+	    result_less_than = x < y  # Result: True
+	    
+	    # Greater Than or Equal To
+	    result_greater_equal = x >= y  # Result: False
+	    
+	    # Less Than or Equal To
+	    result_less_equal = x <= y  # Result: True
+	    </code></pre>
+        </section>
+    
+        <section id="logical-operators">
+            <h3>Logical Operators</h3>
+            <p>Logical operators perform logical operations on boolean values.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">a = True
+	    b = False
+	    
+	    # Logical AND
+	    result_and = a and b  # Result: False
+	    
+	    # Logical OR
+	    result_or = a or b  # Result: True
+	    
+	    # Logical NOT
+	    result_not_a = not a  # Result: False
+	    result_not_b = not b  # Result: True
+	    </code></pre>
+        </section>
+    
+        <section id="identity-operators">
+            <h3>Identity Operators</h3>
+            <p>Identity operators compare the memory locations of two objects.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">x = [1, 2, 3]
+	    y = [1, 2, 3]
+	    z = x
+	    
+	    # Identity (is)
+	    result_identity = x is y  # Result: False
+	    
+	    # Not Identity (is not)
+	    result_not_identity = x is not y  # Result: True
+	    
+	    # Identity (is) with same object
+	    result_identity_same_object = x is z  # Result: True
+	    </code></pre>
+        </section>
+        
+        <section id="membership-operators">
+            <h3>Membership Operators</h3>
+            <p>Membership operators check for the existence of a value in a sequence.</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, 4, 5]
+	    
+	    # Membership (in)
+	    result_membership = 3 in my_list  # Result: True
+	    
+	    # Not Membership (not in)
+	    result_not_membership = 6 not in my_list  # Result: True
+	    </code></pre>
+        </section>
+    
+        <section id="operator-precedence">
+            <h3>Operator Precedence</h3>
+            <p>Operator precedence determines the order in which operations are performed in an expression. Some
+               operators have higher precedence than others, and they are evaluated first.</p>
+        
+            <p>Here is a list of operators in descending order of precedence:</p>
+            <ul class="highlight-block">
+                <li><span class="highlight-text">**</span> (Exponentiation)</li>
+                <li><span class="highlight-text">+x, -x, ~x</span> (Unary plus, Unary minus, Bitwise NOT)</li>
+                <li><span class="highlight-text">*, /, //, %</span> (Multiplication, Division, Floor division, Modulus)
+                </li>
+                <li><span class="highlight-text">+, -</span> (Addition, Subtraction)</li>
+                <li><span class="highlight-text">&lt;&lt;, &gt;&gt;</span> (Bitwise shift operators)</li>
+                <li><span class="highlight-text">&amp;</span> (Bitwise AND)</li>
+                <li><span class="highlight-text">^</span> (Bitwise XOR)</li>
+                <li><span class="highlight-text">|</span> (Bitwise OR)</li>
+                <li><span class="highlight-text">in, not in, is, is not, &lt;, &lt;=, &gt;, &gt;=, !=, ==</span>
+                    (Comparisons, Membership tests, Identity tests)
+                </li>
+                <li><span class="highlight-text">not x</span> (Boolean NOT)</li>
+                <li><span class="highlight-text">and</span> (Boolean AND)</li>
+                <li><span class="highlight-text">or</span> (Boolean OR)</li>
+            </ul>
+        
+            <p>It's important to note that parentheses can be used to override the default precedence and force a
+               specific order of evaluation.</p>
+        
+            <h4>Example:</h4>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">result = 5 + 3 * 2  # Result: 11
+	    # The multiplication is performed first due to higher precedence
+	    </code></pre>
+        
+            <p>In the above example, the multiplication operation has higher precedence than addition, so it is
+               evaluated first, resulting in 11.</p>
+        </section>
     </section>
     
 </main>
