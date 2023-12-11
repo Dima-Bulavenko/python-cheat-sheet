@@ -762,10 +762,43 @@ intersection_set = set1 & set2
         </section>
         
         <section id="boolean">
+            <h3>Boolean</h3>
+
+        <h4>Boolean Values</h4>
+        <p>Boolean values in Python are <span class="highlight-text">True</span> and <span class="highlight-text">False</span>.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_boolean = True
+another_boolean = False
+</code></pre>
+
+        <h4>Evaluate Values and Variables</h4>
+        <p>Values and variables can be evaluated in Boolean context, resulting in either <span class="highlight-text">True</span> or <span class="highlight-text">False</span>.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 5
+y = 10
+is_greater = x > y  # Result: False
+</code></pre>
+
+        <h4>Most Values are True</h4>
+        <p>In a Boolean context, most values are considered <span class="highlight-text">True</span>. Examples include non-zero numbers, non-empty strings, and non-empty lists.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">value = 42
+is_true = bool(value)  # Result: True
+</code></pre>
+
+        <h4>Some Values are False</h4>
+        <p>Some values are considered <span class="highlight-text">False</span> in a Boolean context. Examples include zero, empty strings, and empty lists.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">empty_list = []
+is_false = bool(empty_list)  # Result: False
+</code></pre>
+
+        <h4>Functions can Return a Boolean</h4>
+        <p>Functions can return Boolean values, allowing for conditional checks based on their results.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">def is_even(number):
+    return number % 2 == 0
+
+result = is_even(4)  # Result: True
+</code></pre>
         </section>
         
-        <section id="none">
-        </section>
+        <section id="none"></section>
         
     </section>
     
