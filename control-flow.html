@@ -183,7 +183,7 @@
             <span class="highlight-text">continue</span>.</p>
 
         <section id="conditional-statements">
-            <h3>Conditional Statements</h3>
+            <h3>Conditional Statements <a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements" target="_blank" rel="noopener" aria-label="Get detailed information about conditional statements in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
         <p>Conditional statements in Python allow you to execute different blocks of code based on specified conditions. The primary constructs for this are the <span class="highlight-text">if</span>, <span class="highlight-text">elif</span> (else if), and <span class="highlight-text">else</span> statements.</p>
 
         <h3>The <span class="highlight-text">if</span> Statement</h3>
@@ -233,7 +233,34 @@ else:
         </section>
         
         <section id="loops">
-        
+            <h3>Python Loops</h3>
+        <p>Loops in Python allow you to repeatedly execute a block of code. There are two main types of loops: <span class="highlight-text">for</span> loops and <span class="highlight-text">while</span> loops.</p>
+
+        <h4>The <span class="highlight-text">for</span> Loop <a href="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement" target="_blank" rel="noopener" aria-label="Get detailed information about for statement in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h4>
+        <p>The <span class="highlight-text">for</span> loop is used to iterate over a sequence (such as a list, tuple, or string) or other iterable objects.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits:
+    print(fruit)
+
+#The loop sequentially print this values:
+# "apple"
+# "banana"
+# "cherry"
+</code></pre>
+
+        <h4>The <span class="highlight-text">while</span> Loop <a href="https://docs.python.org/3/reference/compound_stmts.html#while" target="_blank" rel="noopener" aria-label="Get detailed information about while statement in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h4>
+        <p>The <span class="highlight-text">while</span> loop is used to repeatedly execute a block of code as long as a specified condition is true.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">count = 1
+
+while count < 4:
+    print(count)
+    count += 1
+#The loop sequentially print this values:
+# 1
+# 2
+# 3
+</code></pre>
         </section>
         
         <section id="break-and-continue-statements">
