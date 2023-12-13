@@ -20,6 +20,10 @@
 
     <!-- Title -->
     <title>File Handling</title>
+    
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -171,7 +175,70 @@
 </div>
 
 <main>
-    File Handling main
+    <section class="topic-section">
+        <h2>File Handling <a href="https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files" target="_blank" rel="noopener"
+                    aria-label="Get detailed information about try and file handling in python documentation (open in new tab)"><i
+                        class="fa-solid fa-circle-info"></i></a></h2>
+        <p>File handling in Python allows you to work with files, reading from them, writing to them, and manipulating file paths.</p>
+
+        <section id="reading-from-files">
+            <h3>Reading from Files</h3>
+            <p>Reading from files in Python is a common operation. You can use the <span class="highlight-text">open()</span> function to open a file and then read its content.</p>
+            <p>Here's an example of reading from a file:</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">try:
+    with open("example.txt", "r") as file:
+        content = file.read()
+        print(content)
+except FileNotFoundError as e:
+    print("Error:", e)
+    # Output: Contents of the file
+</code></pre>
+
+            <p>The <span class="highlight-text">with</span> statement is used to ensure that the file is properly closed after reading.</p>
+        </section>
+
+        <section id="writing-to-files">
+            <h3>Writing to Files</h3>
+            <p>Writing to files allows you to store data persistently. You can use the <span class="highlight-text">open()</span> function with the mode set to <span class="highlight-text">"w"</span> for writing.</p>
+
+            <p>Here's an example of writing to a file:</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">try:
+    with open("example.txt", "w") as file:
+        file.write("Hello, File!")
+except IOError as e:
+    print("Error:", e)
+    # Creates or overwrites "example.txt" with the specified content
+</code></pre>
+
+            <p>Be cautious with the mode <span class="highlight-text">"w"</span> as it will overwrite the file if it already exists.</p>
+        </section>
+
+        <section id="working-with-file-paths">
+            <h3>Working with File Paths</h3>
+            <p>File paths are essential for navigating and manipulating files. Python provides the <span class="highlight-text">os</span> module to work with file paths.</p>
+
+            <p>Here's an example of working with file paths:</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">import os
+
+file_path = "path/to/your/file.txt"
+
+# Get the absolute path
+absolute_path = os.path.abspath(file_path)
+
+# Get the directory name
+directory_name = os.path.dirname(file_path)
+
+# Get the base name (filename)
+file_name = os.path.basename(file_path)
+
+print("Absolute Path:", absolute_path)
+print("Directory Name:", directory_name)
+print("File Name:", file_name)
+</code></pre>
+
+            <p>Understanding and manipulating file paths is crucial for working with files in different directories.</p>
+        </section>
+    </section>
 </main>
 <footer>
     <ul id="useful-links">
@@ -189,5 +256,6 @@
         </li>
     </ul>
 </footer>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
