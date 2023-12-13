@@ -20,7 +20,11 @@
 
     <!-- Title -->
     <title>Error Handling</title>
-
+    
+    <!-- Highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
     
@@ -171,7 +175,58 @@
 </div>
 
 <main>
-    Error Handling main
+    <section class="topic-section">
+        <h2>Error Handling</h2>
+        <p>Error handling in Python allows you to gracefully manage exceptions and errors that may occur during the execution of your code.</p>
+
+        <section id="exceptions-and-errors">
+            <h3>Exceptions and Errors</h3>
+            <p>In Python, errors and exceptional events are represented by objects called exceptions. Errors can occur due to various reasons such as invalid input, file not found, or division by zero.</p>
+
+            <p>For example, a common exception is the <span class="highlight-text">ZeroDivisionError</span> which occurs when dividing by zero:</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print("Error:", e)
+    # Output: Error: division by zero
+</code></pre>
+
+            <p>Understanding and handling exceptions is crucial for writing robust and reliable code.</p>
+        </section>
+
+        <section id="try-except-blocks">
+            <h3>Try, Except Blocks <a href="https://docs.python.org/3/tutorial/errors.html" target="_blank" rel="noopener"
+                    aria-label="Get detailed information about try and except blocks in python documentation (open in new tab)"><i
+                        class="fa-solid fa-circle-info"></i></a></h3>
+            <p>The <span class="highlight-text">try</span> and <span class="highlight-text">except</span> blocks are used to catch and handle exceptions. Code inside the <span class="highlight-text">try</span> block is executed, and if an exception occurs, it is caught by the corresponding <span class="highlight-text">except</span> block.</p>
+
+            <p>Here's an example handling a <span class="highlight-text">ValueError</span>:</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">try:
+    value = int("abc")
+except ValueError as e:
+    print("Error:", e)
+    # Output: Error: invalid literal for int() with base 10: 'abc'
+</code></pre>
+
+            <p>This prevents the program from crashing and allows you to handle errors gracefully.</p>
+        </section>
+
+        <section id="handling-types-of-exceptions">
+            <h3>Handling Types of Exceptions</h3>
+            <p>You can handle different types of exceptions using multiple <span class="highlight-text">except</span> blocks or a single <span class="highlight-text">except</span> block with multiple exception types:</p>
+            <pre><div class="lang-name">Python</div><code class="hljs language-python">try:
+    result = 10 / 0
+except ZeroDivisionError as e:
+    print("Error:", e)
+    # Output: Error: division by zero
+except ValueError as e:
+    print("ValueError:", e)
+    # This block won't be executed in this example
+</code></pre>
+
+            <p>Handling specific exception types allows for more fine-grained error management.</p>
+        </section>
+    </section>
 </main>
 <footer>
     <ul id="useful-links">
@@ -189,5 +244,6 @@
         </li>
     </ul>
 </footer>
+<script>hljs.highlightAll();</script>
 </body>
 </html>
