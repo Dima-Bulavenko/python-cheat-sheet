@@ -264,7 +264,34 @@ while count < 4:
         </section>
         
         <section id="break-and-continue-statements">
-        
+            <h3>Break and Continue Statements <a href="https://docs.python.org/3/reference/simple_stmts.html#break" target="_blank" rel="noopener" aria-label="Get detailed information about the break and continue  in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
+        <p>The <span class="highlight-text">break</span> statement is used to exit a loop prematurely, while the <span class="highlight-text">continue</span> statement is used to skip the rest of the code inside a loop for the current iteration and move to the next iteration.</p>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
+
+for num in numbers:
+    if num == 3:
+        break
+    print(num)
+
+#The loop sequentially print this values:
+# 1
+# 2
+# The loop be stopped by break statement when encounter number 3 and don't show the rest numbers
+</code></pre>
+        <pre><div class="lang-name">Python</div><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
+
+for num in numbers:
+    if num == 3:
+        continue
+    print(num)
+
+#The loop sequentially print this values:
+# 1
+# 2
+# 4
+# 5
+# The loop skip number 3 and don't print it
+</code></pre>
         </section>
     </section>
 </main>
