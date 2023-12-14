@@ -141,6 +141,7 @@ header > h1 {
     z-index: 51;
     border-right: 2px solid transparent;
     border-image: var(--site-vertical-gradient) 1;
+    transition: width 0.3s;
 }
 
 #nav-bar-topics {
@@ -179,7 +180,9 @@ header > h1 {
 }
 
 #nav-topics-hide:checked + #nav-topics-container {
-    display: none;
+    /*display: none;*/
+    width: 0;
+    border-width: 0;
 }
 
 
@@ -511,7 +514,9 @@ fieldset {
 
     /* Navigation by topics */
     #nav-topics-hide:checked + #nav-topics-container {
-        display: initial;
+        width: inherit;
+        border-right: 2px solid transparent;
+        border-image: var(--site-vertical-gradient) 1;
     }
 
     #nav-topics-container {
