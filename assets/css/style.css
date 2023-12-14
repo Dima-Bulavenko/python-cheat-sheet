@@ -192,23 +192,10 @@ header > h1 {
     font-weight: bolder;
 }
 .highlight-block {
-    position: relative;
     background-color: var(--block-backgorund-color);
     color: #bfcbe2;
     padding: 20px;
     border-radius: 20px;
-}
-
-.gradient-border::before {
-    /* element that has class rounded-gradient-border must be relative*/
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding: 2px;
-    background: var(--site-vertical-gradient);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
 }
 
 /* Topics pages */
