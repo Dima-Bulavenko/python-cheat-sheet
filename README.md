@@ -564,8 +564,7 @@ was also consistent.
 
 ## Bugs
 
-Bugs are an inevitable part of development. Although Disney Food Guide is a relatively simple site with limited
-languages, there were still some bugs that occurred throughout the process. The project was built from vanilla HTML and
+Bugs are an inevitable part of development. The project was built HTML and
 CSS with no use of frameworks and this has its shortcomings. The lack of javascript limits functionality and
 interactivity of the site.
 
@@ -575,6 +574,7 @@ interactivity of the site.
 * Scroll didn't appear when a content overflow a container ([Stuck overflow solution](https://stackoverflow.com/questions/16094785/have-a-fixed-position-div-that-needs-to-scroll-if-content-overflow))
 * A bug was caused due to improperly placed `#nav-topics-hide` radio button which hide navigation topics bar. The button was nested inside the navigation bar that don't allow to close the bar. Extracting this element from the bar enabled to close it and make styling more simple ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/8bf8204d520ceb952de7f3ee690b4ebe02381790))
 * The topics navigation bar cover the main and footer blocks because of its scrollbar and border width ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/ec193946286a00e54185b1a37cd400bd9f7a6fe9))
+* Header element overlapped main element content when navigate to topics by anchor links ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/d396d5ab731a5add8f886ff18625f28e3cde0546)). 
 
 * ### Unresolved
 
