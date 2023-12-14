@@ -219,7 +219,7 @@ header > h1 {
 }
 
 .topic-section :is(h1, h2, h3, h4) {
-    margin: 50px 0 20px;
+    margin: 20px 0;
 }
 
 .topic-section p {
@@ -230,6 +230,8 @@ header > h1 {
 /* Code style*/
 .topic-section pre {
     margin-top: 30px;
+    min-width: 250px;
+    max-width: fit-content;
 }
 
 .lang-name {
