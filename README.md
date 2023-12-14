@@ -27,7 +27,7 @@ grasping and reinforcing Python knowledge.
 
 Link to the live site - [Python Cheat Sheet](https://dima-bulavenko.github.io/python-cheat-sheet/)
 
-![Python Cheat Sheet Responsive Design](assets/images/readme-images/disney-food-guide-responsive-display.png)
+![Python Cheat Sheet Responsive Design](assets/images/readme-images/respinsive-pages.PNG)
 
 # Contents
 
@@ -107,8 +107,8 @@ designs vary from the end layout in some places due to creative decisions made t
 ### Home Page
 The home page serves as the central hub, outlining the site's primary objectives and purpose. Content includes an introduction to the Python language, reasons for learning it, and valuable links for tutorials and Python download.
 
-### Cheat Sheet Page
-The cheat sheet page, arguably the most crucial, offers users essential information on key Python concepts. Users can seamlessly navigate through topics using pagination buttons for a smooth learning experience.
+### Get Started Page
+The cheat sheet page, arguably the most crucial, offers users essential information on key Python concepts. Users can seamlessly navigate through topics using left side the topics navigation bar.
 
 ### Feedback Page
 The feedback page provides visitors with the opportunity to express gratitude, share wishes, or provide valuable suggestions for site improvement.
@@ -121,9 +121,9 @@ The feedback page provides visitors with the opportunity to express gratitude, s
 - Links to the developer's LinkedIn profile and the GitHub repository housing the site's source code.
 
 ### Footer
-Mirrors the header, excluding the logo.
+- Contains useful links to python documentation and online python compiler.
 
-### Navigation Bar
+### Topics Navigation Bar
 Enables users to swiftly move between topics, enhancing overall navigation efficiency.
 
 
@@ -148,309 +148,62 @@ For text color, I opted for an off-white shade. This intentional choice creates 
 
 Additionally, shades derived from Rich Black are strategically used for buttons and various blocks. This approach subtly highlights specific elements, contributing to a visually cohesive design. 
 
-![Disney classic colour scheme](assets/images/readme-images/cheat_sheet_colour_scheme.png)
+![Python Cheat Sheet colour scheme](assets/images/readme-images/cheat_sheet_colour_scheme.png)
 
 [Back to top](<#contents>)
 
 # Features
 
-Disney Food Guide is designed to make accessing information as easy for the user as possible. There are many user
-friendly features which are formatted and styled in accordance with best practice. Users will be familiar with the
-layout and flow of the site as it doesn't stray too far from the expected norm. Friendly and lighthearted content
-encourages exploration throughout the website.
+Python Cheat Sheet is designed to make accessing key python concepts as easy for the user as possible. There are many user-friendly features which are formatted and styled in accordance with best practice. Users will be familiar with the
+layout and flow of the site as it doesn't stray too far from the expected norm.
 
-## Existing Features
+## Home
 
-### Home
+The home page is an introduction what Python is. It tells user the main features of this programing language, why you should learn this and give user link to guide "How to get python on your machine".
 
-The home page is the main landing page of Disney Food Guide. The intent of the landing page is to provide the user with
-a clear purpose for the website, and also to walk the user through some of the features before encouraging further
-exploration via the navigation bar.
+## Header
+Header for laptop screens and higher include:
 
-Link to live site - [Home](https://matthew-hurrell.github.io/Disney-Food-Guide/index.html)
+![Header laptop](assets/images/readme-images/header-laptop.PNG)
+- Logo which lead user to the Home page.
+- "Home" link lead user to the Home page as well.
+- "Get started" lead user to the "Variables" topic.
+- "Feedback" lead user to feedback page.
+- LinkedIn logo lead user to LinkedIn account of site's developer.
+- GitHub logo lead user to github repository of Python Cheat Sheet.
 
-Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/index.html)
 
-* ### Navigation Menu
+Header for smsmartphones and tabletsartphones and tablets include:
 
-* Main Nav
+![Header ](assets/images/readme-images/header-smartphones-tablets.PNG)
 
-The main navigation bar is present at the top of all the pages of the site. It features a Disney Food Guide logo on the
-far left, which is a clickable link to the home page. Spanning across from the right of the nav bar is the links to the
-other pages of the website. When a user hovers over a link to a page a pink underline appears beneath the base of the
-text. When a user is on one of the pages that underline continually displays beneath the page link of whichever page
-they are on. The page links are evenly spaced using flexbox and respond to changes of screen size. When the screen size
-goes below 757px this navigation bar is hidden and is replaced with a mobile nav bar.
+- Burger button open the topics navigation bar.
+- Chat button lead user to feedback page.
+- Logo which lead user to the Home page.
+- LinkedIn logo lead user to LinkedIn account of site's developer.
+- GitHub logo lead user to github repository of Python Cheat Sheet.
 
-![Nav bar large display](assets/images/readme-images/nav-bar-full-screen.png)
+## Topic Navigation Bar
+The Topic Navigation Bar consist of topics and their subtopics. This feature allows user quickly navigate through key python topics.
+For phones and tablets screens this navbar is hidden and needs to be opened.
 
-* Mobile Nav
+Topic Navigation Bar for phones and tablets:
 
-The mobile nav bar is hidden from view on all screen sizes above 757px. On smaller screens it is visible. The mobile
-menu is sticky and follows the screen as the user scrolls down. This nav features the same clickable Disney Food Guide
-Logo on the left side of the bar. On the right side there is a menu icon button that displays a drop down menu of the
-page links when clicked. The menu icon is removed from display when clicked and is replaced by an icon of a cross to
-indicate a way of closing the menu to the user. When the cross icon is clicked the drop down menu disappears. The drop
-down menu doesn't interfere with the flow and layout of information displayed beneath it, it simply appears on-top until
-closed with the cross icon. This menu can be accessed anywhere on the page.
+![Topic Navigation Bar for phones and tablets](assets/images/readme-images/topic-navigation-bar-phone.PNG)
 
-![Nav bar small display](assets/images/readme-images/nav-bar-small.png)
+Topic Navigation Bar for laptops and PC:
 
-![Nav bar open menu](assets/images/readme-images/nav-bar-open-menu.png)
+![Topic Navigation Bar for laptops and PC](assets/images/readme-images/topic-navigation-bar-laptops.PNG)
 
-* ### Main Header
+## Footer
+The Footer contains links to python documentation and python online compiler. The footer allows users to get more information about python 
 
-The main header section features a large background image which takes up the whole height and width of the screen on
-larger screens. The background image is a collage of multiple items of food and drink at Disney World. This helps the
-user understand the intention of the site straight away. The image features a white linear gradient which was designed
-through experimentation in the browser. There is also a h1 title featuring the name of the website and a h2 title below
-summarising its purpose. Both of these titles are within a pink slightly transparent box to make their visibility better
-ontop of the background image. There is also a scroll down box with similar styling and an icon with arrows pointing
-down. This provides a visual indication to the user that there is more information below the header. This box can also
-be clicked to scroll the user down to the welcome section automatically. As the screen size reduces, this section
-resizes at multiple break points to allow for most of the background image to still be seen. The scroll box is removed
-from display when the mobile nav bar is introduced and the header section is resized to the point where the information
-below is visible without having to scroll.
+![Footer](assets/images/readme-images/footer.png)
 
-![Main header section](assets/images/readme-images/main-header-large.png)
+## Feedback form
+The Feedback form allows users to leave their impression about the python cheat sheet and rate it.
 
-* ### Introduction
-
-Below the header is the welcome section / introductory paragraph. It features a h2 title with a quick welcome and then a
-paragraph of text below that. The text further establishes the purpose and intention of the site while exhibiting the
-playful tone of the content. The purpose of this text is to walk the user through the basic features of the site so they
-have an understanding before they then use the navigation bar to travel through the sections. The text is short enough
-so as not to overload the user with too much information at once.
-
-![Welcome section paragraph](assets/images/readme-images/welcome-section.png)
-
-* ### Mailing List
-
-On larger screens the mailing list is in a column directly right of the welcome paragraph. This is a form with the
-intention of allowing a user to submit their details to be kept informed of any further information or updates. It's a
-simple form with three inputs for first name, last name and email address with a submit button. There is also a h2 title
-within the form which displays the forms purpose to the user. The form has been formatted to not allow any of these
-inputs to be left blank without returning a prompt to complete the form fully. The email address input can only be
-submitted with a valid email address. When the information is submitted the page is simply refreshed. There are also
-placeholders in the input fields which are filled out with the details of Mickey Mouse. The form is responsive, and
-stacks beneath the welcome paragraph on smaller screens. The button changes colours when hovered over and there is a
-light orange background with a rounded border radius on the form. The form is an optional feature for the user.
-
-![Mailing list](assets/images/readme-images/mailing-list.png)
-
-* ### Footer
-
-The footer element is present at the bottom of every page other than the contact page. The footer has a light pink
-background and it contains four icons which provide links to facebook, instagram, twitter and youtube. As this site
-isn't established on social media, these links simply link to the home pages of each site. The icons are coloured with a
-darker shade of pink, but as they are hovered over by a user they transition into their predefined social media colours.
-A user should recognise these colours and will be able to use them as a visual queue if they are looking for a certain
-social media site. Generally it is quite common to see social media links in a footer so this will be something the user
-should be familiar with without much explanation needed. They should also be familiar with the logos without a need for
-writing their full names. The footer is designed using flexbox and is reponsive with smaller screen sizes and because of
-its simplicity, doesn't require much editing or resizing. The icons are spaced evenly across the screen using flexbox.
-
-![Landing page footer](assets/images/readme-images/footer.png)
-
-[Back to top](<#contents>)
-
-### Restaurants
-
-The restaurants page is accessible via the main navigation menu. The intended purpose of the page is to provide the user
-with information about the top ten restaurants in Disney World in 2022 in a clear and easy to understand format.
-
-Link to live site - [Restaurants](https://matthew-hurrell.github.io/Disney-Food-Guide/restaurants.html)
-
-Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/restaurants.html)
-
-* ### Restaurant Header
-
-The header for the restaurant page features a cropped version of the background image from the main page, which makes it
-half the size in height. The same linear gradient is used on the image and the same styling of titles and boxing is
-used. The title is a h1 and is centered in the middle of the image to clearly display the subject of the page to the
-user. As the screen size is reduced the background image and titles continue to resize at certain break points to fit on
-smaller screens.
-
-![Restaurant header](assets/images/readme-images/restaurant-header.png)
-
-* ### Restaurant Listings
-
-This is the main section of the restaurant page. It features ten individual restaurant listings each with a large
-internal picture, a name, location, dining type, price range and summary. Each listing has a button link to a menu and
-table booking which opens in a new tab. The location is also a link which opens a new tab to an online virtual map
-pinpointing the location of the restaurant. On larger screens each listing is laid out in two columns. Each listing
-alternates between image left and image right to give a balanced flow to the page. Each listing information section
-features a h2 title with the name of the restaurant at the top. The location, dining type, price range and summary then
-follow beneath the title with corresponding icons to easily define the purpose of each piece of information to the user
-clearly. Link buttons are displayed beneath the summary paragraph and feature a similar styling to other buttons
-throughout the site. Summary paragraph content is kept short to avoid large blocks of text. Each alternate listing
-features a faint change of background colours to define the different sections whilst not distracting from the content.
-The text is spaced using flexbox and each listing is also centered in columns using flexbox. As the screen size
-decreases the content shrinks before stacking on-top of each other as singular columns using the flexbox feature
-flex-direction: column. To reduce the amount of code and to provide a uniform appearance throughout the site, the
-styling of the listings is recorded using CSS classes for reusable styling throughout the other pages. Two main classes
-are used to style all the following listings. Content is spaced out to avoid clutter and to display information in a
-pleasant and easy to understand way for the user.
-
-![Restaurant listings](assets/images/readme-images/restaurant-listings.png)
-
-* ### Restaurant Footer
-
-The restaurant footer is styled almost exactly the same as the footer on the main landing page, although it has one
-extra feature. Due to the page length, the footer also features a back to the top link, which sends the user smoothly to
-the top of the page when clicked. This avoids the user having to scroll manually all the way back to the top to reach
-the navigation bar. This link also features an arrow icon pointing upwards to serve as a visual queue if the user is
-unsure of its purpose. The link transitions to a darker colour when hovered over. The social media icons are then spaced
-evenly around the middle link using flexbox. This footer is reused for the snacks and drinks pages. The back to top link
-is removed from display when the mobile nav bar is visible on smaller screens. As the nav bar is sticky for the mobile
-display and is visible at all times, there is no need for the user to scroll to the top of the page to navigate the
-site. This also frees up space in the footer for responsivity on smaller screens.
-
-![Restaurant footer](assets/images/readme-images/restaurant-footer.png)
-
-[Back to top](<#contents>)
-
-### Snacks
-
-The snacks page is again accessible via the main navigation menu. Its purpose is very similar to the restaurants page
-except it is providing information on the top ten snacks at Disney World in 2022. Information on this page needs to be
-arranged in a clear way for the user to understand. It should also be styled similarly to the previous pages for
-uniformity and professionalism.
-
-Link to live site - [Snacks](https://matthew-hurrell.github.io/Disney-Food-Guide/snacks.html)
-
-Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/snacks.html)
-
-* ### Snacks Header
-
-The snacks header is styled very similarly to the restaurant header except the difference in title content. This is to
-showcase the subject and purpose of the page to the user in a clear and defined way.
-
-![Snacks header](assets/images/readme-images/snacks-header.png)
-
-* ### Snack Listings
-
-The main section of the snacks page is made up of the snack listings. This section comprises of ten individual listings
-of the top snacks at Disney World in 2022. The same reusable CSS classes from the restaurant listings are used in this
-section to uniformly order the images and information in a style that will now be familiar to the user. Some information
-used for the restaurants is inapplicable to the snacks and is removed. Snacks are normally available via couter service
-throughout the parks and are therefore not available for table bookings, so the booking link button was removed. The
-dining type was also removed as it is not relevant to the individual items. Icons and colour schemes remain consistent
-with the other pages of the site. Location and menu links for each item opens in a new tab. The images and information
-shrink on smaller screen sizes and then stack ontop of each other in singular columns using flex-direction: column.
-Images are kept uniform throughout with a clear front shot of each snack item per listing.
-
-[Back to top](<#contents>)
-
-### Drinks
-
-The drinks page is accessible via the main navigation menu. The purpose of this page is to define and showcase the top
-ten drinks at Disney World in 2022. Information is laid out in a format which is very consistent with the other pages in
-the site. Information should be clear and accurate, and the page should be easy to navigate.
-
-Link to live site - [Drinks](https://matthew-hurrell.github.io/Disney-Food-Guide/drinks.html)
-
-Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/drinks.html)
-
-* ### Drinks Header
-
-The styling for the drinks header is consistent with the previous pages. The h1 title is different to clearly display
-the subject of the content of the page to the user.
-
-![Drinks header](assets/images/readme-images/drinks-header.png)
-
-* ### Drink Listings
-
-The main section of the drinks page is comprised of the drink listings. This section is split into ten individual
-listings of the top drinks at Disney World in 2022. The section uses the same reusable CSS classes from the previous
-pages to make the information styling consistent with previous pages. An alcoholic / non-alcoholic catagory was added to
-the drinks listings with a matching martini glass icon as this is a useful piece of information for users who have kids
-or wish to avoid alcohol. The buttons to book a table and view the menu are displayed and removed from each listing when
-applicable. Some drinks are only available at kiosks and consequently do not have table reservations. All buttons and
-location links open in a new tab. The pictures are high quality and of a similar styling to the snack images. Flexbox is
-used to evenly space content. As with the other pages, the listings are responsive and stack when viewed on smaller
-screen sizes.
-
-![Drinks listings](assets/images/readme-images/drinks-listings.png)
-
-[Back to top](<#contents>)
-
-### Contact
-
-The purpose of the contact page is to provide a clear to understand and easily accessable form of contact that the user
-can use to submit details of their own experience at Disney World. Regular user interaction like this can also help keep
-information up to date on the website. The page needs to look welcoming and trustworthy to encourage the user to submit
-their information. This page is accessible via the navigation menu.
-
-Link to live site - [Contact](https://matthew-hurrell.github.io/Disney-Food-Guide/contact.html)
-
-Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/contact.html)
-
-* ### Contact Background
-
-The contact page is a simple one form page with a centralised form and a background image covering the entire length and
-width of the screen. The background image dimensions are defined with vh and vw so they line up with the outer
-dimensions of the screen on any screen size. The background image is a simple disney themed cloud with a blue colour
-sky. The image is simple enough not to distract from the form content. The footer is removed from display on the contact
-page, however there is a linear gradient applied to the bottom of the background image which fades into the colour used
-for the footer throughout the rest of the site. This helps bring some consistency to the colour scheme in comparison to
-the other pages in the site.
-
-![Contact background](assets/images/readme-images/contact-background.png)
-
-* ### Contact Form
-
-The form on the contact page is centered in the middle of the screen using flexbox. The background is a transparent
-white box with a dotted 1px black border which helps provide some clarity of text over the background image. The form
-features a h2 title prompting the user to submit their information and details about their Disney experience. There is a
-heart icon in the title to encourage positive interaction. The form inputs are split into two columns on larger screens
-but stack into one column using flexbox on smaller screens. The user has six different inputs for information and data
-in the form. First name, last name, email address and the description of your trip box are all required inputs, the form
-will not accept the data without all of them being correctly filled out. Date of trip and the photo attachment inputs
-are both optional as the user may not remember a date and/or may not have a photo. The form is similarly styled to the
-mailing list form on the main landing page of the site. Inputs have border radius rounded edges and the same
-placeholders as the mailing list form. When the form is submitted the user is directed to the thanks.html page which is
-styled in exactly the same way but with a thank you message instead of the form. This is the only way to access the
-thanks.html page.
-
-![Contact form](assets/images/readme-images/contact-form.png)
-
-### Form Submission Confirmation
-
-The purpose of the form submission / thank you page is to show the user that their form submission has been successfully
-received. The page should also allow and promote easy navigation away from the page onto another page of the site
-without the user needing to use the back button on the browser. This page is not accessible via the navigation menu and
-is hidden until the user submits the contact form. The styling and layout is exactly the same as the contact form page
-except the form is now removed and replaced with a thank you for your feedback message with similar styling to the form.
-Contact is still underlined in the navigation bar, which suggests to the user that they are still on the same page.
-There is also a smiley face icon next to the thank you message.
-
-Link to live site - [Thanks](https://matthew-hurrell.github.io/Disney-Food-Guide/thanks.html)
-
-Link to code - [GitHub](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/thanks.html)
-
-![Thank you form submission page](assets/images/readme-images/thank-you-page.png)
-
-[Back to top](<#contents>)
-
-## Future Features
-
-Disney Food Guide has many potential avenues for expansion and improvement. Here are some ideas that could further build
-upon the site.
-
-* A full blog could be added to the landing page or a seperate blog page. It would be a good place to keep users
-  informed with the latest news and updates about the park and dining options. Further information like articles and
-  videos could be displayed here.
-* An e-commerce element could be introduced with the ability for the user to pay a small fee to download a full digital
-  pdf dining guide for offline viewing.
-* Image elements within the lists could be further expanded by adding more images to each item to make a slideshow which
-  the user can browse through. Video could also be included in the slideshow.
-* A video guide for each category could be imbedded in the header of each page so the user can click and watch the video
-  guide if they prefer this to reading the guide.
-* Embedded maps for each listing that don't require navigation off page would be a good feature to make finding the
-  location easier and more user friendly.
-
-[Back to top](<#contents>)
+![Feedback form](assets/images/readme-images/feedbakc-form.PNG)
 
 # Technologies Used
 
@@ -458,18 +211,14 @@ upon the site.
   elements and website content.
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) - Provides the styling of the HTML content.
 * [Balsamiq](https://balsamiq.com/) - Wireframing software used to plan and design website templates.
-* [GitPod](https://gitpod.io/) - An open source developer platform for remote development. Used to edit and build the
-  website.
 * [GitHub](https://github.com/) - An online host for web and software development projects. Used to store the repository
   and deploy the finished website.
 * [Git](https://git-scm.com/) - Software for tracking changes to files. Used with GitPod to add, commit and push code
   changes to the repository on GitHub.
-* [Affinity Photo](https://affinity.serif.com/en-gb/photo/) - A photo editing app available through the Apple store used
-  to design and create graphics for the site.
-* [Apple Notes](https://www.icloud.com/notes) - A simple Apple app used to write and plan copy and content for the
-  website.
 * [Slack](https://www.icloud.com/notes) - An online messaging program designed for workplace collaboration. Used for
   advice and guidance from peers and tutors.
+* [Highlight code](https://highlightjs.org/) was used to highlight and style python code.
+* [ChatGPT](https://chat.openai.com/) was used to create readable and sensible text and to create similar pages using code structure template.
 
 [Back to top](<#contents>)
 
