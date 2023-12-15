@@ -276,7 +276,7 @@ size, further testing was done using [Am I Responsive](https://ui.dev/amirespons
 also used to view the pages on multiple physical devices such as an Apple iPad, Apple iPhone 6, Samsung Galaxy and Apple
 MacBook Pro.
 
-![Disney Food Guide Responsive Design](assets/images/readme-images/respinsive-pages.PNG)
+![Python Cheat Sheet Responsive Design](assets/images/readme-images/respinsive-pages.PNG)
 
 [Back to top](<#contents>)
 
@@ -345,11 +345,9 @@ This section will credit the sources of content and media for Python Cheat Sheet
 
 * For creating sensible and readable content was used [ChatGPT](https://chat.openai.com/)
 * Fonts were imported from [Google Fonts](https://fonts.google.com/).
-* Icons were imported from [Font Awesome](https://fontawesome.com/).
 * The Python Cheat Sheet colour palette was inspired
   by [Dark Blue Colour Scheme.](https://coolors.co/fdf0d5-00a6fb-0085c8-006494-003554-051923)
 * Information about using [CSS variables](https://www.w3schools.com/css/css3_variables.asp)
-* Favicon and logo were created by using [icons8](https://icons8.com/icons)
 * [Semantic HTML](https://www.semrush.com/blog/semantic-html5-guide/): What It Is and How to Use It Correctly
 * How to create [Blurry Header](https://www.w3schools.com/cssref/css3_pr_backdrop-filter.php)
 * [Gradient Creator](https://cssgradient.io/)
@@ -357,30 +355,19 @@ This section will credit the sources of content and media for Python Cheat Sheet
 * How to create [Typewriter Effect](https://css-tricks.com/snippets/css/typewriter-effect/)
 * Make math calculations in CSS using [calc()](https://www.w3schools.com/cssref/func_calc.php)
 * Custom [scrollbar](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
+* Online [table of contents generator](https://ecotrust-canada.github.io/markdown-toc/)  
 
 ## Media
-
-* Images and graphics were used from [The Official Disney Website](https://www.disneyworld.co.uk/)
-  and [Disney Food Blog](https://www.disneyfoodblog.com/).
-* Map buttons link to maps found on [The Official Disney Website](https://www.disneyworld.co.uk/).
-* Menu buttons link to menus found on [The Official Disney Website](https://www.disneyworld.co.uk/).
-* Dining reservation buttons link to [Mouse Watcher](https://mousewatcher.com/).
-* The contact page background image was found
-  at [Wall Papers Den](https://wallpapersden.com/disney-the-imagineering-story-wallpaper/1336x768/).
+* Favicon and logo were created by using [icons8](https://icons8.com/icons)
+* Icons were imported from [Font Awesome](https://fontawesome.com/).
 
 [Back to top](<#contents>)
 
 # Acknowledgements
 
-Disney Food Guide was created as a portfolio 1 project for [Code Insitute](https://codeinstitute.net/), the first of
-five projects of a Higher Diploma in Full Stack Software Development. I would like to take a moment to thank my
-mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for all his help and encouragement
-throughout the development process. I would also like to thank the Slack Community, especially Jim Morel the community
-executive, for his advice about building a responsive nav using CSS when I was rather lost! I'd like to thank my peers
-in the May 2022 class at Code Insitute for their feedback and support and also the tutors and student care team at Code
-Institute. Thank you all for helping me on my journey to becoming a better developer.
+The Python Cheat Sheet was developed as the first portfolio project for [Code Insitute](https://codeinstitute.net/), marking the initial step in the completion of the Higher Diploma in Full Stack Software Development, consisting of five projects. I want to express my gratitude to my mentor, [Luke Buchanan](https://www.linkedin.com/in/lukebuchanan67/), for his invaluable assistance and encouragement during the entire development phase. Additionally, I extend my thanks to the Slack Community. To everyone who contributed, thank you for being part of my journey towards becoming a better developer.
 
-Matthew Hobbs-Hurrell
+Dmytro Bulavenko
 
 
 
