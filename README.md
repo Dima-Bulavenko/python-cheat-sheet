@@ -226,88 +226,55 @@ The Feedback form allows users to leave their impression about the python cheat 
 
 ## Validator Tests
 
-Disney Food Guide has been tested extensively. All the code for every page of the site has been run
+The Python Cheat Sheet has been tested extensively. All the code for every page of the site has been run
 through [The W3C HTML Markup Validation Service](https://validator.w3.org/) and
 the [The W3C CSS Markup Validation Service](https://jigsaw.w3.org/css-validator/) to test the code for any errors. On
 the final tests, no errors on any pages were found.
+* ### index.html
+![index.html validation](assets/images/readme-images/index-validation.PNG)
 
-* ### Home page
+* ### control-flow.html
+![control-flow-validation.html validation](assets/images/readme-images/control-flow-validation.PNG)
 
-![Home page html validation](assets/images/readme-images/index.html-validation.png)
+* ### data-types.html
+![data-types.html validation](assets/images/readme-images/data-types-validation.PNG)
 
-* ### Restaurants
+* ### error-handling.html
+![error-handling.html validation](assets/images/readme-images/error-handling.PNG)
 
-![Restaurants html validation](assets/images/readme-images/restaurants.html-validation.png)
+* ### feedback.html
+![feedback.html validation](assets/images/readme-images/feedback-validation.PNG)
 
-* ### Snacks
+* ### file-handling.html
+![file handling validation](assets/images/readme-images/file-handling-validation.PNG)
 
-![Home page html validation](assets/images/readme-images/snacks.html-validation.png)
+* ### functions.html
+![functions validation](assets/images/readme-images/functions-validation.PNG)
 
-* ### Drinks
+* ### modules-and-packages.html
+![modules and packages validation](assets/images/readme-images/modules-and-packages-validation.PNG)
 
-![Home page html validation](assets/images/readme-images/drinks.html-validation.png)
+* ### operators.html
+![operators validation](assets/images/readme-images/operators-validation.PNG)
 
-* ### Contact
-
-![Home page html validation](assets/images/readme-images/contact.html-validation.png)
-
-* ### Thanks
-
-![Home page html validation](assets/images/readme-images/thanks.html-validation.png)
+* ### variables.html
+![variables validation](assets/images/readme-images/varables-validation.PNG)
 
 * ### Style.css
-
-![Home page html validation](assets/images/readme-images/style.css-validation.png)
+![CSS validation](assets/images/readme-images/css-validation.PNG)
 
 [Back to top](<#contents>)
 
 ## Responsiveness Tests
 
-Disney Food Guide was tested thoroughly for responsiveness through multiple software applications and online resources.
+Python Cheat Sheet was tested thoroughly for responsiveness through multiple software applications and online resources.
 Most of the testing was done manually through [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/)
 using the multiple preset device dimensions in the toolbar. Once the site layout was displaying well on every screen
-size, further testing was done using [Am I Responsive](https://ui.dev/amiresponsive)
-and [Responsive Design Checker](https://responsivedesignchecker.com/). Once the site was deployed on GitHub the link was
+size, further testing was done using [Am I Responsive](https://ui.dev/amiresponsive). Once the site was deployed on GitHub the link was
 also used to view the pages on multiple physical devices such as an Apple iPad, Apple iPhone 6, Samsung Galaxy and Apple
 MacBook Pro.
 
-![Disney Food Guide Responsive Design](assets/images/readme-images/disney-food-guide-responsive-display.png)
-
-[Back to top](<#contents>)
-
-## Lighthouse Tests
-
-Disney Food Guide was also tested
-through [Chrome Dev Tools - Lighthouse](https://developers.google.com/web/tools/lighthouse). It was tested on four main
-areas - Performance, Accessibility, Best Practices and SEO.
-
-* ### Home page
-
-![Home lighthouse test](assets/images/readme-images/lighthouse-test.png)
-
-* ### Restaurants
-
-![Restaurant lighthouse test](assets/images/readme-images/lighthouse-restaurants.png)
-
-* ### Snacks
-
-![Snacks lighthouse test](assets/images/readme-images/lighthouse-snacks.png)
-
-* ### Drinks
-
-![Drinks lighthouse test](assets/images/readme-images/lighthouse-drinks.png)
-
-* ### Contact
-
-![Contact lighthouse test](assets/images/readme-images/lighthouse-contact.png)
-
-[Back to top](<#contents>)
-
-## Browser Tests
-
-Disney Food Guide was tested on a multitude of different browsers to check for any errors or issues. These browsers
-included Google Chrome, Safari and Firefox. There were no visible errors in appearance or functionality. Responsivity
-was also consistent.
+![Disney Food Guide Responsive Design](assets/images/readme-images/respinsive-pages.PNG)
 
 [Back to top](<#contents>)
 
