@@ -22,7 +22,7 @@
     <title>File Handling</title>
     
     <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- Stylesheet -->
@@ -185,7 +185,7 @@
             <h3>Reading from Files</h3>
             <p>Reading from files in Python is a common operation. You can use the <span class="highlight-text">open()</span> function to open a file and then read its content.</p>
             <p>Here's an example of reading from a file:</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">try:
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">try:
     with open("example.txt", "r") as file:
         content = file.read()
         print(content)
@@ -202,7 +202,7 @@ except FileNotFoundError as e:
             <p>Writing to files allows you to store data persistently. You can use the <span class="highlight-text">open()</span> function with the mode set to <span class="highlight-text">"w"</span> for writing.</p>
 
             <p>Here's an example of writing to a file:</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">try:
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">try:
     with open("example.txt", "w") as file:
         file.write("Hello, File!")
 except IOError as e:
@@ -218,7 +218,7 @@ except IOError as e:
             <p>File paths are essential for navigating and manipulating files. Python provides the <span class="highlight-text">os</span> module to work with file paths.</p>
 
             <p>Here's an example of working with file paths:</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">import os
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">import os
 
 file_path = "path/to/your/file.txt"
 

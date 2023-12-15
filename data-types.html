@@ -22,7 +22,7 @@
     <title>Variables and data types</title>
 
     <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     
     <!-- Stylesheet -->
@@ -196,26 +196,26 @@
             <h4>Integer</h4>
             <p>Represents whole numbers without any decimal points.</p>
             <p>Can be positive or negative.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">num_int = 42
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">num_int = 42
 negative_int = -10
 </code></pre>
         
             <h4>Floating-Point</h4>
             <p>Represents numbers with decimal points or in exponential form.</p>
             <p>Can be used to represent real numbers.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">num_float = 3.14
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">num_float = 3.14
 </code></pre>
         
             <h4>Complex Numbers</h4>
             <p>Represents numbers in the form of a + bj, where "a" and "b" are real numbers, and "j" is the imaginary
                unit.</p>
             <p>Useful in mathematical and engineering applications.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">num_complex = 2 + 3j
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">num_complex = 2 + 3j
 </code></pre>
         
             <h4>Operations on Numeric Types</h4>
             <p>Python supports various arithmetic operations on numeric types:</p>
-             <pre><div class="lang-name">Python</div><code class="hljs language-python"># Examples:
+             <pre><span class="lang-name">Python</span><code class="hljs language-python"># Examples:
 a = 10
 b = 3
 
@@ -250,17 +250,17 @@ exp_result = a ** b  # Result: 1000
                 class="fa-solid fa-circle-info"></i></a></h3>
             <p>Strings are sequences of characters, and they can be defined using either single quotes (') or double quotes (").</p>
             <p><span class="highlight-text">Strings are immutable</span>, meaning you cannot change the characters of an existing string directly.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 </code></pre>
             <h4>Accessing Characters</h4>
             <p>You can access individual characters in a string using indexing.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 first_char = my_string[0]  # Result: 'H'
 </code></pre>
             
             <h4>String Slicing</h4>
             <p>Slicing allows you to extract a portion of the string.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python"># Initial string
+            <pre><span class="lang-name">Python</span><code class="hljs language-python"># Initial string
 my_string = "Python Programming"
 
 # String Slicing
@@ -280,7 +280,7 @@ reversed_string = my_string[::-1]  # Result: 'gnimmargorP nohtyP'
             <div class="method">
                 <p><span class="highlight-text">len()</span> - returns the length (number of
                                                                               characters) of a string.</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 length = len(my_string)  # Result: 13
 </code></pre>
             </div>
@@ -289,7 +289,7 @@ length = len(my_string)  # Result: 13
                 <p><span class="highlight-text">lower() and upper()</span> - converts all characters in
                                                                                             a string to lowercase and
                                                                                             uppercase appropriately</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 lowercase_str = my_string.lower()  # Result: 'hello, python!'
 uppercase_str = my_string.upper()  # Result: 'HELLO, PYTHON!'
 </code></pre>
@@ -299,14 +299,14 @@ uppercase_str = my_string.upper()  # Result: 'HELLO, PYTHON!'
                 <p><span class="highlight-text">strip()</span> - removes leading and trailing whitespaces from a string.</p>
                 <p><span class="highlight-text">lstrip()</span> - removes leading whitespaces.</p>
                 <p><span class="highlight-text">rstrip()</span> - removes trailing whitespaces</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">padded_str = "   Python   "
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">padded_str = "   Python   "
 stripped_str = padded_str.strip()  # Result: 'Python'
 </code></pre>
             </div>
             
             <div class="method">
                 <p><span class="highlight-text">replace()</span> - replaces a specified substring with another substring.</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 new_str = my_string.replace("Python", "World")  # Result: 'Hello, World!'
 </code></pre>
             </div>
@@ -314,7 +314,7 @@ new_str = my_string.replace("Python", "World")  # Result: 'Hello, World!'
             <div class="method">
                 <p><span class="highlight-text">find()</span> - returns the index of the first occurrence of a substring (or -1 if not found).</p>
                 <p><span class="highlight-text">count()</span> - returns the number of occurrences of a substring.</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 index = my_string.find("Python")  # Result: 7
 occurrences = my_string.count("o")  # Result: 2
 </code></pre>
@@ -322,21 +322,21 @@ occurrences = my_string.count("o")  # Result: 2
             
             <div class="method">
                 <p><span class="highlight-text">split()</span> - splits a string into a list of substrings based on a specified delimiter.</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 words = my_string.split(",")  # Result: ['Hello', ' Python!']
 </code></pre>
             </div>
             
             <div class="method">
                 <p><span class="highlight-text">join()</span> - joins elements of a sequence (like a list) into a string using the specified separator.</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">word_list = ["Hello", "Python!"]
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">word_list = ["Hello", "Python!"]
 joined_str = ",".join(word_list)  # Result: 'Hello,Python!'
 </code></pre>
             </div>
             
             <div class="method">
                 <p><span class="highlight-text">startswith() and endswith()</span> - checks if a string starts or ends with a specified substring.</p>
-                <pre><div class="lang-name">Python</div><code class="hljs language-python">my_string = "Hello, Python!"
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">my_string = "Hello, Python!"
 starts_with = my_string.startswith("Hello")  # Result: True
 ends_with = my_string.endswith("Python")  # Result: False
 </code></pre>
@@ -350,13 +350,13 @@ ends_with = my_string.endswith("Python")  # Result: False
             <p>The most common and versatile method for string formatting is using <span class="highlight-text">f-strings</span>.</p>
             <p>An f<span class="highlight-text">-string</span> is created by prefixing a string with the letter "f"</p>
             <p>You can embed expressions inside curly braces <span class="highlight-text">{}</span> within the string.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">name = "Alice"
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">name = "Alice"
 age = 30
 formatted_str = f"My name is {name} and I am {age} years old."
 </code></pre>
             
             <p>You can include variables, expressions, and even function calls inside curly braces.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 5
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 5
 y = 10
 result_str = f"The sum of {x} and {y} is {x + y}."
 </code></pre>
@@ -369,12 +369,12 @@ result_str = f"The sum of {x} and {y} is {x + y}."
         <section id="list">
             <h3>List <a href="https://docs.python.org/3/library/stdtypes.html#list" target="_blank" rel="noopener" aria-label="Get detailed information about List type in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
         <p>Lists are <span class="highlight-text">ordered</span>, <span class="highlight-text">mutable</span> sequences used to store collections of items. They are defined using square brackets.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, "apple", "orange"]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, "apple", "orange"]
 </code></pre>
 
         <h4>Access List Items</h4>
         <p>You can access individual items in a list using indexing.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, "apple", "orange"]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, "apple", "orange"]
 
 # Access the first item
 first_item = my_list[0]  # Result: 1
@@ -390,14 +390,14 @@ subset = my_list[1:4]  # Result: [2, 3, 'apple']</code></pre>
 
         <h4>Change List Items</h4>
         <p>You can change the value of a specific item in a list using indexing.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, "apple", "orange"]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, "apple", "orange"]
 my_list[3] = "banana"
 # Result: [1, 2, 3, "banana", "orange"]
 </code></pre>
 
         <h4>Loop Lists</h4>
         <p>You can iterate through a list using a <span class="highlight-text">for</span> loop.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, 4]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, 4]
 for item in my_list:
     print(item)
 # Output: 1
@@ -408,14 +408,14 @@ for item in my_list:
 
         <h4>List Comprehension</h4>
         <p>List comprehension is a concise way to create lists.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">numbers = [1, 2, 3, 4]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">numbers = [1, 2, 3, 4]
 squared_numbers = [x**2 for x in numbers]
 # Result: [1, 4, 9, 16]
 </code></pre>
 
         <h4>Join Lists</h4>
         <p>You can concatenate two lists using the <span class="highlight-text">+</span> operator.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">list1 = [1, 2, 3]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 joined_list = list1 + list2
 # Result: [1, 2, 3, 4, 5, 6]
@@ -425,7 +425,7 @@ joined_list = list1 + list2
 
         <div class="method">
             <p><span class="highlight-text">append()</span> - adds an element to the end of the list.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3]
 my_list.append(4)
 # Result: [1, 2, 3, 4]
 </code></pre>
@@ -433,7 +433,7 @@ my_list.append(4)
 
         <div class="method">
             <p><span class="highlight-text">remove()</span> - removes the first occurrence of a specified element from the list.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, 4]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, 4]
 my_list.remove(3)
 # Result: [1, 2, 4]
 </code></pre>
@@ -441,7 +441,7 @@ my_list.remove(3)
 
         <div class="method">
             <p><span class="highlight-text">pop()</span> - removes and returns the last element from the list (or a specified index).</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, 4]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, 4]
 last_element = my_list.pop()
 # Result: [1, 2, 3], last_element: 4
 
@@ -452,7 +452,7 @@ second_element = my_list.pop(1) # 1 is index of second element
 
         <div class="method">
             <p><span class="highlight-text">insert()</span> - inserts an element at a specified position in the list.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3]
 my_list.insert(1, 4) # 1 is index the position and 4 is the value that will be inserted
 # Result: [1, 4, 2, 3]
 </code></pre>
@@ -460,7 +460,7 @@ my_list.insert(1, 4) # 1 is index the position and 4 is the value that will be i
 
         <div class="method">
             <p><span class="highlight-text">sort()</span> - sorts the elements of the list in ascending order.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [3, 1, 4, 1, 5, 9, 2]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [3, 1, 4, 1, 5, 9, 2]
 my_list.sort()
 # Result: [1, 1, 2, 3, 4, 5, 9]
 </code></pre>
@@ -468,7 +468,7 @@ my_list.sort()
 
         <div class="method">
             <p><span class="highlight-text">reverse()</span> - reverses the order of the elements in the list.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, 4]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, 4]
 my_list.reverse()
 # Result: [4, 3, 2, 1]
 </code></pre>
@@ -476,7 +476,7 @@ my_list.reverse()
 
         <div class="method">
             <p><span class="highlight-text">count()</span> - returns the number of occurrences of a specified element in the list.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 2, 3, 4, 2, 5]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 2, 3, 4, 2, 5]
 count_of_2 = my_list.count(2)
 # Result: 3
 </code></pre>
@@ -484,7 +484,7 @@ count_of_2 = my_list.count(2)
 
         <div class="method">
             <p><span class="highlight-text">extend()</span> - extends the list by appending elements from another list.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">list1 = [1, 2, 3]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 list1.extend(list2)
 # Result: [1, 2, 3, 4, 5, 6]
@@ -493,7 +493,7 @@ list1.extend(list2)
 
         <div class="method">
             <p><span class="highlight-text">index()</span> - returns the index of the first occurrence of a specified element in the list (or raises a ValueError if not found).</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_list = [1, 2, 3, 4]
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, 4]
 index_of_3 = my_list.index(3)
 # Result: 2
 </code></pre>
@@ -503,32 +503,32 @@ index_of_3 = my_list.index(3)
         <section id="tuple">
         <h3>Tuple <a href="https://docs.python.org/3/library/stdtypes.html#tuple" target="_blank" rel="noopener" aria-label="Get detailed information about Tuple type in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
         <p>Tuples are <span class="highlight-text">ordered</span>, <span class="highlight-text">immutable</span> sequences used to store collections of items. They are defined using parentheses.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, "apple", "orange")
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_tuple = (1, 2, 3, "apple", "orange")
 </code></pre>
 
         <h4>Access Tuple Items</h4>
         <p>You can access individual items in a tuple using indexing (like a list).</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, "apple", "orange")
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_tuple = (1, 2, 3, "apple", "orange")
 first_item = my_tuple[0]  # Result: 1
 </code></pre>
 
         <h4>Update Tuples</h4>
         <p>Tuples are immutable, meaning you cannot change the values of items once they are set.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">original_tuple = (1, 2, 3)
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">original_tuple = (1, 2, 3)
 new_tuple = original_tuple + (4, 5)
 # Result: (1, 2, 3, 4, 5)
 </code></pre>
 
         <h4>Unpack Tuples</h4>
         <p>You can assign the elements of a tuple to individual variables using unpacking (list has the same behavior).</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3)
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_tuple = (1, 2, 3)
 a, b, c = my_tuple
 # Variables: a=1, b=2, c=3
 </code></pre>
 
         <h4>Loop Tuples</h4>
         <p>You can iterate through a tuple using a <span class="highlight-text">for</span> loop.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, 4)
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_tuple = (1, 2, 3, 4)
 for item in my_tuple:
     print(item)
 # Output: 1
@@ -539,7 +539,7 @@ for item in my_tuple:
 
         <h4>Join Tuples</h4>
         <p>You can concatenate two tuples using the <span class="highlight-text">+</span> operator.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">tuple1 = (1, 2, 3)
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">tuple1 = (1, 2, 3)
 tuple2 = (4, 5, 6)
 joined_tuple = tuple1 + tuple2
 # Result: (1, 2, 3, 4, 5, 6)
@@ -549,7 +549,7 @@ joined_tuple = tuple1 + tuple2
 
         <div class="method">
             <p><span class="highlight-text">count()</span> - returns the number of occurrences of a specified element in the tuple.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 2, 3, 4, 2, 5)
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_tuple = (1, 2, 2, 3, 4, 2, 5)
 count_of_2 = my_tuple.count(2)
 # Result: 3
 </code></pre>
@@ -557,7 +557,7 @@ count_of_2 = my_tuple.count(2)
 
         <div class="method">
             <p><span class="highlight-text">index()</span> - returns the index of the first occurrence of a specified element in the tuple (or raises a ValueError if not found).</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_tuple = (1, 2, 3, 4)
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_tuple = (1, 2, 3, 4)
 index_of_3 = my_tuple.index(3)
 # Result: 2
 </code></pre>
@@ -567,32 +567,32 @@ index_of_3 = my_tuple.index(3)
         <section id="dictionary">
             <h3>Dictionary <a href="https://docs.python.org/3/library/stdtypes.html#dict" target="_blank" rel="noopener" aria-label="Get detailed information about Dictionary type in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
         <p>Dictionaries are <span class="highlight-text">unordered</span>, <span class="highlight-text">mutable</span> collections of items. They are defined using curly braces and consist of key-value pairs.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 </code></pre>
 
         <h4>Accessing Dictionary Items</h4>
         <p>You can access the value associated with a specific key in a dictionary.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 name_value = my_dict["name"]  # Result: "John"
 </code></pre>
 
         <h4>Change Dictionary Items</h4>
         <p>You can change the value associated with a specific key in a dictionary.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 my_dict["age"] = 31
 # Result: {"name": "John", "age": 31, "city": "New York"}
 </code></pre>
 
         <h4>Add Dictionary Items</h4>
         <p>You can add new key-value pairs to a dictionary.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30}
 my_dict["city"] = "New York"
 # Result: {"name": "John", "age": 30, "city": "New York"}
 </code></pre>
 
         <h4>Nested Dictionaries</h4>
         <p>Dictionaries can be nested inside other dictionaries.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">nested_dict = {"person": {"name": "John", "age": 30, "city": "New York"}}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">nested_dict = {"person": {"name": "John", "age": 30, "city": "New York"}}
 # Accessing nested value: nested_dict["person"]["age"]
 </code></pre>
 
@@ -600,7 +600,7 @@ my_dict["city"] = "New York"
 
         <div class="method">
             <p><span class="highlight-text">keys()</span> - returns a list of all the keys in the dictionary.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 keys_view = my_dict.keys()
 # Result: dict_keys(['name', 'age', 'city'])
 </code></pre>
@@ -608,7 +608,7 @@ keys_view = my_dict.keys()
 
         <div class="method">
             <p><span class="highlight-text">values()</span> - returns a list of all the values in the dictionary.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 values_view = my_dict.values()
 # Result: dict_values(['John', 30, 'New York'])
 </code></pre>
@@ -616,7 +616,7 @@ values_view = my_dict.values()
 
         <div class="method">
             <p><span class="highlight-text">items()</span> - returns a list of all key-value pairs in the dictionary.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 items_view = my_dict.items()
 # Result: dict_items([('name', 'John'), ('age', 30), ('city', 'New York')])
 </code></pre>
@@ -624,7 +624,7 @@ items_view = my_dict.items()
 
         <div class="method">
             <p><span class="highlight-text">get()</span> - returns the value for the specified key. If the key is not found, it returns a default value.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 age_value = my_dict.get("age", 0) # 0 is default value
 # Result: 30
 # Alternatively: age_value = my_dict["age"] if "age" in my_dict else 0
@@ -633,7 +633,7 @@ age_value = my_dict.get("age", 0) # 0 is default value
 
         <div class="method">
             <p><span class="highlight-text">pop()</span> - removes the item with the specified key and returns its value.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 age_value = my_dict.pop("age")
 # Result: age_value: 30, my_dict: {'name': 'John', 'city': 'New York'}
 </code></pre>
@@ -641,7 +641,7 @@ age_value = my_dict.pop("age")
 
         <div class="method">
             <p><span class="highlight-text">popitem()</span> - removes and returns the last inserted key-value pair.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 last_item = my_dict.popitem()
 # Result: last_item: ('city', 'New York'), my_dict: {'name': 'John', 'age': 30}
 </code></pre>
@@ -649,7 +649,7 @@ last_item = my_dict.popitem()
 
         <div class="method">
             <p><span class="highlight-text">update()</span> - updates the dictionary with elements from another dictionary or from an iterable of key-value pairs.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30}
 new_data = {"city": "New York", "gender": "Male"}
 my_dict.update(new_data)
 # Result: {'name': 'John', 'age': 30, 'city': 'New York', 'gender': 'Male'}
@@ -658,7 +658,7 @@ my_dict.update(new_data)
 
         <div class="method">
             <p><span class="highlight-text">clear()</span> - removes all items from the dictionary.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_dict = {"name": "John", "age": 30, "city": "New York"}
 my_dict.clear()
 # Result: {}
 </code></pre>
@@ -668,20 +668,20 @@ my_dict.clear()
         <section id="set">
             <h3>Set <a href="https://docs.python.org/3/library/stdtypes.html#set" target="_blank" rel="noopener" aria-label="Get detailed information about Set type in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
         <p>Sets are <span class="highlight-text">unordered</span>, <span class="highlight-text">mutable</span> collections of unique items. They are defined using curly braces.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_set = {1, 1, 2, 2, 3, 4, 5}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_set = {1, 1, 2, 2, 3, 4, 5}
 # Notice set doesn't have any duplicate items
 # Result: {1, 2, 3, 4, 5}
 </code></pre>
 
         <h4>Access Set Items</h4>
         <p>You can access items in a set, but sets are unordered, so there is no index. You can check for membership.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_set = {1, 2, 3, 4, 5}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_set = {1, 2, 3, 4, 5}
 is_present = 3 in my_set  # Result: True
 </code></pre>
 
         <h4>Loop Sets</h4>
         <p>You can iterate through a set using a <span class="highlight-text">for</span> loop.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_set = {1, 2, 3, 4}
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_set = {1, 2, 3, 4}
 for item in my_set:
     print(item)
 # Output: 1
@@ -694,7 +694,7 @@ for item in my_set:
 
         <div class="method">
             <p><span class="highlight-text">add()</span> - adds an element to the set.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_set = {1, 2, 3}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_set = {1, 2, 3}
 my_set.add(4)
 # Result: {1, 2, 3, 4}
 </code></pre>
@@ -702,7 +702,7 @@ my_set.add(4)
 
         <div class="method">
             <p><span class="highlight-text">remove()</span> - removes the specified element from the set.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_set = {1, 2, 3, 4}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_set = {1, 2, 3, 4}
 my_set.remove(3)
 # Result: {1, 2, 4}
 </code></pre>
@@ -710,7 +710,7 @@ my_set.remove(3)
 
         <div class="method">
             <p><span class="highlight-text">discard()</span> - removes the specified element from the set if present.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">my_set = {1, 2, 3, 4}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_set = {1, 2, 3, 4}
 my_set.discard(2)
 # Result: {1, 3, 4}
 </code></pre>
@@ -718,7 +718,7 @@ my_set.discard(2)
 
         <div class="method">
             <p><span class="highlight-text">union()</span> - returns a new set containing the union of sets.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">set1 = {1, 2, 3}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 joined_set = set1.union(set2)
 # Result: {1, 2, 3, 4, 5}
@@ -727,7 +727,7 @@ joined_set = set1.union(set2)
 
         <div class="method">
             <p><span class="highlight-text">|</span> - returns a new set containing the union of sets using the | operator.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">set1 = {1, 2, 3}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">set1 = {1, 2, 3}
 set2 = {3, 4, 5}
 joined_set = set1 | set2
 # Result: {1, 2, 3, 4, 5}
@@ -736,7 +736,7 @@ joined_set = set1 | set2
 
         <div class="method">
             <p><span class="highlight-text">difference()</span> - returns a new set containing the difference between two or more sets.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">set1 = {1, 2, 3, 4}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5}
 diff_set = set1.difference(set2)
 # Result: {1, 2}
@@ -745,7 +745,7 @@ diff_set = set1.difference(set2)
 
         <div class="method">
             <p><span class="highlight-text">-</span> - returns a new set containing the difference between sets using the - operator.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">set1 = {1, 2, 3, 4}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5}
 diff_set = set1 - set2
 # Result: {1, 2}
@@ -754,7 +754,7 @@ diff_set = set1 - set2
 
         <div class="method">
             <p><span class="highlight-text">intersection()</span> - returns a new set containing the intersection of two or more sets.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">set1 = {1, 2, 3, 4}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5}
 intersection_set = set1.intersection(set2)
 # Result: {3, 4}
@@ -763,7 +763,7 @@ intersection_set = set1.intersection(set2)
 
         <div class="method">
             <p><span class="highlight-text">&</span> - returns a new set containing the intersection of sets using the & operator.</p>
-            <pre><div class="lang-name">Python</div><code class="hljs language-python">set1 = {1, 2, 3, 4}
+            <pre><span class="lang-name">Python</span><code class="hljs language-python">set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5}
 intersection_set = set1 & set2
 # Result: {3, 4}
@@ -778,32 +778,32 @@ intersection_set = set1 & set2
 
         <h4>Boolean Values</h4>
         <p>Boolean values in Python are <span class="highlight-text">True</span> and <span class="highlight-text">False</span>.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_boolean = True
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_boolean = True
 another_boolean = False
 </code></pre>
 
         <h4>Evaluate Values and Variables</h4>
         <p>Values and variables can be evaluated in Boolean context, resulting in either <span class="highlight-text">True</span> or <span class="highlight-text">False</span>.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 5
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 5
 y = 10
 is_greater = x > y  # Result: False
 </code></pre>
 
         <h4>Most Values are True</h4>
         <p>In a Boolean context, most values are considered <span class="highlight-text">True</span>. Examples include non-zero numbers, non-empty strings, and non-empty lists.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">value = 42
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">value = 42
 is_true = bool(value)  # Result: True
 </code></pre>
 
         <h4>Some Values are False</h4>
         <p>Some values are considered <span class="highlight-text">False</span> in a Boolean context. Examples include zero, empty strings, and empty lists.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">empty_list = []
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">empty_list = []
 is_false = bool(empty_list)  # Result: False
 </code></pre>
 
         <h4>Functions can Return a Boolean</h4>
         <p>Functions can return Boolean values, allowing for conditional checks based on their results.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">def is_even(number):
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">def is_even(number):
     return number % 2 == 0
 
 result = is_even(4)  # Result: True
@@ -815,19 +815,19 @@ result = is_even(4)  # Result: True
         <p>In Python, <span class="highlight-text">None</span> is a special constant representing the absence of a value or a null value. It is often used to signify that a variable or a function does not have a meaningful value or result.</p>
 
         <h4>Assignment of None</h4>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">my_variable = None
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">my_variable = None
 </code></pre>
 
         <h4>Function Return Values</h4>
             <p>Functions in Python can explicitly return <span class="highlight-text">None</span> to indicate that they don't produce any meaningful result.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">def do_something():
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">def do_something():
     # code to do something
     return None
 </code></pre>
 
         <h4>Default Function Arguments</h4>
             <p><span class="highlight-text">None</span> is commonly used as a default value for function parameters when the absence of a user-provided value is meaningful.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">def greet(name=None):
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">def greet(name=None):
     if name is None:
         print("Hello, anonymous!")
     else:
@@ -839,7 +839,7 @@ greet("John")  # Output: Hello, John!
 
         <h4>Checking for None</h4>
             <p>You can check if a variable is <span class="highlight-text">None</span> using the is operator.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">if some_variable is None:
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">if some_variable is None:
     print("The variable is None.")
 else:
     print("The variable has a value.")
@@ -848,7 +848,7 @@ else:
         <h4>Comparisons</h4>
             <p><span class="highlight-text">None</span> is considered equal to itself and evaluates to <span
                     class="highlight-text">False</span> in a boolean context.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = None
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = None
 y = None
 print(x == y)  # Output: True
 print(bool(None))  # Output: False

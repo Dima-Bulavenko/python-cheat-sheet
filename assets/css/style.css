@@ -225,6 +225,7 @@ header > h1 {
 }
 
 .lang-name {
+    display: block;
     border-radius: 5px 5px 0 0;
     padding-left: 10px;
     background-color: var(--block-backgorund-color);

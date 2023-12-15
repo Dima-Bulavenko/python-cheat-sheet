@@ -22,7 +22,7 @@
     <title>Control flow</title>
     
     <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- Stylesheet -->
@@ -188,7 +188,7 @@
 
         <h3>The <span class="highlight-text">if</span> Statement</h3>
         <p>The <span class="highlight-text">if</span> statement is used to execute a block of code if a specified condition is true.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 10
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 10
 
 if x > 0:
     print("Positive number")
@@ -196,11 +196,11 @@ if x > 0:
 
         <h3>The <span class="highlight-text">elif</span> Statement</h3>
         <p>The <span class="highlight-text">elif</span> statement allows you to check multiple conditions after the initial <span class="highlight-text">if</span> statement. It is used to provide additional alternatives if the preceding conditions are false.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 0
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 0
 
 if x > 0:
     print("Positive number")
-elif x < 0:
+elif x &lt; 0:
     print("Negative number")
 else:
     print("Zero")
@@ -208,18 +208,18 @@ else:
 
         <h3>The <span class="highlight-text">else</span> Statement</h3>
         <p>The <span class="highlight-text">else</span> statement is used to execute a block of code if none of the preceding conditions in the <span class="highlight-text">if</span> and <span class="highlight-text">elif</span> statements are true.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = -5
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = -5
 
 if x > 0:
     print("Positive number")
-elif x < 0:
+elif x &lt; 0:
     print("Negative number")
 else:
     print("Zero")
 </code></pre>
 
         <p>Conditional statements can be nested, allowing for more complex decision-making in your code.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">x = 10
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 10
 y = 5
 
 if x > 0:
@@ -238,7 +238,7 @@ else:
 
         <h4>The <span class="highlight-text">for</span> Loop <a href="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement" target="_blank" rel="noopener" aria-label="Get detailed information about for statement in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h4>
         <p>The <span class="highlight-text">for</span> loop is used to iterate over a sequence (such as a list, tuple, or string) or other iterable objects.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">fruits = ["apple", "banana", "cherry"]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">fruits = ["apple", "banana", "cherry"]
 
 for fruit in fruits:
     print(fruit)
@@ -251,9 +251,9 @@ for fruit in fruits:
 
         <h4>The <span class="highlight-text">while</span> Loop <a href="https://docs.python.org/3/reference/compound_stmts.html#while" target="_blank" rel="noopener" aria-label="Get detailed information about while statement in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h4>
         <p>The <span class="highlight-text">while</span> loop is used to repeatedly execute a block of code as long as a specified condition is true.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">count = 1
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">count = 1
 
-while count < 4:
+while count &lt; 4:
     print(count)
     count += 1
 #The loop sequentially print this values:
@@ -266,7 +266,7 @@ while count < 4:
         <section id="break-and-continue-statements">
             <h3>Break and Continue Statements <a href="https://docs.python.org/3/reference/simple_stmts.html#break" target="_blank" rel="noopener" aria-label="Get detailed information about the break and continue  in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
         <p>The <span class="highlight-text">break</span> statement is used to exit a loop prematurely, while the <span class="highlight-text">continue</span> statement is used to skip the rest of the code inside a loop for the current iteration and move to the next iteration.</p>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
 
 for num in numbers:
     if num == 3:
@@ -278,7 +278,7 @@ for num in numbers:
 # 2
 # The loop be stopped by break statement when encounter number 3 and don't show the rest numbers
 </code></pre>
-        <pre><div class="lang-name">Python</div><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
 
 for num in numbers:
     if num == 3:
