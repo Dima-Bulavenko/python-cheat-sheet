@@ -292,9 +292,10 @@ interactivity of the site.
 * The topics navigation bar cover the main and footer blocks because of its scrollbar and border width ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/ec193946286a00e54185b1a37cd400bd9f7a6fe9))
 * Header element overlapped main element content when navigate to topics by anchor links ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/d396d5ab731a5add8f886ff18625f28e3cde0546)). 
 
-* ### Unresolved
+### Unresolved
 
-[Back to top](<#contents>)
+* On mobile and tablet screens, the topics navigation bar can be toggled between closed and open states. However, there is only one way for a user to close the bar, making its use less convenient. If a user scrolls down, they will not have any options to close the bar except by scrolling back up.
+*On the [feedback page](http://localhost:63342/python-cheat-sheet/feedback.html), users are required to rank the site. However, if a user attempts to submit the feedback form without selecting a ranking, the form cannot be sent, and no error message is displayed. This issue arises because I replaced the radio input with its corresponding icon labels.[Back to top](<#contents>)
 
 # Deployment
 
