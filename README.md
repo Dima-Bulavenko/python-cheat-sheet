@@ -341,10 +341,7 @@ The live link for Python Cheat Sheet can be found here - [Python Cheat Sheet](ht
 
 [Back to top](<#contents>)
 
-<<<<<<< HEAD
-=======
-## How to Clone:
-
+# How to Clone
 
 1.  Log into your account on GitHub
 2.  Go to the repository of this project [Python cheat sheet](https://github.com/Dima-Bulavenko/python-cheat-sheet.git)
@@ -352,7 +349,6 @@ The live link for Python Cheat Sheet can be found here - [Python Cheat Sheet](ht
 4.  Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5.  Type 'git clone' into the terminal, paste the link you copied in step 3 and press enter.
 
->>>>>>> 37332c8 (fixup! refactor: refactor html and css files.)
 # Credits
 
 This section will credit the sources of content and media for Python Cheat Sheet.
