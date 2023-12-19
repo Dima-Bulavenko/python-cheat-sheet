@@ -294,6 +294,8 @@ interactivity of the site.
 * The topics navigation bar cover the main and footer blocks because of its scrollbar and border width ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/ec193946286a00e54185b1a37cd400bd9f7a6fe9))
 * Header element overlapped main element content when navigate to topics by anchor links ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/d396d5ab731a5add8f886ff18625f28e3cde0546)). 
 
+* Too low contrast between background and .selected-page class ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/ca7557c72ed98861ea740fe6cce609b4a9352730)).
+
 ### Unresolved
 
 * On mobile and tablet screens, the topics navigation bar can be toggled between closed and open states. However, there is only one way for a user to close the bar, making its use less convenient. If a user scrolls down, they will not have any options to close the bar except by scrolling back up.
