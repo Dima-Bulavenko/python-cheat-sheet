@@ -1,365 +1,430 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0"
-          name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Meta tags for search engines-->
     <meta name="keywords"
-          content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
+        content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
     <meta name="description"
-          content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
+        content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
 
     <!-- Favicons -->
     <link type="image/png" sizes="16x16" rel="icon" href="./assets/images/favicons/icons8-python-gradient-16.png">
     <link type="image/png" sizes="32x32" rel="icon" href="./assets/images/favicons/icons8-python-gradient-32.png">
     <link type="image/png" sizes="96x96" rel="icon" href="./assets/images/favicons/icons8-python-gradient-96.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/images/favicons/icons8-python-gradient-180.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
+        href="./assets/images/favicons/icons8-python-gradient-180.png">
 
     <!-- Title -->
     <title>Operators</title>
 
     <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+        integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/e212569926.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-<header>
-    <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
-    <label class="font-aw-icon" for="nav-topics-show">
-        <i class="fa-solid fa-bars font-aw-icon"></i>
-    </label>
-    
-    <h1>
-        <a href="index.html">
-            <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
-        </a>
-    </h1>
-    
-    <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
-    
-    <nav id="nav-site">
-        <ul class="bold-text">
-            <li><a href="./index.html">Home</a></li>
-            <li class="selected-page" ><a href="./variables.html">Get Started</a></li>
-            <li><a href="./feedback.html">Feedback</a></li>
-        </ul>
-    </nav>
-    
-    <ul id="outer-sites">
-        <li>
-            <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
-               aria-label="Visit my LinkedIn page (open in new tab)">
-                <i class="fa-brands fa-linkedin font-aw-icon"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
-               aria-label="Visit GitHub repository of this project (open in new tab)">
-                <i class="fa-brands fa-square-github font-aw-icon"></i>
-            </a>
-        </li>
-    </ul>
-</header>
 
-<input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
-<div id="nav-topics-container">
-    <div id="nav-bar-topics">
-        <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
-        <nav id="nav-topics">
-            <ul>
-                <li>
-                    <h2><a href="./variables.html">Variables</a></h2>
-                    <ul>
-                        <li><h3><a href="./variables.html#assignments">Assignments</a></h3></li>
-                        <li><h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3></li>
-                        <li><h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3></li>
-                        <li><h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3></li>
-                        <li><h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2  class="selected-page"><a href="./operators.html">Operators</a></h2>
-                    <ul>
-                        <li><h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#logical-operators">Logical Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#identity-operators">Identity Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#membership-operators">Membership Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./data-types.html">Data Types</a></h2>
-                    <ul>
-                        <li>
-                            <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#string">String</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#list">List</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#tuple">Tuple</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#set">Set</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#boolean">Boolean</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#none">None</a></h3>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./control-flow.html">Control Flow</a></h2>
-                    <ul>
-                        <li><h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3></li>
-                        <li><h3><a href="./control-flow.html#loops">Loops</a></h3></li>
-                        <li><h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue Statements</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./functions.html">Functions</a></h2>
-                    <ul>
-                        <li><h3><a href="./functions.html#defining-functions">Defining Functions</a></h3></li>
-                        <li><h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
-                        </li>
-                        <li><h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3></li>
-                        <li><h3><a href="./functions.html#recursion">Recursion</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./modules-and-packages.html">Modules and Packages</a></h2>
-                    <ul>
-                        <li><h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3></li>
-                        <li><h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using Packages</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./error-handling.html">Error Handling</a></h2>
-                    <ul>
-                        <li><h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3></li>
-                        <li><h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3></li>
-                        <li><h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of Exceptions</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./file-handling.html">File Handling</a></h2>
-                    <ul>
-                        <li><h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3></li>
-                        <li><h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3></li>
-                        <li><h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a></h3></li>
-                    </ul>
-                </li>
+<body>
+    <header>
+        <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
+        <label class="font-aw-icon" for="nav-topics-show">
+            <i class="fa-solid fa-bars font-aw-icon"></i>
+        </label>
+
+        <h1>
+            <a href="index.html">
+                <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
+            </a>
+        </h1>
+
+        <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
+
+        <nav id="nav-site">
+            <ul class="bold-text">
+                <li><a href="./index.html">Home</a></li>
+                <li class="selected-page"><a href="./variables.html">Get Started</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
             </ul>
         </nav>
-    </div>
-</div>
 
-<main>
-    <section class="topic-section">
-        <h2 id="operators">Operators <a
-                href="https://docs.python.org/3/library/operator.html" target="_blank"
-                rel="noopener"
-                aria-label="Get detailed information about operators in python official documentation (open in new tab)"><i
-                class="fa-solid fa-circle-info"></i></a></h2>
-        <p>Operators in Python are special symbols or keywords used to perform operations on variables and values.</p>
-    
-        <section id="arithmetic-operators">
-            <h3>Arithmetic Operators</h3>
-            <p>Arithmetic operators perform mathematical operations on numeric values.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">a = 10
-	    b = 5
-	    
-	    # Addition
-	    result_addition = a + b  # Result: 15
-	    
-	    # Subtraction
-	    result_subtraction = a - b  # Result: 5
-	    
-	    # Multiplication
-	    result_multiplication = a * b  # Result: 50
-	    
-	    # Division
-	    result_division = a / b  # Result: 2.0
-	    
-	    # Modulus
-	    result_modulus = a % b  # Result: 0
-	    
-	    # Exponentiation
-	    result_exponentiation = a ** b  # Result: 100000
-	    </code></pre>
+        <ul id="outer-sites">
+            <li>
+                <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
+                    aria-label="Visit my LinkedIn page (open in new tab)">
+                    <i class="fa-brands fa-linkedin font-aw-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
+                    aria-label="Visit GitHub repository of this project (open in new tab)">
+                    <i class="fa-brands fa-square-github font-aw-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
+    <div id="nav-topics-container">
+        <div id="nav-bar-topics">
+            <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
+            <nav id="nav-topics">
+                <ul>
+                    <li>
+                        <h2><a href="./variables.html">Variables</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./variables.html#assignments">Assignments</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="selected-page"><a href="./operators.html">Operators</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#logical-operators">Logical Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#identity-operators">Identity Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#membership-operators">Membership Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./data-types.html">Data Types</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#string">String</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#list">List</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#tuple">Tuple</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#set">Set</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#boolean">Boolean</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#none">None</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./control-flow.html">Control Flow</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./control-flow.html#loops">Loops</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue
+                                        Statements</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./functions.html">Functions</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./functions.html#defining-functions">Defining Functions</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#recursion">Recursion</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./modules-and-packages.html">Modules and Packages</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using
+                                        Packages</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./error-handling.html">Error Handling</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of
+                                        Exceptions</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./file-handling.html">File Handling</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section class="topic-section">
+            <h2 id="operators">Operators <a href="https://docs.python.org/3/library/operator.html" target="_blank"
+                    rel="noopener"
+                    aria-label="Get detailed information about operators in python official documentation (open in new tab)"><i
+                        class="fa-solid fa-circle-info"></i></a></h2>
+            <p>Operators in Python are special symbols or keywords used to perform operations on variables and values.
+            </p>
+
+            <section id="arithmetic-operators">
+                <h3>Arithmetic Operators</h3>
+                <p>Arithmetic operators perform mathematical operations on numeric values.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">a = 10
+b = 5
+
+# Addition
+result_addition = a + b  # Result: 15
+
+# Subtraction
+result_subtraction = a - b  # Result: 5
+
+# Multiplication
+result_multiplication = a * b  # Result: 50
+
+# Division
+result_division = a / b  # Result: 2.0
+
+# Modulus
+result_modulus = a % b  # Result: 0
+
+# Exponentiation
+result_exponentiation = a ** b  # Result: 100000
+</code></pre>
+            </section>
+
+            <section id="assignment-operators">
+                <h3>Assignment Operators</h3>
+                <p>Assignment operators are used to assign values to variables.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 5
+
+# Simple Assignment
+y = x  # y gets the value of x
+
+# Add and Assign
+x += 3  # Equivalent to: x = x + 3
+
+# Subtract and Assign
+x -= 2  # Equivalent to: x = x - 2
+
+# Multiply and Assign
+x *= 4  # Equivalent to: x = x * 4
+
+# Divide and Assign
+x /= 2  # Equivalent to: x = x / 2
+</code></pre>
+            </section>
+
+            <section id="comparison-operators">
+                <h3>Comparison Operators</h3>
+                <p>Comparison operators compare two values and return a boolean result.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 5
+y = 10
+
+# Equal
+result_equal = x == y  # Result: False
+
+# Not Equal
+result_not_equal = x != y  # Result: True
+
+# Greater Than
+result_greater_than = x > y  # Result: False
+
+# Less Than
+result_less_than = x &lt; y  # Result: True
+
+# Greater Than or Equal To
+result_greater_equal = x >= y  # Result: False
+
+# Less Than or Equal To
+result_less_equal = x &lt;= y  # Result: True
+</code></pre>
+            </section>
+
+            <section id="logical-operators">
+                <h3>Logical Operators</h3>
+                <p>Logical operators perform logical operations on boolean values.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">a = True
+b = False
+
+# Logical AND
+result_and = a and b  # Result: False
+
+# Logical OR
+result_or = a or b  # Result: True
+
+# Logical NOT
+result_not_a = not a  # Result: False
+result_not_b = not b  # Result: True
+</code></pre>
+            </section>
+
+            <section id="identity-operators">
+                <h3>Identity Operators</h3>
+                <p>Identity operators compare the memory locations of two objects.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
+
+# Identity (is)
+result_identity = x is y  # Result: False
+
+# Not Identity (is not)
+result_not_identity = x is not y  # Result: True
+
+# Identity (is) with same object
+result_identity_same_object = x is z  # Result: True
+</code></pre>
+            </section>
+
+            <section id="membership-operators">
+                <h3>Membership Operators</h3>
+                <p>Membership operators check for the existence of a value in a sequence.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, 4, 5]
+
+# Membership (in)
+result_membership = 3 in my_list  # Result: True
+
+# Not Membership (not in)
+result_not_membership = 6 not in my_list  # Result: True
+</code></pre>
+            </section>
+
+            <section id="operator-precedence">
+                <h3>Operator Precedence</h3>
+                <p>Operator precedence determines the order in which operations are performed in an expression. Some
+                    operators have higher precedence than others, and they are evaluated first.</p>
+
+                <p>Here is a list of operators in descending order of precedence:</p>
+                <ul class="highlight-block">
+                    <li><span class="highlight-text">**</span> (Exponentiation)</li>
+                    <li><span class="highlight-text">+x, -x, ~x</span> (Unary plus, Unary minus, Bitwise NOT)</li>
+                    <li><span class="highlight-text">*, /, //, %</span> (Multiplication, Division, Floor division,
+                        Modulus)
+                    </li>
+                    <li><span class="highlight-text">+, -</span> (Addition, Subtraction)</li>
+                    <li><span class="highlight-text">&lt;&lt;, &gt;&gt;</span> (Bitwise shift operators)</li>
+                    <li><span class="highlight-text">&amp;</span> (Bitwise AND)</li>
+                    <li><span class="highlight-text">^</span> (Bitwise XOR)</li>
+                    <li><span class="highlight-text">|</span> (Bitwise OR)</li>
+                    <li><span class="highlight-text">in, not in, is, is not, &lt;, &lt;=, &gt;, &gt;=, !=, ==</span>
+                        (Comparisons, Membership tests, Identity tests)
+                    </li>
+                    <li><span class="highlight-text">not x</span> (Boolean NOT)</li>
+                    <li><span class="highlight-text">and</span> (Boolean AND)</li>
+                    <li><span class="highlight-text">or</span> (Boolean OR)</li>
+                </ul>
+
+                <p>It's important to note that parentheses can be used to override the default precedence and force a
+                    specific order of evaluation.</p>
+
+                <h4>Example:</h4>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">result = 5 + 3 * 2  # Result: 11
+# The multiplication is performed first due to higher precedence
+</code></pre>
+
+                <p>In the above example, the multiplication operation has higher precedence than addition, so it is
+                    evaluated first, resulting in 11.</p>
+            </section>
         </section>
-    
-        <section id="assignment-operators">
-            <h3>Assignment Operators</h3>
-            <p>Assignment operators are used to assign values to variables.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 5
-	    
-	    # Simple Assignment
-	    y = x  # y gets the value of x
-	    
-	    # Add and Assign
-	    x += 3  # Equivalent to: x = x + 3
-	    
-	    # Subtract and Assign
-	    x -= 2  # Equivalent to: x = x - 2
-	    
-	    # Multiply and Assign
-	    x *= 4  # Equivalent to: x = x * 4
-	    
-	    # Divide and Assign
-	    x /= 2  # Equivalent to: x = x / 2
-	    </code></pre>
-        </section>
-    
-        <section id="comparison-operators">
-            <h3>Comparison Operators</h3>
-            <p>Comparison operators compare two values and return a boolean result.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 5
-	    y = 10
-	    
-	    # Equal
-	    result_equal = x == y  # Result: False
-	    
-	    # Not Equal
-	    result_not_equal = x != y  # Result: True
-	    
-	    # Greater Than
-	    result_greater_than = x > y  # Result: False
-	    
-	    # Less Than
-	    result_less_than = x &lt; y  # Result: True
-	    
-	    # Greater Than or Equal To
-	    result_greater_equal = x >= y  # Result: False
-	    
-	    # Less Than or Equal To
-	    result_less_equal = x &lt;= y  # Result: True
-	    </code></pre>
-        </section>
-    
-        <section id="logical-operators">
-            <h3>Logical Operators</h3>
-            <p>Logical operators perform logical operations on boolean values.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">a = True
-	    b = False
-	    
-	    # Logical AND
-	    result_and = a and b  # Result: False
-	    
-	    # Logical OR
-	    result_or = a or b  # Result: True
-	    
-	    # Logical NOT
-	    result_not_a = not a  # Result: False
-	    result_not_b = not b  # Result: True
-	    </code></pre>
-        </section>
-    
-        <section id="identity-operators">
-            <h3>Identity Operators</h3>
-            <p>Identity operators compare the memory locations of two objects.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">x = [1, 2, 3]
-	    y = [1, 2, 3]
-	    z = x
-	    
-	    # Identity (is)
-	    result_identity = x is y  # Result: False
-	    
-	    # Not Identity (is not)
-	    result_not_identity = x is not y  # Result: True
-	    
-	    # Identity (is) with same object
-	    result_identity_same_object = x is z  # Result: True
-	    </code></pre>
-        </section>
-        
-        <section id="membership-operators">
-            <h3>Membership Operators</h3>
-            <p>Membership operators check for the existence of a value in a sequence.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">my_list = [1, 2, 3, 4, 5]
-	    
-	    # Membership (in)
-	    result_membership = 3 in my_list  # Result: True
-	    
-	    # Not Membership (not in)
-	    result_not_membership = 6 not in my_list  # Result: True
-	    </code></pre>
-        </section>
-    
-        <section id="operator-precedence">
-            <h3>Operator Precedence</h3>
-            <p>Operator precedence determines the order in which operations are performed in an expression. Some
-               operators have higher precedence than others, and they are evaluated first.</p>
-        
-            <p>Here is a list of operators in descending order of precedence:</p>
-            <ul class="highlight-block">
-                <li><span class="highlight-text">**</span> (Exponentiation)</li>
-                <li><span class="highlight-text">+x, -x, ~x</span> (Unary plus, Unary minus, Bitwise NOT)</li>
-                <li><span class="highlight-text">*, /, //, %</span> (Multiplication, Division, Floor division, Modulus)
-                </li>
-                <li><span class="highlight-text">+, -</span> (Addition, Subtraction)</li>
-                <li><span class="highlight-text">&lt;&lt;, &gt;&gt;</span> (Bitwise shift operators)</li>
-                <li><span class="highlight-text">&amp;</span> (Bitwise AND)</li>
-                <li><span class="highlight-text">^</span> (Bitwise XOR)</li>
-                <li><span class="highlight-text">|</span> (Bitwise OR)</li>
-                <li><span class="highlight-text">in, not in, is, is not, &lt;, &lt;=, &gt;, &gt;=, !=, ==</span>
-                    (Comparisons, Membership tests, Identity tests)
-                </li>
-                <li><span class="highlight-text">not x</span> (Boolean NOT)</li>
-                <li><span class="highlight-text">and</span> (Boolean AND)</li>
-                <li><span class="highlight-text">or</span> (Boolean OR)</li>
-            </ul>
-        
-            <p>It's important to note that parentheses can be used to override the default precedence and force a
-               specific order of evaluation.</p>
-        
-            <h4>Example:</h4>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">result = 5 + 3 * 2  # Result: 11
-	    # The multiplication is performed first due to higher precedence
-	    </code></pre>
-        
-            <p>In the above example, the multiplication operation has higher precedence than addition, so it is
-               evaluated first, resulting in 11.</p>
-        </section>
-    </section>
-    
-</main>
-<footer>
-    <ul id="useful-links">
-        <li>
-            <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
-               aria-label="Visit visit python documentation site(open in new tab)">
-               Python3 documentation
-            </a>
-        </li>
-        <li>
-            <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
-               aria-label="Visit python online compiler site(open in new tab)">
-               Python online compiler
-            </a>
-        </li>
-    </ul>
-</footer>
-<script>hljs.highlightAll();</script>
+
+    </main>
+    <footer>
+        <ul id="useful-links">
+            <li>
+                <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
+                    aria-label="Visit visit python documentation site(open in new tab)">
+                    Python3 documentation
+                </a>
+            </li>
+            <li>
+                <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
+                    aria-label="Visit python online compiler site(open in new tab)">
+                    Python online compiler
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
+
 </html>

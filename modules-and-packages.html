@@ -1,240 +1,312 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0"
-          name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Meta tags for search engines-->
     <meta name="keywords"
-          content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
+        content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
     <meta name="description"
-          content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
+        content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
 
     <!-- Favicons -->
     <link type="image/png" sizes="16x16" rel="icon" href="./assets/images/favicons/icons8-python-gradient-16.png">
     <link type="image/png" sizes="32x32" rel="icon" href="./assets/images/favicons/icons8-python-gradient-32.png">
     <link type="image/png" sizes="96x96" rel="icon" href="./assets/images/favicons/icons8-python-gradient-96.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/images/favicons/icons8-python-gradient-180.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
+        href="./assets/images/favicons/icons8-python-gradient-180.png">
 
     <!-- Title -->
     <title>Modules and Packages</title>
-    
+
     <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+        integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/e212569926.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
-<header>
-    <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
-    <label class="font-aw-icon" for="nav-topics-show">
-        <i class="fa-solid fa-bars font-aw-icon"></i>
-    </label>
-    
-    <h1>
-        <a href="index.html">
-            <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
-        </a>
-    </h1>
-    
-    <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
-    
-    <nav id="nav-site">
-        <ul class="bold-text">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="variables.html">Get Started</a></li>
-            <li><a href="./feedback.html">Feedback</a></li>
-        </ul>
-    </nav>
-    
-    <ul id="outer-sites">
-        <li>
-            <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
-               aria-label="Visit my LinkedIn page (open in new tab)">
-                <i class="fa-brands fa-linkedin font-aw-icon"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
-               aria-label="Visit GitHub repository of this project (open in new tab)">
-                <i class="fa-brands fa-square-github font-aw-icon"></i>
-            </a>
-        </li>
-    </ul>
-</header>
 
-<input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
-<div id="nav-topics-container">
-    <div id="nav-bar-topics">
-        <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
-        <nav id="nav-topics">
-            <ul>
-                <li>
-                    <h2 ><a href="./variables.html">Variables</a></h2>
-                    <ul>
-                        <li><h3><a href="./variables.html#assignments">Assignments</a></h3></li>
-                        <li><h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3></li>
-                        <li><h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3></li>
-                        <li><h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3></li>
-                        <li><h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./operators.html">Operators</a></h2>
-                    <ul>
-                        <li><h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#logical-operators">Logical Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#identity-operators">Identity Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#membership-operators">Membership Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./data-types.html">Data Types</a></h2>
-                    <ul>
-                        <li>
-                            <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#string">String</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#list">List</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#tuple">Tuple</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#set">Set</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#boolean">Boolean</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#none">None</a></h3>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./control-flow.html">Control Flow</a></h2>
-                    <ul>
-                        <li><h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3></li>
-                        <li><h3><a href="./control-flow.html#loops">Loops</a></h3></li>
-                        <li><h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue Statements</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./functions.html">Functions</a></h2>
-                    <ul>
-                        <li><h3><a href="./functions.html#defining-functions">Defining Functions</a></h3></li>
-                        <li><h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
-                        </li>
-                        <li><h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3></li>
-                        <li><h3><a href="./functions.html#recursion">Recursion</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="selected-page"><a href="./modules-and-packages.html">Modules and Packages</a></h2>
-                    <ul>
-                        <li><h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3></li>
-                        <li><h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using Packages</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./error-handling.html">Error Handling</a></h2>
-                    <ul>
-                        <li><h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3></li>
-                        <li><h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3></li>
-                        <li><h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of Exceptions</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./file-handling.html">File Handling</a></h2>
-                    <ul>
-                        <li><h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3></li>
-                        <li><h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3></li>
-                        <li><h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a></h3></li>
-                    </ul>
-                </li>
+<body>
+    <header>
+        <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
+        <label class="font-aw-icon" for="nav-topics-show">
+            <i class="fa-solid fa-bars font-aw-icon"></i>
+        </label>
+
+        <h1>
+            <a href="index.html">
+                <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
+            </a>
+        </h1>
+
+        <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
+
+        <nav id="nav-site">
+            <ul class="bold-text">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="variables.html">Get Started</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
             </ul>
         </nav>
+
+        <ul id="outer-sites">
+            <li>
+                <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
+                    aria-label="Visit my LinkedIn page (open in new tab)">
+                    <i class="fa-brands fa-linkedin font-aw-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
+                    aria-label="Visit GitHub repository of this project (open in new tab)">
+                    <i class="fa-brands fa-square-github font-aw-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
+    <div id="nav-topics-container">
+        <div id="nav-bar-topics">
+            <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
+            <nav id="nav-topics">
+                <ul>
+                    <li>
+                        <h2><a href="./variables.html">Variables</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./variables.html#assignments">Assignments</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./operators.html">Operators</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#logical-operators">Logical Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#identity-operators">Identity Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#membership-operators">Membership Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./data-types.html">Data Types</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#string">String</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#list">List</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#tuple">Tuple</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#set">Set</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#boolean">Boolean</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#none">None</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./control-flow.html">Control Flow</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./control-flow.html#loops">Loops</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue
+                                        Statements</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./functions.html">Functions</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./functions.html#defining-functions">Defining Functions</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#recursion">Recursion</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="selected-page"><a href="./modules-and-packages.html">Modules and Packages</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using
+                                        Packages</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./error-handling.html">Error Handling</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of
+                                        Exceptions</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./file-handling.html">File Handling</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
 
-<main>
-    <section class="topic-section">
-        <h2>Modules and Packages</h2>
-        <p>Modules and packages in Python are organizational units that help in structuring code, improving reusability, and managing namespaces.</p>
+    <main>
+        <section class="topic-section">
+            <h2>Modules and Packages</h2>
+            <p>Modules and packages in Python are organizational units that help in structuring code, improving
+                reusability, and managing namespaces.</p>
 
-        <section id="importing-modules">
-            <h3>Importing Modules <a href="https://docs.python.org/3/tutorial/modules.html" target="_blank" rel="noopener"
-                    aria-label="Get detailed information about importing modules in python documentation (open in new tab)"><i
-                        class="fa-solid fa-circle-info"></i></a></h3>
-            <p>Modules are Python files containing Python code and definitions. You can use the <span
-                    class="highlight-text">import</span> statement to bring functionality from a module into your code.</p>
+            <section id="importing-modules">
+                <h3>Importing Modules <a href="https://docs.python.org/3/tutorial/modules.html" target="_blank"
+                        rel="noopener"
+                        aria-label="Get detailed information about importing modules in python documentation (open in new tab)"><i
+                            class="fa-solid fa-circle-info"></i></a></h3>
+                <p>Modules are Python files containing Python code and definitions. You can use the <span
+                        class="highlight-text">import</span> statement to bring functionality from a module into your
+                    code.</p>
 
-            <p>Here's an example of importing the <span class="highlight-text">math</span> module and using the <span class="highlight-text">sqrt</span> function:</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">import math
+                <p>Here's an example of importing the <span class="highlight-text">math</span> module and using the
+                    <span class="highlight-text">sqrt</span> function:</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">import math
 
 result = math.sqrt(25)
 print(result)  # Output: 5.0
 </code></pre>
 
-            <p>This allows you to organize your code into separate files and reuse code by importing relevant modules.</p>
-        </section>
+                <p>This allows you to organize your code into separate files and reuse code by importing relevant
+                    modules.</p>
+            </section>
 
-        <section id="creating-and-using-packages">
-            <h3>Creating and Using Packages <a href="https://docs.python.org/3/tutorial/modules.html#packages" target="_blank"
-                    rel="noopener" aria-label="Get detailed information about creating and using packages in python documentation (open in new tab)"><i
-                        class="fa-solid fa-circle-info"></i></a></h3>
-            <p>Packages are a way of organizing related modules into a directory hierarchy. They help prevent naming conflicts and provide a modular structure for larger projects.</p>
+            <section id="creating-and-using-packages">
+                <h3>Creating and Using Packages <a href="https://docs.python.org/3/tutorial/modules.html#packages"
+                        target="_blank" rel="noopener"
+                        aria-label="Get detailed information about creating and using packages in python documentation (open in new tab)"><i
+                            class="fa-solid fa-circle-info"></i></a></h3>
+                <p>Packages are a way of organizing related modules into a directory hierarchy. They help prevent naming
+                    conflicts and provide a modular structure for larger projects.</p>
 
-            <p>Here's an example of a simple package structure:</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">mypackage/
+                <p>Here's an example of a simple package structure:</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">mypackage/
 |-- __init__.py
 |-- module1.py
 |-- module2.py
 </code></pre>
 
-            <p>You can import modules from a package using dot notation:</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">from mypackage import module1
+                <p>You can import modules from a package using dot notation:</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">from mypackage import module1
 
 module1.function()
 </code></pre>
 
-            <p>Creating packages allows you to organize your code into logical units, making it more maintainable and scalable.</p>
+                <p>Creating packages allows you to organize your code into logical units, making it more maintainable
+                    and scalable.</p>
+            </section>
         </section>
-    </section>
-</main>
-<footer>
-    <ul id="useful-links">
-        <li>
-            <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
-               aria-label="Visit visit python documentation site(open in new tab)">
-               Python3 documentation
-            </a>
-        </li>
-        <li>
-            <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
-               aria-label="Visit python online compiler site(open in new tab)">
-               Python online compiler
-            </a>
-        </li>
-    </ul>
-</footer>
-<script>hljs.highlightAll();</script>
+    </main>
+    <footer>
+        <ul id="useful-links">
+            <li>
+                <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
+                    aria-label="Visit visit python documentation site(open in new tab)">
+                    Python3 documentation
+                </a>
+            </li>
+            <li>
+                <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
+                    aria-label="Visit python online compiler site(open in new tab)">
+                    Python online compiler
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
+
 </html>
