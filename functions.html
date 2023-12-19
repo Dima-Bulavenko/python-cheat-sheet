@@ -20,14 +20,14 @@
 
     <!-- Title -->
     <title>Functions</title>
-    
+
     <!-- Highlight.js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/e212569926.js" crossorigin="anonymous"></script>
 
@@ -38,15 +38,15 @@
     <label class="font-aw-icon" for="nav-topics-show">
         <i class="fa-solid fa-bars font-aw-icon"></i>
     </label>
-    
+
     <h1>
         <a href="index.html">
             <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
         </a>
     </h1>
-    
+
     <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
-    
+
     <nav id="nav-site">
         <ul class="bold-text">
             <li><a href="./index.html">Home</a></li>
@@ -54,7 +54,7 @@
             <li><a href="./feedback.html">Feedback</a></li>
         </ul>
     </nav>
-    
+
     <ul id="outer-sites">
         <li>
             <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
@@ -140,7 +140,7 @@
                     <h2 class="selected-page"><a href="./functions.html">Functions</a></h2>
                     <ul>
                         <li><h3><a href="./functions.html#defining-functions">Defining Functions</a></h3></li>
-                        <li><h3><a href="./functions.html#function-parameters-and-return-values">Function Parameters</a></h3>
+                        <li><h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
                         </li>
                         <li><h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3></li>
                         <li><h3><a href="./functions.html#recursion">Recursion</a></h3></li>
@@ -207,7 +207,7 @@ my_function("Emil") # Return string "Emil Refsnes"</code></pre>
   print("The youngest child is " + kids[2])
 
 my_function("Emil", "Tobias", "Linus")</code></pre>
-            
+
             <h4>Keyword Arguments</h4>
             <p>You can also send arguments with the <span class="highlight-text">key = value</span> syntax.</p>
             <p>This way the order of the arguments does not matter.</p>
@@ -215,7 +215,7 @@ my_function("Emil", "Tobias", "Linus")</code></pre>
   print("The youngest child is " + child3)
 
 my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")</code></pre>
-        
+
             <h4>Arbitrary Keyword Arguments, **kwargs</h4>
             <p>If you do not know how many keyword arguments that will be passed into your function, add two asterisk:
                 <span class="highlight-text">**</span> before the parameter name in the function definition.</p>
@@ -224,7 +224,7 @@ my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")</code></pre>
   print("His last name is " + kid["lname"])
 
 my_function(fname = "Tobias", lname = "Refsnes")</code></pre>
-            
+
             <h4>Default Parameter Value</h4>
             <p>The following example shows how to use a default parameter value.</p>
             <p>If we call the function without argument, it uses the default value:</p>
@@ -235,7 +235,7 @@ my_function("Sweden")
 my_function("India")
 my_function()
 my_function("Brazil")</code></pre>
-            
+
             <h4>The pass Statement</h4>
             <p><span class="highlight-text">function</span> definitions cannot be empty, but if you for some reason have a
                 <span class="highlight-text">function</span> definition with no content, put in the <span
