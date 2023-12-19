@@ -175,7 +175,7 @@ Header for laptop screens and higher include:
 - GitHub logo lead user to github repository of Python Cheat Sheet.
 
 
-Header for smsmartphones and tabletsartphones and tablets include:
+Header for smartphones and tabletsartphones and tablets include:
 
 ![Header ](assets/images/readme-images/header-smartphones-tablets.PNG)
 
@@ -220,7 +220,7 @@ The Feedback form allows users to leave their impression about the python cheat 
 * [Slack](https://www.icloud.com/notes) - An online messaging program designed for workplace collaboration. Used for
   advice and guidance from peers and tutors.
 * [Highlight code](https://highlightjs.org/) was used to highlight and style python code.
-* [ChatGPT](https://chat.openai.com/) was used to create readable and sensible text and to create similar pages using code structure template.
+* [ChatGPT](https://chat.openai.com/) was used to create more readable and sensible text.
 
 [Back to top](<#contents>)
 
@@ -297,7 +297,9 @@ interactivity of the site.
 ### Unresolved
 
 * On mobile and tablet screens, the topics navigation bar can be toggled between closed and open states. However, there is only one way for a user to close the bar, making its use less convenient. If a user scrolls down, they will not have any options to close the bar except by scrolling back up.
-*On the [feedback page](http://localhost:63342/python-cheat-sheet/feedback.html), users are required to rank the site. However, if a user attempts to submit the feedback form without selecting a ranking, the form cannot be sent, and no error message is displayed. This issue arises because I replaced the radio input with its corresponding icon labels.[Back to top](<#contents>)
+*On the [feedback page](http://localhost:63342/python-cheat-sheet/feedback.html), users are required to rank the site. However, if a user attempts to submit the feedback form without selecting a ranking, the form cannot be sent, and no error message is displayed. This issue arises because I replaced the radio input with its corresponding icon labels.
+
+[Back to top](<#contents>)
 
 # Deployment
 
@@ -337,6 +339,18 @@ The live link for Python Cheat Sheet can be found here - [Python Cheat Sheet](ht
 
 [Back to top](<#contents>)
 
+<<<<<<< HEAD
+=======
+## How to Clone:
+
+
+1.  Log into your account on GitHub
+2.  Go to the repository of this project [Python cheat sheet](https://github.com/Dima-Bulavenko/python-cheat-sheet.git)
+3.  Click on the **code** button, and copy your preferred clone link.
+4.  Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5.  Type 'git clone' into the terminal, paste the link you copied in step 3 and press enter.
+
+>>>>>>> 37332c8 (fixup! refactor: refactor html and css files.)
 # Credits
 
 This section will credit the sources of content and media for Python Cheat Sheet.

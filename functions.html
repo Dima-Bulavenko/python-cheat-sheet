@@ -1,28 +1,31 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0"
-          name="viewport">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Meta tags for search engines-->
     <meta name="keywords"
-          content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
+        content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
     <meta name="description"
-          content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
+        content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
 
     <!-- Favicons -->
     <link type="image/png" sizes="16x16" rel="icon" href="./assets/images/favicons/icons8-python-gradient-16.png">
     <link type="image/png" sizes="32x32" rel="icon" href="./assets/images/favicons/icons8-python-gradient-32.png">
     <link type="image/png" sizes="96x96" rel="icon" href="./assets/images/favicons/icons8-python-gradient-96.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/images/favicons/icons8-python-gradient-180.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
+        href="./assets/images/favicons/icons8-python-gradient-180.png">
 
     <!-- Title -->
     <title>Functions</title>
 
     <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
+        integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- Stylesheet -->
@@ -32,203 +35,270 @@
     <script src="https://kit.fontawesome.com/e212569926.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-<header>
-    <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
-    <label class="font-aw-icon" for="nav-topics-show">
-        <i class="fa-solid fa-bars font-aw-icon"></i>
-    </label>
+    <header>
+        <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
+        <label class="font-aw-icon" for="nav-topics-show">
+            <i class="fa-solid fa-bars font-aw-icon"></i>
+        </label>
 
-    <h1>
-        <a href="index.html">
-            <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
-        </a>
-    </h1>
-
-    <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
-
-    <nav id="nav-site">
-        <ul class="bold-text">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="variables.html">Get Started</a></li>
-            <li><a href="./feedback.html">Feedback</a></li>
-        </ul>
-    </nav>
-
-    <ul id="outer-sites">
-        <li>
-            <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
-               aria-label="Visit my LinkedIn page (open in new tab)">
-                <i class="fa-brands fa-linkedin font-aw-icon"></i>
+        <h1>
+            <a href="index.html">
+                <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
             </a>
-        </li>
-        <li>
-            <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
-               aria-label="Visit GitHub repository of this project (open in new tab)">
-                <i class="fa-brands fa-square-github font-aw-icon"></i>
-            </a>
-        </li>
-    </ul>
-</header>
+        </h1>
 
-<input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
-<div id="nav-topics-container">
-    <div id="nav-bar-topics">
-        <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
-        <nav id="nav-topics">
-            <ul>
-                <li>
-                    <h2 ><a href="./variables.html">Variables</a></h2>
-                    <ul>
-                        <li><h3><a href="./variables.html#assignments">Assignments</a></h3></li>
-                        <li><h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3></li>
-                        <li><h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3></li>
-                        <li><h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3></li>
-                        <li><h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./operators.html">Operators</a></h2>
-                    <ul>
-                        <li><h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#logical-operators">Logical Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#identity-operators">Identity Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#membership-operators">Membership Operators</a></h3></li>
-                        <li><h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./data-types.html">Data Types</a></h2>
-                    <ul>
-                        <li>
-                            <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#string">String</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#list">List</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#tuple">Tuple</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#set">Set</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#boolean">Boolean</a></h3>
-                        </li>
-                        <li>
-                            <h3><a href="./data-types.html#none">None</a></h3>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./control-flow.html">Control Flow</a></h2>
-                    <ul>
-                        <li><h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3></li>
-                        <li><h3><a href="./control-flow.html#loops">Loops</a></h3></li>
-                        <li><h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue Statements</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2 class="selected-page"><a href="./functions.html">Functions</a></h2>
-                    <ul>
-                        <li><h3><a href="./functions.html#defining-functions">Defining Functions</a></h3></li>
-                        <li><h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
-                        </li>
-                        <li><h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3></li>
-                        <li><h3><a href="./functions.html#recursion">Recursion</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./modules-and-packages.html">Modules and Packages</a></h2>
-                    <ul>
-                        <li><h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3></li>
-                        <li><h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using Packages</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./error-handling.html">Error Handling</a></h2>
-                    <ul>
-                        <li><h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3></li>
-                        <li><h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3></li>
-                        <li><h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of Exceptions</a></h3></li>
-                    </ul>
-                </li>
-                <li>
-                    <h2><a href="./file-handling.html">File Handling</a></h2>
-                    <ul>
-                        <li><h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3></li>
-                        <li><h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3></li>
-                        <li><h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a></h3></li>
-                    </ul>
-                </li>
+        <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
+
+        <nav id="nav-site">
+            <ul class="bold-text">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./variables.html">Get Started</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
             </ul>
         </nav>
+
+        <ul id="outer-sites">
+            <li>
+                <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
+                    aria-label="Visit my LinkedIn page (open in new tab)">
+                    <i class="fa-brands fa-linkedin font-aw-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
+                    aria-label="Visit GitHub repository of this project (open in new tab)">
+                    <i class="fa-brands fa-square-github font-aw-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
+    <div id="nav-topics-container">
+        <div id="nav-bar-topics">
+            <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
+            <nav id="nav-topics">
+                <ul>
+                    <li>
+                        <h2><a href="./variables.html">Variables</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./variables.html#assignments">Assignments</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./operators.html">Operators</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#logical-operators">Logical Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#identity-operators">Identity Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#membership-operators">Membership Operators</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./data-types.html">Data Types</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#string">String</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#list">List</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#tuple">Tuple</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#set">Set</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#boolean">Boolean</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./data-types.html#none">None</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./control-flow.html">Control Flow</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./control-flow.html#loops">Loops</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue
+                                        Statements</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2 class="selected-page"><a href="./functions.html">Functions</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./functions.html#defining-functions">Defining Functions</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./functions.html#recursion">Recursion</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./modules-and-packages.html">Modules and Packages</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using
+                                        Packages</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./error-handling.html">Error Handling</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of
+                                        Exceptions</a></h3>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2><a href="./file-handling.html">File Handling</a></h2>
+                        <ul>
+                            <li>
+                                <h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3>
+                            </li>
+                            <li>
+                                <h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a>
+                                </h3>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
 
-<main>
-    <section class="topic-section">
-        <h2>Functions <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions" target="_blank" rel="noopener" aria-label="Get detailed information about defining functions in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h2>
-        <p>A function is a block of code which only runs when it is called.</p>
-        <p>You can pass data, known as parameters, into a function.</p>
-        <p>A function can return data as a result.</p>
+    <main>
+        <section class="topic-section">
+            <h2>Functions <a href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions"
+                    target="_blank" rel="noopener"
+                    aria-label="Get detailed information about defining functions in python documentation (open in new tab)"><i
+                        class="fa-solid fa-circle-info"></i></a></h2>
+            <p>A function is a block of code which only runs when it is called.</p>
+            <p>You can pass data, known as parameters, into a function.</p>
+            <p>A function can return data as a result.</p>
 
-        <section id="defining-functions">
-            <h3>Defining Functions</h3>
-            <p>Functions in Python are defined using the <span class="highlight-text">def</span> keyword, followed by the function name and a pair of parentheses. The function body is indented below the declaration.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function():
+            <section id="defining-functions">
+                <h3>Defining Functions</h3>
+                <p>Functions in Python are defined using the <span class="highlight-text">def</span> keyword, followed
+                    by the function name and a pair of parentheses. The function body is indented below the declaration.
+                </p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function():
     print("Hello from a function")
 
 my_function() # Calling the my_function</code></pre>
-        </section>
+            </section>
 
-        <section id="function-parameters">
-            <h3>Function Parameters</h3>
-            <p>Information can be passed into functions as parameters.</p>
-            <p>Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.</p>
-            <p>The following example has a function with one parameter (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(fname):
+            <section id="function-parameters">
+                <h3>Function Parameters</h3>
+                <p>Information can be passed into functions as parameters.</p>
+                <p>Parameters are specified after the function name, inside the parentheses. You can add as many
+                    parameters as you want, just separate them with a comma.</p>
+                <p>The following example has a function with one parameter (fname). When the function is called, we pass
+                    along a first name, which is used inside the function to print the full name:</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(fname):
   print(fname + " Refsnes")
 
 my_function("Emil") # Return string "Emil Refsnes"</code></pre>
-            <h4>Arbitrary Arguments, <span class="highlight-text">*args</span></h4>
-            <p>If you do not know how many arguments that will be passed into your function, add a <span
-                    class="highlight-text">*</span> before the parameter name in the function definition.</p>
-            <p>This way the function will receive a tuple of arguments, and can access the items accordingly:</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(*kids):
+                <h4>Arbitrary Arguments, <span class="highlight-text">*args</span></h4>
+                <p>If you do not know how many arguments that will be passed into your function, add a <span
+                        class="highlight-text">*</span> before the parameter name in the function definition.</p>
+                <p>This way the function will receive a tuple of arguments, and can access the items accordingly:</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(*kids):
   print("The youngest child is " + kids[2])
 
 my_function("Emil", "Tobias", "Linus")</code></pre>
 
-            <h4>Keyword Arguments</h4>
-            <p>You can also send arguments with the <span class="highlight-text">key = value</span> syntax.</p>
-            <p>This way the order of the arguments does not matter.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(child3, child2, child1):
+                <h4>Keyword Arguments</h4>
+                <p>You can also send arguments with the <span class="highlight-text">key = value</span> syntax.</p>
+                <p>This way the order of the arguments does not matter.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(child3, child2, child1):
   print("The youngest child is " + child3)
 
 my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")</code></pre>
 
-            <h4>Arbitrary Keyword Arguments, **kwargs</h4>
-            <p>If you do not know how many keyword arguments that will be passed into your function, add two asterisk:
-                <span class="highlight-text">**</span> before the parameter name in the function definition.</p>
-            <p>This way the function will receive a dictionary of arguments, and can access the items accordingly:</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(**kid):
+                <h4>Arbitrary Keyword Arguments, **kwargs</h4>
+                <p>If you do not know how many keyword arguments that will be passed into your function, add two
+                    asterisk:
+                    <span class="highlight-text">**</span> before the parameter name in the function definition.</p>
+                <p>This way the function will receive a dictionary of arguments, and can access the items accordingly:
+                </p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(**kid):
   print("His last name is " + kid["lname"])
 
 my_function(fname = "Tobias", lname = "Refsnes")</code></pre>
 
-            <h4>Default Parameter Value</h4>
-            <p>The following example shows how to use a default parameter value.</p>
-            <p>If we call the function without argument, it uses the default value:</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(country = "Norway"):
+                <h4>Default Parameter Value</h4>
+                <p>The following example shows how to use a default parameter value.</p>
+                <p>If we call the function without argument, it uses the default value:</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def my_function(country = "Norway"):
   print("I am from " + country)
 
 my_function("Sweden")
@@ -236,29 +306,32 @@ my_function("India")
 my_function()
 my_function("Brazil")</code></pre>
 
-            <h4>The pass Statement</h4>
-            <p><span class="highlight-text">function</span> definitions cannot be empty, but if you for some reason have a
-                <span class="highlight-text">function</span> definition with no content, put in the <span
+                <h4>The pass Statement</h4>
+                <p><span class="highlight-text">function</span> definitions cannot be empty, but if you for some reason
+                    have a
+                    <span class="highlight-text">function</span> definition with no content, put in the <span
                         class="highlight-text">pass</span> statement to avoid getting an error.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def myfunction():
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def myfunction():
   pass</code></pre>
-        </section>
+            </section>
 
-        <section id="lambda-functions">
-            <h3>Lambda Functions</h3>
-            <p>Lambda functions, also known as anonymous functions, are small, one-line functions defined using the <span class="highlight-text">lambda</span> keyword.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">multiply = lambda x, y: x * y
+            <section id="lambda-functions">
+                <h3>Lambda Functions</h3>
+                <p>Lambda functions, also known as anonymous functions, are small, one-line functions defined using the
+                    <span class="highlight-text">lambda</span> keyword.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">multiply = lambda x, y: x * y
 
 # Calling the lambda function
 result = multiply(3, 4)
 # Result: 12
 </code></pre>
-        </section>
+            </section>
 
-        <section id="recursion">
-            <h3>Recursion</h3>
-            <p>Recursion is a programming concept where a function calls itself directly or indirectly. It is often used to solve problems that can be broken down into smaller, similar sub-problems.</p>
-            <pre><span class="lang-name">Python</span><code class="hljs language-python">def factorial(n):
+            <section id="recursion">
+                <h3>Recursion</h3>
+                <p>Recursion is a programming concept where a function calls itself directly or indirectly. It is often
+                    used to solve problems that can be broken down into smaller, similar sub-problems.</p>
+                <pre><span class="lang-name">Python</span><code class="hljs language-python">def factorial(n):
     if n == 0 or n == 1:
         return 1
     else:
@@ -268,25 +341,28 @@ result = multiply(3, 4)
 result = factorial(5)
 # Result: 120
 </code></pre>
+            </section>
         </section>
-    </section>
-</main>
-<footer>
-    <ul id="useful-links">
-        <li>
-            <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
-               aria-label="Visit visit python documentation site(open in new tab)">
-               Python3 documentation
-            </a>
-        </li>
-        <li>
-            <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
-               aria-label="Visit python online compiler site(open in new tab)">
-               Python online compiler
-            </a>
-        </li>
-    </ul>
-</footer>
-<script>hljs.highlightAll();</script>
+    </main>
+    <footer>
+        <ul id="useful-links">
+            <li>
+                <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
+                    aria-label="Visit visit python documentation site(open in new tab)">
+                    Python3 documentation
+                </a>
+            </li>
+            <li>
+                <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
+                    aria-label="Visit python online compiler site(open in new tab)">
+                    Python online compiler
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
+
 </html>
