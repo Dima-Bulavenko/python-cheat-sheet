@@ -391,6 +391,11 @@ fieldset {
     left: 0;
 }
 
+.required::after {
+    content: "*";
+    color: red;
+    margin-left: 10px;
+}
 #rating-container label {
     transition: color 0.7s;
 }
