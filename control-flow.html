@@ -1,273 +1,202 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width, initial-scale=1.0"
+          name="viewport">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Meta tags for search engines-->
     <meta name="keywords"
-        content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
+          content="python, cheatsheet, cheat, sheet, functions, args, kwargs, sets, dictionary, list, string, regular, expression, formatting, comprehension">
     <meta name="description"
-        content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
+          content="Explore Python effortlessly with Python Cheat Sheet. Your quick reference for essential Python concepts. Clear explanations, intuitive design, and useful links for efficient learning. Perfect for both beginners and experienced Python developers.">
 
     <!-- Favicons -->
     <link type="image/png" sizes="16x16" rel="icon" href="./assets/images/favicons/icons8-python-gradient-16.png">
     <link type="image/png" sizes="32x32" rel="icon" href="./assets/images/favicons/icons8-python-gradient-32.png">
     <link type="image/png" sizes="96x96" rel="icon" href="./assets/images/favicons/icons8-python-gradient-96.png">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180"
-        href="./assets/images/favicons/icons8-python-gradient-180.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./assets/images/favicons/icons8-python-gradient-180.png">
 
     <!-- Title -->
     <title>Control flow</title>
-
+    
     <!-- Highlight.js -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css"
-        integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" integrity="sha512-rO+olRTkcf304DQBxSWxln8JXCzTHlKnIdnMUwYvQa9/Jd4cQaNkItIUj6Z4nvW1dqK0SKXLbn9h4KwZTNtAyw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/e212569926.js" crossorigin="anonymous"></script>
 
 </head>
-
 <body>
-    <header>
-        <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
-        <label class="font-aw-icon" for="nav-topics-show">
-            <i class="fa-solid fa-bars font-aw-icon"></i>
-        </label>
-
-        <h1>
-            <a href="index.html">
-                <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
+<header>
+    <input type="radio" id="nav-topics-show" name="nav-topics-toggle">
+    <label class="font-aw-icon" for="nav-topics-show">
+        <i class="fa-solid fa-bars font-aw-icon"></i>
+    </label>
+    
+    <h1>
+        <a href="index.html">
+            <img id="logo" src="./assets/images/icons8-python.svg" alt="logo">
+        </a>
+    </h1>
+    
+    <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
+    
+    <nav id="nav-site">
+        <ul class="bold-text">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="variables.html">Get Started</a></li>
+            <li><a href="./feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    
+    <ul id="outer-sites">
+        <li>
+            <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
+               aria-label="Visit my LinkedIn page (open in new tab)">
+                <i class="fa-brands fa-linkedin font-aw-icon"></i>
             </a>
-        </h1>
+        </li>
+        <li>
+            <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
+               aria-label="Visit GitHub repository of this project (open in new tab)">
+                <i class="fa-brands fa-square-github font-aw-icon"></i>
+            </a>
+        </li>
+    </ul>
+</header>
 
-        <div id="feedback-icon"><a href="feedback.html"><i class="fa-solid fa-comment font-aw-icon"></i></a></div>
-
-        <nav id="nav-site">
-            <ul class="bold-text">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="variables.html">Get Started</a></li>
-                <li><a href="./feedback.html">Feedback</a></li>
+<input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
+<div id="nav-topics-container">
+    <div id="nav-bar-topics">
+        <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
+        <nav id="nav-topics">
+            <ul>
+                <li>
+                    <h2 ><a href="./variables.html">Variables</a></h2>
+                    <ul>
+                        <li><h3><a href="./variables.html#assignments">Assignments</a></h3></li>
+                        <li><h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3></li>
+                        <li><h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3></li>
+                        <li><h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3></li>
+                        <li><h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./operators.html">Operators</a></h2>
+                    <ul>
+                        <li><h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3></li>
+                        <li><h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3></li>
+                        <li><h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3></li>
+                        <li><h3><a href="./operators.html#logical-operators">Logical Operators</a></h3></li>
+                        <li><h3><a href="./operators.html#identity-operators">Identity Operators</a></h3></li>
+                        <li><h3><a href="./operators.html#membership-operators">Membership Operators</a></h3></li>
+                        <li><h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./data-types.html">Data Types</a></h2>
+                    <ul>
+                        <li>
+                            <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#string">String</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#list">List</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#tuple">Tuple</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#set">Set</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#boolean">Boolean</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="./data-types.html#none">None</a></h3>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="selected-page"><a href="./control-flow.html">Control Flow</a></h2>
+                    <ul>
+                        <li><h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3></li>
+                        <li><h3><a href="./control-flow.html#loops">Loops</a></h3></li>
+                        <li><h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue Statements</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./functions.html">Functions</a></h2>
+                    <ul>
+                        <li><h3><a href="./functions.html#defining-functions">Defining Functions</a></h3></li>
+                        <li><h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
+                        </li>
+                        <li><h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3></li>
+                        <li><h3><a href="./functions.html#recursion">Recursion</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./modules-and-packages.html">Modules and Packages</a></h2>
+                    <ul>
+                        <li><h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3></li>
+                        <li><h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using Packages</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./error-handling.html">Error Handling</a></h2>
+                    <ul>
+                        <li><h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3></li>
+                        <li><h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3></li>
+                        <li><h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of Exceptions</a></h3></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2><a href="./file-handling.html">File Handling</a></h2>
+                    <ul>
+                        <li><h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3></li>
+                        <li><h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3></li>
+                        <li><h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a></h3></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-
-        <ul id="outer-sites">
-            <li>
-                <a href="https://www.linkedin.com/in/dima-bulavenko-07a162239/" target="_blank" rel="noopener"
-                    aria-label="Visit my LinkedIn page (open in new tab)">
-                    <i class="fa-brands fa-linkedin font-aw-icon"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/Dima-Bulavenko/python-cheat-sheet" target="_blank" rel="noopener"
-                    aria-label="Visit GitHub repository of this project (open in new tab)">
-                    <i class="fa-brands fa-square-github font-aw-icon"></i>
-                </a>
-            </li>
-        </ul>
-    </header>
-
-    <input type="radio" id="nav-topics-hide" name="nav-topics-toggle" checked>
-    <div id="nav-topics-container">
-        <div id="nav-bar-topics">
-            <label for="nav-topics-hide"><i class="fa-solid fa-xmark font-aw-icon"></i></label>
-            <nav id="nav-topics">
-                <ul>
-                    <li>
-                        <h2><a href="./variables.html">Variables</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./variables.html#assignments">Assignments</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./variables.html#multiple-assignments">Multiple Assignments</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./variables.html#variable-naming-rules">Variable Naming Rules</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./variables.html#dynamic-typing">Dynamic Typing</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./variables.html#variable-reassignment">Variable Reassignment</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2><a href="./operators.html">Operators</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./operators.html#arithmetic-operators">Arithmetic Operators</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./operators.html#assignment-operators">Assignment Operators</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./operators.html#comparison-operators">Comparison Operators</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./operators.html#logical-operators">Logical Operators</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./operators.html#identity-operators">Identity Operators</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./operators.html#membership-operators">Membership Operators</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./operators.html#operator-precedence">Operator Precedence</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2><a href="./data-types.html">Data Types</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./data-types.html#numeric-types">Numeric Types</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./data-types.html#string">String</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./data-types.html#list">List</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./data-types.html#tuple">Tuple</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./data-types.html#dictionary">Dictionary</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./data-types.html#set">Set</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./data-types.html#boolean">Boolean</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./data-types.html#none">None</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2 class="selected-page"><a href="./control-flow.html">Control Flow</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./control-flow.html#conditional-statements">Conditional Statements</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./control-flow.html#loops">Loops</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./control-flow.html#break-and-continue-statements">Break and Continue
-                                        Statements</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2><a href="./functions.html">Functions</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./functions.html#defining-functions">Defining Functions</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./functions.html#function-parameters">Function Parameters</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./functions.html#lambda-functions">Lambda Functions</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./functions.html#recursion">Recursion</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2><a href="./modules-and-packages.html">Modules and Packages</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./modules-and-packages.html#importing-modules">Importing Modules</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./modules-and-packages.html#creating-and-using-packages">Creating and Using
-                                        Packages</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2><a href="./error-handling.html">Error Handling</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./error-handling.html#exceptions-and-errors">Exceptions and Errors</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./error-handling.html#try-except-blocks">Try, Except Blocks</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./error-handling.html#handling-types-of-exceptions">Handling Types of
-                                        Exceptions</a></h3>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2><a href="./file-handling.html">File Handling</a></h2>
-                        <ul>
-                            <li>
-                                <h3><a href="./file-handling.html#reading-from-files">Reading from Files</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./file-handling.html#writing-to-files">Writing to Files</a></h3>
-                            </li>
-                            <li>
-                                <h3><a href="./file-handling.html#working-with-file-paths">Working with File Paths</a>
-                                </h3>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </div>
+</div>
 
-    <main>
-        <section class="topic-section">
-            <h2>Control Flow</h2>
-            <p>Control flow in Python refers to the order in which statements are executed. It includes <span
-                    class="highlight-text">conditional statements</span>, <span class="highlight-text">loops</span>, and
-                special statements like
-                <span class="highlight-text">break</span> and
-                <span class="highlight-text">continue</span>.</p>
+<main>
+    <section class="topic-section">
+        <h2>Control Flow</h2>
+        <p>Control flow in Python refers to the order in which statements are executed. It includes <span
+                class="highlight-text">conditional statements</span>, <span class="highlight-text">loops</span>, and special statements like
+            <span class="highlight-text">break</span> and
+            <span class="highlight-text">continue</span>.</p>
 
-            <section id="conditional-statements">
-                <h3>Conditional Statements <a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements"
-                        target="_blank" rel="noopener"
-                        aria-label="Get detailed information about conditional statements in python documentation (open in new tab)"><i
-                            class="fa-solid fa-circle-info"></i></a></h3>
-                <p>Conditional statements in Python allow you to execute different blocks of code based on specified
-                    conditions. The primary constructs for this are the <span class="highlight-text">if</span>, <span
-                        class="highlight-text">elif</span> (else if), and <span class="highlight-text">else</span>
-                    statements.</p>
+        <section id="conditional-statements">
+            <h3>Conditional Statements <a href="https://docs.python.org/3/tutorial/controlflow.html#if-statements" target="_blank" rel="noopener" aria-label="Get detailed information about conditional statements in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
+        <p>Conditional statements in Python allow you to execute different blocks of code based on specified conditions. The primary constructs for this are the <span class="highlight-text">if</span>, <span class="highlight-text">elif</span> (else if), and <span class="highlight-text">else</span> statements.</p>
 
-                <h3>The <span class="highlight-text">if</span> Statement</h3>
-                <p>The <span class="highlight-text">if</span> statement is used to execute a block of code if a
-                    specified condition is true.</p>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 10
+        <h3>The <span class="highlight-text">if</span> Statement</h3>
+        <p>The <span class="highlight-text">if</span> statement is used to execute a block of code if a specified condition is true.</p>
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 10
 
 if x > 0:
     print("Positive number")
 </code></pre>
 
-                <h3>The <span class="highlight-text">elif</span> Statement</h3>
-                <p>The <span class="highlight-text">elif</span> statement allows you to check multiple conditions after
-                    the initial <span class="highlight-text">if</span> statement. It is used to provide additional
-                    alternatives if the preceding conditions are false.</p>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 0
+        <h3>The <span class="highlight-text">elif</span> Statement</h3>
+        <p>The <span class="highlight-text">elif</span> statement allows you to check multiple conditions after the initial <span class="highlight-text">if</span> statement. It is used to provide additional alternatives if the preceding conditions are false.</p>
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 0
 
 if x > 0:
     print("Positive number")
@@ -277,11 +206,9 @@ else:
     print("Zero")
 </code></pre>
 
-                <h3>The <span class="highlight-text">else</span> Statement</h3>
-                <p>The <span class="highlight-text">else</span> statement is used to execute a block of code if none of
-                    the preceding conditions in the <span class="highlight-text">if</span> and <span
-                        class="highlight-text">elif</span> statements are true.</p>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">x = -5
+        <h3>The <span class="highlight-text">else</span> Statement</h3>
+        <p>The <span class="highlight-text">else</span> statement is used to execute a block of code if none of the preceding conditions in the <span class="highlight-text">if</span> and <span class="highlight-text">elif</span> statements are true.</p>
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = -5
 
 if x > 0:
     print("Positive number")
@@ -291,8 +218,8 @@ else:
     print("Zero")
 </code></pre>
 
-                <p>Conditional statements can be nested, allowing for more complex decision-making in your code.</p>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 10
+        <p>Conditional statements can be nested, allowing for more complex decision-making in your code.</p>
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">x = 10
 y = 5
 
 if x > 0:
@@ -303,22 +230,15 @@ if x > 0:
 else:
     print("x is not positive.")
 </code></pre>
-            </section>
+        </section>
+        
+        <section id="loops">
+            <h3>Python Loops</h3>
+        <p>Loops in Python allow you to repeatedly execute a block of code. There are two main types of loops: <span class="highlight-text">for</span> loops and <span class="highlight-text">while</span> loops.</p>
 
-            <section id="loops">
-                <h3>Python Loops</h3>
-                <p>Loops in Python allow you to repeatedly execute a block of code. There are two main types of loops:
-                    <span class="highlight-text">for</span> loops and <span class="highlight-text">while</span> loops.
-                </p>
-
-                <h4>The <span class="highlight-text">for</span> Loop <a
-                        href="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement" target="_blank"
-                        rel="noopener"
-                        aria-label="Get detailed information about for statement in python documentation (open in new tab)"><i
-                            class="fa-solid fa-circle-info"></i></a></h4>
-                <p>The <span class="highlight-text">for</span> loop is used to iterate over a sequence (such as a list,
-                    tuple, or string) or other iterable objects.</p>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">fruits = ["apple", "banana", "cherry"]
+        <h4>The <span class="highlight-text">for</span> Loop <a href="https://docs.python.org/3/reference/compound_stmts.html#the-for-statement" target="_blank" rel="noopener" aria-label="Get detailed information about for statement in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h4>
+        <p>The <span class="highlight-text">for</span> loop is used to iterate over a sequence (such as a list, tuple, or string) or other iterable objects.</p>
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">fruits = ["apple", "banana", "cherry"]
 
 for fruit in fruits:
     print(fruit)
@@ -329,14 +249,9 @@ for fruit in fruits:
 # "cherry"
 </code></pre>
 
-                <h4>The <span class="highlight-text">while</span> Loop <a
-                        href="https://docs.python.org/3/reference/compound_stmts.html#while" target="_blank"
-                        rel="noopener"
-                        aria-label="Get detailed information about while statement in python documentation (open in new tab)"><i
-                            class="fa-solid fa-circle-info"></i></a></h4>
-                <p>The <span class="highlight-text">while</span> loop is used to repeatedly execute a block of code as
-                    long as a specified condition is true.</p>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">count = 1
+        <h4>The <span class="highlight-text">while</span> Loop <a href="https://docs.python.org/3/reference/compound_stmts.html#while" target="_blank" rel="noopener" aria-label="Get detailed information about while statement in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h4>
+        <p>The <span class="highlight-text">while</span> loop is used to repeatedly execute a block of code as long as a specified condition is true.</p>
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">count = 1
 
 while count &lt; 4:
     print(count)
@@ -346,17 +261,12 @@ while count &lt; 4:
 # 2
 # 3
 </code></pre>
-            </section>
-
-            <section id="break-and-continue-statements">
-                <h3>Break and Continue Statements <a href="https://docs.python.org/3/reference/simple_stmts.html#break"
-                        target="_blank" rel="noopener"
-                        aria-label="Get detailed information about the break and continue  in python documentation (open in new tab)"><i
-                            class="fa-solid fa-circle-info"></i></a></h3>
-                <p>The <span class="highlight-text">break</span> statement is used to exit a loop prematurely, while the
-                    <span class="highlight-text">continue</span> statement is used to skip the rest of the code inside a
-                    loop for the current iteration and move to the next iteration.</p>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
+        </section>
+        
+        <section id="break-and-continue-statements">
+            <h3>Break and Continue Statements <a href="https://docs.python.org/3/reference/simple_stmts.html#break" target="_blank" rel="noopener" aria-label="Get detailed information about the break and continue  in python documentation (open in new tab)"><i class="fa-solid fa-circle-info"></i></a></h3>
+        <p>The <span class="highlight-text">break</span> statement is used to exit a loop prematurely, while the <span class="highlight-text">continue</span> statement is used to skip the rest of the code inside a loop for the current iteration and move to the next iteration.</p>
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
 
 for num in numbers:
     if num == 3:
@@ -368,7 +278,7 @@ for num in numbers:
 # 2
 # The loop be stopped by break statement when encounter number 3 and don't show the rest numbers
 </code></pre>
-                <pre><span class="lang-name">Python</span><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
+        <pre><span class="lang-name">Python</span><code class="hljs language-python">numbers = [1, 2, 3, 4, 5]
 
 for num in numbers:
     if num == 3:
@@ -382,28 +292,25 @@ for num in numbers:
 # 5
 # The loop skip number 3 and don't print it
 </code></pre>
-            </section>
         </section>
-    </main>
-    <footer>
-        <ul id="useful-links">
-            <li>
-                <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
-                    aria-label="Visit visit python documentation site(open in new tab)">
-                    Python3 documentation
-                </a>
-            </li>
-            <li>
-                <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
-                    aria-label="Visit python online compiler site(open in new tab)">
-                    Python online compiler
-                </a>
-            </li>
-        </ul>
-    </footer>
-    <script>
-        hljs.highlightAll();
-    </script>
+    </section>
+</main>
+<footer>
+    <ul id="useful-links">
+        <li>
+            <a href="https://docs.python.org/3/" target="_blank" rel="noopener"
+               aria-label="Visit visit python documentation site(open in new tab)">
+               Python3 documentation
+            </a>
+        </li>
+        <li>
+            <a href="https://replit.com/new/python3" target="_blank" rel="noopener"
+               aria-label="Visit python online compiler site(open in new tab)">
+               Python online compiler
+            </a>
+        </li>
+    </ul>
+</footer>
+<script>hljs.highlightAll();</script>
 </body>
-
 </html>
