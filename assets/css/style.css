@@ -30,7 +30,9 @@
 }
 
 a {
+    color: inherit;
     transition: all 0.1s linear; 
+    text-decoration: none;
 }
 a:hover, .font-aw-icon:hover { 
     color: var(--hilight-text-color);   
@@ -67,11 +69,6 @@ textarea {
     resize: none;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 .font-aw-icon {
     font-size: 1.6rem;
     color: #b3b3b6;
@@ -82,7 +79,7 @@ li {
 }
 
 .selected-page {
-    color: var(--selected-link-color);
+    color: var(--button-hover-color);
 }
 
 .bold-text {
