@@ -377,15 +377,25 @@ fieldset {
     font-size: 1.5rem;
 }
 
-#rating-container input {
-    display: none;
+.rate-button-container {
+    position: relative;
+}
+
+.rate-button-container input {
+    opacity: 0;
+}
+
+.rate-button-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #rating-container label {
     transition: color 0.7s;
 }
 
-#rating-container>input:checked+label {
+#rating-container input:checked+label {
     color: var(--button-hover-color);
 }
 
