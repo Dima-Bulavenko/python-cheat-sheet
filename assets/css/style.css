@@ -29,6 +29,13 @@
     box-sizing: border-box;
 }
 
+a {
+    transition: all 0.1s linear; 
+}
+a:hover, .font-aw-icon:hover { 
+    color: var(--hilight-text-color);   
+}
+
 body {
     background-color: var(--site-background-color);
     color: var(--text-color);
