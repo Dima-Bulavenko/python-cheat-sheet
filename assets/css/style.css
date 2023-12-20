@@ -247,10 +247,6 @@ header>h1 {
     margin-bottom: 45px;
 }
 
-.method:last-of-type {
-    margin-bottom: 0;
-}
-
 .method p {
     margin-top: 10px !important;
 }
