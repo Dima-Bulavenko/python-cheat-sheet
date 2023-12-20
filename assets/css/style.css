@@ -186,6 +186,7 @@ header>h1 {
 }
 
 #nav-topics-hide:checked+#nav-topics-container {
+    /*display: none;*/
     width: 0;
     border-width: 0;
 }
@@ -262,6 +263,7 @@ header>h1 {
     border-right: .15em solid orange;
     white-space: nowrap;
     margin: 0 auto;
+    /*letter-spacing: .15em;*/
     animation:
         typing 2s steps(25, end),
         blink-caret .5s step-end infinite;
@@ -450,6 +452,7 @@ fieldset {
         width: 40vw;
     }
 
+    /*Main*/
     /*Feedback*/
     .feedback-container {
         max-width: 500px;
