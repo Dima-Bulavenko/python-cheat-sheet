@@ -71,10 +71,15 @@ Link to the live site - [Python Cheat Sheet](https://dima-bulavenko.github.io/py
     + [Unresolved](#unresolved)
 - [Deployment](#deployment)
   * [Project Deployment via GitHub](#project-deployment-via-github)
+- [How to Clone](#how-to-clone)
+- [Codeanywhere Reminders](#codeanywhere-reminders)
 - [Credits](#credits)
   * [Content](#content)
   * [Media](#media)
 - [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 # User Experience UX
 
@@ -295,6 +300,8 @@ interactivity of the site.
 * Header element overlapped main element content when navigate to topics by anchor links ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/d396d5ab731a5add8f886ff18625f28e3cde0546)). 
 
 * Too low contrast between background and .selected-page class ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/ca7557c72ed98861ea740fe6cce609b4a9352730)).
+
+* Submitting the form without selecting any radio button caused a bug where the form couldn't be submitted, and no validation message was shown. This issue was due to the buttons having the 'display: none' property ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/7efd935401195cea6a5f3f7e36e01499a25a510c)).
 
 ### Unresolved
 
