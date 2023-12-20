@@ -301,7 +301,7 @@ interactivity of the site.
 
 * Too low contrast between background and .selected-page class ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/ca7557c72ed98861ea740fe6cce609b4a9352730)).
 
-* Submitting the form without selecting any radio button caused a bug where the form couldn't be submitted, and no validation message was shown. This issue was due to the buttons having the 'display: none' property ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/7efd935401195cea6a5f3f7e36e01499a25a510c)).
+* Submitting the form without selecting any radio button caused a bug where the form couldn't be submitted, and no validation message was shown. This issue was due to the buttons having the 'display: none' property ([Fixing commit](https://github.com/Dima-Bulavenko/python-cheat-sheet/commit/a6ba222918c78b4db01262dc780eb67b7f5aa9e4)).
 
 ### Unresolved
 

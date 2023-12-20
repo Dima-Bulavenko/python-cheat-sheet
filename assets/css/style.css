@@ -6,7 +6,7 @@
     --site-background-color: #051923;
     --block-backgorund-color: #1E293BFF;
     --border-color: rgba(229, 71, 234, 0.44);
-    --selected-link-color: #0050c8;
+    --selected-link-color: #00ceff;
     --button-color: #01689e;
     --button-hover-color: #00A6FB;
     --text-color: #C0C0C0;
@@ -30,9 +30,7 @@
 }
 
 a {
-    color: inherit;
     transition: all 0.1s linear; 
-    text-decoration: none;
 }
 a:hover, .font-aw-icon:hover { 
     color: var(--hilight-text-color);   
@@ -69,6 +67,11 @@ textarea {
     resize: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .font-aw-icon {
     font-size: 1.6rem;
     color: #b3b3b6;
@@ -79,7 +82,7 @@ li {
 }
 
 .selected-page {
-    color: var(--button-hover-color);
+    color: var(--selected-link-color);
 }
 
 .bold-text {
@@ -251,6 +254,10 @@ header>h1 {
     margin-bottom: 45px;
 }
 
+.method:last-of-type {
+    margin-bottom: 0;
+}
+
 .method p {
     margin-top: 10px !important;
 }
@@ -331,6 +338,10 @@ main li:not(li:first-child) {
     background-color: black;
     padding: 40px 0;
     margin: 0;
+}
+
+#operator-precedence > ul {
+    margin-top: 20px;
 }
 
 /* Feedback*/
