@@ -329,10 +329,6 @@ main li:not(li:first-child) {
     margin: 0;
 }
 
-#operator-precedence > ul {
-    margin-top: 20px;
-}
-
 /* Feedback*/
 #feedback-main {
     display: flex;
