@@ -436,11 +436,16 @@ fieldset {
     border: none;
     align-self: center;
     font-size: 1rem;
+    transition: all 0.5s; 
 }
 
 #feedback-form button:active {
     height: 45px;
     width: 65%;
+    background-color: var(--button-hover-color);
+}
+
+#feedback-form button:hover {
     background-color: var(--button-hover-color);
 }
 
