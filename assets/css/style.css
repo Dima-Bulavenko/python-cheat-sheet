@@ -429,7 +429,7 @@ fieldset {
 
 #feedback-form button {
     background-color: var(--button-color);
-    color: var(--text-color);
+    color: var(--hilight-text-color);
     width: 60%;
     height: 40px;
     border-radius: 10px;
