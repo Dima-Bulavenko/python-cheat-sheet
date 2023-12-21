@@ -270,6 +270,9 @@ the final tests, no errors on any pages were found.
 * ### Style.css
 ![CSS validation](assets/images/readme-images/css-validation.PNG)
 
+* ### Lighthouse
+![Lighthouse validation](assets/images/readme-images/lighthouse-validation.PNG)
+
 [Back to top](<#contents>)
 
 ## Responsiveness Tests
