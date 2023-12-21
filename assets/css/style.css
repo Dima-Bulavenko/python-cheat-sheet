@@ -222,7 +222,7 @@ header>h1 {
 }
 
 .topic-section :is(h1, h2, h3, h4) {
-    margin: 20px 0;
+    margin: 35px 0 20px;
 }
 
 .topic-section p {
