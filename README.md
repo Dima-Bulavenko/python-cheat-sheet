@@ -405,7 +405,8 @@ This section will credit the sources of content and media for Python Cheat Sheet
 * How to create [Typewriter Effect](https://css-tricks.com/snippets/css/typewriter-effect/)
 * Make math calculations in CSS using [calc()](https://www.w3schools.com/cssref/func_calc.php)
 * Custom [scrollbar](https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp)
-* Online [table of contents generator](https://ecotrust-canada.github.io/markdown-toc/)  
+* Online [table of contents generator](https://ecotrust-canada.github.io/markdown-toc/)
+* Example of readme file I took [form Disney-Food-Guide repisitory](https://github.com/Matthew-Hurrell/Disney-Food-Guide/blob/main/README.md).
 
 ## Media
 * Favicon and logo were created by using [icons8](https://icons8.com/icons)
